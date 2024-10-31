@@ -26,6 +26,9 @@ class Circuits
     #[ORM\Column(length: 255)]
     private ?string $location = null;
 
+    #[ORM\Column(length: 20)]
+    private ?string $type = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +78,18 @@ class Circuits
     public function setLocation(string $location): static
     {
         $this->location = $location;
+
+        return $this;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(string $type): static
+    {
+        $this->type = $type;
 
         return $this;
     }

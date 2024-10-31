@@ -17,21 +17,9 @@ class Sessions
     #[ORM\Column(length: 100)]
     private ?string $name = null;
 
-    #[ORM\Column(length: 100)]
-    private ?string $type = null;
-
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
-    private ?\DateTimeInterface $date_start = null;
-
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
-    private ?\DateTimeInterface $date_end = null;
-
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $year = null;
-
     #[ORM\ManyToOne(inversedBy: 'sessions')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?Meetings $meetings = null;
+    private ?Races $race = null;
 
     #[ORM\OneToOne(cascade: ['persist', 'remove'])]
     private ?Standings $standing = null;
@@ -53,62 +41,14 @@ class Sessions
         return $this;
     }
 
-    public function getType(): ?string
+    public function getRace(): ?Races
     {
-        return $this->type;
+        return $this->race;
     }
 
-    public function setType(string $type): static
+    public function setRace(?Races $race): static
     {
-        $this->type = $type;
-
-        return $this;
-    }
-
-    public function getDateStart(): ?\DateTimeInterface
-    {
-        return $this->date_start;
-    }
-
-    public function setDateStart(\DateTimeInterface $date_start): static
-    {
-        $this->date_start = $date_start;
-
-        return $this;
-    }
-
-    public function getDateEnd(): ?\DateTimeInterface
-    {
-        return $this->date_end;
-    }
-
-    public function setDateEnd(\DateTimeInterface $date_end): static
-    {
-        $this->date_end = $date_end;
-
-        return $this;
-    }
-
-    public function getYear(): ?\DateTimeInterface
-    {
-        return $this->year;
-    }
-
-    public function setYear(\DateTimeInterface $year): static
-    {
-        $this->year = $year;
-
-        return $this;
-    }
-
-    public function getMeetings(): ?Meetings
-    {
-        return $this->meetings;
-    }
-
-    public function setMeetings(?Meetings $meetings): static
-    {
-        $this->meetings = $meetings;
+        $this->race = $race;
 
         return $this;
     }

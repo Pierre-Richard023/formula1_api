@@ -13,14 +13,14 @@ class StandingEntry
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
+    #[ORM\Column(nullable: true)]
     private ?int $position = null;
 
-    #[ORM\Column]
+    #[ORM\Column(nullable: true)]
     private ?float $points = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?float $raceTime = null;
+    #[ORM\Column(length: 50, nullable: true)]
+    private ?string $raceTime = null;
 
     #[ORM\ManyToOne(inversedBy: 'entries')]
     #[ORM\JoinColumn(nullable: false)]
@@ -61,12 +61,12 @@ class StandingEntry
         return $this;
     }
 
-    public function getRaceTime(): ?float
+    public function getRaceTime(): ?string
     {
         return $this->raceTime;
     }
 
-    public function setRaceTime(?float $raceTime): static
+    public function setRaceTime(?string $raceTime): static
     {
         $this->raceTime = $raceTime;
 

@@ -24,10 +24,7 @@ class Drivers
     private ?string $full_name = null;
 
     #[ORM\Column(length: 5)]
-    private ?string $name_acronym = null;
-
-    #[ORM\Column(length: 5)]
-    private ?string $country_code = null;
+    private ?string $abbreviation = null;
 
     #[ORM\Column(length: 255)]
     private ?string $Country = null;
@@ -46,6 +43,21 @@ class Drivers
 
     #[ORM\Column]
     private ?int $grands_prix_entered = null;
+
+    #[ORM\Column]
+    private ?int $race_wins = null;
+
+    #[ORM\Column]
+    private ?int $pole_positions = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $nationality = null;
+
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $date_of_death = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?int $permanent_number = null;
 
     public function getId(): ?int
     {
@@ -88,26 +100,14 @@ class Drivers
         return $this;
     }
 
-    public function getNameAcronym(): ?string
+    public function getAbbreviation(): ?string
     {
-        return $this->name_acronym;
+        return $this->abbreviation;
     }
 
-    public function setNameAcronym(string $name_acronym): static
+    public function setAbbreviation(string $abbreviation): static
     {
-        $this->name_acronym = $name_acronym;
-
-        return $this;
-    }
-
-    public function getCountryCode(): ?string
-    {
-        return $this->country_code;
-    }
-
-    public function setCountryCode(string $country_code): static
-    {
-        $this->country_code = $country_code;
+        $this->abbreviation = $abbreviation;
 
         return $this;
     }
@@ -180,6 +180,66 @@ class Drivers
     public function setGrandsPrixEntered(int $grands_prix_entered): static
     {
         $this->grands_prix_entered = $grands_prix_entered;
+
+        return $this;
+    }
+
+    public function getRaceWins(): ?int
+    {
+        return $this->race_wins;
+    }
+
+    public function setRaceWins(int $race_wins): static
+    {
+        $this->race_wins = $race_wins;
+
+        return $this;
+    }
+
+    public function getPolePositions(): ?int
+    {
+        return $this->pole_positions;
+    }
+
+    public function setPolePositions(int $pole_positions): static
+    {
+        $this->pole_positions = $pole_positions;
+
+        return $this;
+    }
+
+    public function getNationality(): ?string
+    {
+        return $this->nationality;
+    }
+
+    public function setNationality(string $nationality): static
+    {
+        $this->nationality = $nationality;
+
+        return $this;
+    }
+
+    public function getDateOfDeath(): ?\DateTimeInterface
+    {
+        return $this->date_of_death;
+    }
+
+    public function setDateOfDeath(?\DateTimeInterface $date_of_death): static
+    {
+        $this->date_of_death = $date_of_death;
+
+        return $this;
+    }
+
+    public function getPermanentNumber(): ?int
+    {
+        return $this->permanent_number;
+    }
+
+    public function setPermanentNumber(?int $permanent_number): static
+    {
+        $this->permanent_number = $permanent_number;
 
         return $this;
     }

@@ -21,15 +21,19 @@ class Seasons
     #[ORM\OneToMany(targetEntity: Standings::class, mappedBy: 'season')]
     private Collection $standings;
 
-    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
-    private ?Schedules $schedule = null;
-
     #[ORM\Column]
     private ?int $year = null;
+
+    /**
+     * @var Collection<int, Races>
+     */
+    #[ORM\OneToMany(targetEntity: Races::class, mappedBy: 'season', orphanRemoval: true)]
+    private Collection $meetings;
 
     public function __construct()
     {
         $this->standings = new ArrayCollection();
+        $this->meetings = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -67,18 +71,6 @@ class Seasons
         return $this;
     }
 
-    public function getSchedule(): ?Schedules
-    {
-        return $this->schedule;
-    }
-
-    public function setSchedule(?Schedules $schedule): static
-    {
-        $this->schedule = $schedule;
-
-        return $this;
-    }
-
     public function getYear(): ?int
     {
         return $this->year;
@@ -87,6 +79,36 @@ class Seasons
     public function setYear(int $year): static
     {
         $this->year = $year;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Races>
+     */
+    public function getMeetings(): Collection
+    {
+        return $this->meetings;
+    }
+
+    public function addMeeting(Races $meeting): static
+    {
+        if (!$this->meetings->contains($meeting)) {
+            $this->meetings->add($meeting);
+            $meeting->setSeason($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMeeting(Races $meeting): static
+    {
+        if ($this->meetings->removeElement($meeting)) {
+            // set the owning side to null (unless already changed)
+            if ($meeting->getSeason() === $this) {
+                $meeting->setSeason(null);
+            }
+        }
 
         return $this;
     }

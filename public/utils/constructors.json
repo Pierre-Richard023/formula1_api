@@ -1,0 +1,1842 @@
+[
+    {
+        "id": "adams",
+        "name": "Adams",
+        "fullName": "Adams",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "afm",
+        "name": "AFM",
+        "fullName": "Alex von Falkenhausen Motorenbau",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ags",
+        "name": "AGS",
+        "fullName": "Automobiles Gonfaronnaises Sportives",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 80,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "alfa-romeo",
+        "name": "Alfa Romeo",
+        "fullName": "Alfa Romeo Racing",
+        "countryId": "italy",
+        "totalRaceWins": 10,
+        "totalRaceEntries": 214,
+        "totalPodiumRaces": 18,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "alfa-special",
+        "name": "Alfa Special",
+        "fullName": "Alfa Special",
+        "countryId": "south-africa",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "alphatauri",
+        "name": "AlphaTauri",
+        "fullName": "Scuderia AlphaTauri",
+        "countryId": "italy",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 83,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "alpine",
+        "name": "Alpine",
+        "fullName": "Alpine F1 Team",
+        "countryId": "france",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 85,
+        "totalPodiumRaces": 4,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "alta",
+        "name": "Alta",
+        "fullName": "Alta Car and Engineering Company",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "amon",
+        "name": "Amon",
+        "fullName": "Chris Amon Racing",
+        "countryId": "new-zealand",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "andrea-moda",
+        "name": "Andrea Moda",
+        "fullName": "Andrea Moda Formula",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 10,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "apollon",
+        "name": "Apollon",
+        "fullName": "Apollon",
+        "countryId": "switzerland",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "arrows",
+        "name": "Arrows",
+        "fullName": "Arrows Grand Prix International",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 296,
+        "totalPodiumRaces": 8,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "arzani-volpini",
+        "name": "Arzani-Volpini",
+        "fullName": "Scuderia Arzani-Volpini",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "aston-butterworth",
+        "name": "Aston Butterworth",
+        "fullName": "Aston Butterworth",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "aston-martin",
+        "name": "Aston Martin",
+        "fullName": "Aston Martin",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 91,
+        "totalPodiumRaces": 9,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ats-wheels",
+        "name": "ATS",
+        "fullName": "ATS Wheels",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 107,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ats",
+        "name": "ATS",
+        "fullName": "Automobili Turismo e Sport",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "balsa",
+        "name": "Balsa",
+        "fullName": "Balsa",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "bar",
+        "name": "BAR",
+        "fullName": "British American Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 118,
+        "totalPodiumRaces": 15,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "behra-porsche",
+        "name": "Behra-Porsche",
+        "fullName": "Behra-Porsche",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "bellasi",
+        "name": "Bellasi",
+        "fullName": "Bellasi",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 6,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "benetton",
+        "name": "Benetton",
+        "fullName": "Benetton Formula",
+        "countryId": "italy",
+        "totalRaceWins": 27,
+        "totalRaceEntries": 260,
+        "totalPodiumRaces": 94,
+        "totalChampionshipWins": 1
+    },
+    {
+        "id": "bmw-sauber",
+        "name": "BMW Sauber",
+        "fullName": "BMW Sauber F1 Team",
+        "countryId": "germany",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 70,
+        "totalPodiumRaces": 16,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "bmw",
+        "name": "BMW",
+        "fullName": "BMW",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "boro",
+        "name": "Boro",
+        "fullName": "Boro",
+        "countryId": "netherlands",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 8,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "brabham",
+        "name": "Brabham",
+        "fullName": "Motor Racing Developments",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 35,
+        "totalRaceEntries": 402,
+        "totalPodiumRaces": 106,
+        "totalChampionshipWins": 2
+    },
+    {
+        "id": "brawn",
+        "name": "Brawn",
+        "fullName": "Brawn GP Formula One Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 8,
+        "totalRaceEntries": 17,
+        "totalPodiumRaces": 11,
+        "totalChampionshipWins": 1
+    },
+    {
+        "id": "brm",
+        "name": "BRM",
+        "fullName": "British Racing Motors",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 17,
+        "totalRaceEntries": 208,
+        "totalPodiumRaces": 53,
+        "totalChampionshipWins": 1
+    },
+    {
+        "id": "bromme",
+        "name": "Bromme",
+        "fullName": "Bromme",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "brp",
+        "name": "BRP",
+        "fullName": "British Racing Partnership",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 13,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "bugatti",
+        "name": "Bugatti",
+        "fullName": "Bugatti",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "caterham",
+        "name": "Caterham",
+        "fullName": "Caterham F1 Team",
+        "countryId": "malaysia",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 56,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "christensen",
+        "name": "Christensen",
+        "fullName": "Christensen",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "cisitalia",
+        "name": "Cisitalia",
+        "fullName": "Cisitalia",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "coloni",
+        "name": "Coloni",
+        "fullName": "Scuderia Coloni",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 65,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "connaught",
+        "name": "Connaught",
+        "fullName": "Connaught Engineering",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 18,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "connew",
+        "name": "Connew",
+        "fullName": "Connew Racing Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "cooper",
+        "name": "Cooper",
+        "fullName": "Cooper Car Company",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 16,
+        "totalRaceEntries": 129,
+        "totalPodiumRaces": 41,
+        "totalChampionshipWins": 2
+    },
+    {
+        "id": "dallara",
+        "name": "Dallara",
+        "fullName": "Dallara Automobili",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 80,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "de-tomaso",
+        "name": "De Tomaso",
+        "fullName": "De Tomaso Modena",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 15,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "deidt",
+        "name": "Deidt",
+        "fullName": "Deidt",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 3,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "del-roy",
+        "name": "Del Roy",
+        "fullName": "Del Roy",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "derrington-francis",
+        "name": "Derrington-Francis",
+        "fullName": "Derrington-Francis Racing Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "dunn",
+        "name": "Dunn",
+        "fullName": "Dunn",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 3,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "eagle",
+        "name": "Eagle",
+        "fullName": "All American Racers",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 26,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "eifelland",
+        "name": "Eifelland",
+        "fullName": "Team Eifelland Caravans",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 8,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "elder",
+        "name": "Elder",
+        "fullName": "Elder",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "emeryson",
+        "name": "Emeryson",
+        "fullName": "Emeryson Cars",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 6,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "emw",
+        "name": "EMW",
+        "fullName": "Eisenacher Motorenwerk",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "enb",
+        "name": "ENB",
+        "fullName": "Ecurie National Belge",
+        "countryId": "belgium",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ensign",
+        "name": "Ensign",
+        "fullName": "Ensign Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 133,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "epperly",
+        "name": "Epperly",
+        "fullName": "Epperly",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 2,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "era",
+        "name": "ERA",
+        "fullName": "English Racing Automobiles",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 7,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "eurobrun",
+        "name": "EuroBrun",
+        "fullName": "EuroBrun Racing",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 46,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ewing",
+        "name": "Ewing",
+        "fullName": "Ewing",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ferguson",
+        "name": "Ferguson",
+        "fullName": "Harry Ferguson Research",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ferrari",
+        "name": "Ferrari",
+        "fullName": "Scuderia Ferrari",
+        "countryId": "italy",
+        "totalRaceWins": 247,
+        "totalRaceEntries": 1095,
+        "totalPodiumRaces": 628,
+        "totalChampionshipWins": 16
+    },
+    {
+        "id": "first",
+        "name": "FIRST",
+        "fullName": "FIRST Racing",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 0,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "fittipaldi",
+        "name": "Fittipaldi",
+        "fullName": "Fittipaldi Automotive",
+        "countryId": "brazil",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 120,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "fondmetal",
+        "name": "Fondmetal",
+        "fullName": "Fondmetal",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 29,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "footwork",
+        "name": "Footwork",
+        "fullName": "Footwork Arrows",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 97,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "force-india",
+        "name": "Force India",
+        "fullName": "Force India F1 Team",
+        "countryId": "india",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 212,
+        "totalPodiumRaces": 6,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "forti",
+        "name": "Forti",
+        "fullName": "Forti Corse",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 27,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "frank-williams-racing-cars",
+        "name": "Frank Williams Racing Cars",
+        "fullName": "Frank Williams Racing Cars",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 14,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "frazer-nash",
+        "name": "Frazer-Nash",
+        "fullName": "Frazer-Nash",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "fry",
+        "name": "Fry",
+        "fullName": "Fry Racing Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "gilby",
+        "name": "Gilby",
+        "fullName": "Gilby Engineering",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 6,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "gordini",
+        "name": "Gordini",
+        "fullName": "Gordini",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 33,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "greifzu",
+        "name": "Greifzu",
+        "fullName": "Greifzu",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "haas",
+        "name": "Haas",
+        "fullName": "Haas F1 Team",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 185,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "hall",
+        "name": "Hall",
+        "fullName": "Hall",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "heck",
+        "name": "Heck",
+        "fullName": "Heck",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "hesketh",
+        "name": "Hesketh",
+        "fullName": "Hesketh Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 60,
+        "totalPodiumRaces": 7,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "hill",
+        "name": "Hill",
+        "fullName": "Embassy Racing With Graham Hill",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 11,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "honda",
+        "name": "Honda",
+        "fullName": "Honda Racing F1 Team",
+        "countryId": "japan",
+        "totalRaceWins": 3,
+        "totalRaceEntries": 88,
+        "totalPodiumRaces": 9,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "hrt",
+        "name": "HRT",
+        "fullName": "Hispania Racing Team",
+        "countryId": "spain",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 57,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "hwm",
+        "name": "HWM",
+        "fullName": "Hersham and Walton Motors",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 16,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "iso-marlboro",
+        "name": "Iso-Marlboro",
+        "fullName": "Iso-Marlboro",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 30,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "jaguar",
+        "name": "Jaguar",
+        "fullName": "Jaguar Racing F1 Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 85,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "jbw",
+        "name": "JBW",
+        "fullName": "JBW Cars",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 6,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "jordan",
+        "name": "Jordan",
+        "fullName": "Jordan Grand Prix",
+        "countryId": "ireland",
+        "totalRaceWins": 4,
+        "totalRaceEntries": 250,
+        "totalPodiumRaces": 17,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "kauhsen",
+        "name": "Kauhsen",
+        "fullName": "Kauhsen",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "kick-sauber",
+        "name": "Kick Sauber",
+        "fullName": "Kick Sauber F1 Team",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 19,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "klenk",
+        "name": "Klenk",
+        "fullName": "Klenk",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "kojima",
+        "name": "Kojima",
+        "fullName": "Kojima Engineering",
+        "countryId": "japan",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "krakau",
+        "name": "Krakau",
+        "fullName": "Krakau",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "kurtis-kraft",
+        "name": "Kurtis Kraft",
+        "fullName": "Kurtis Kraft",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 5,
+        "totalRaceEntries": 12,
+        "totalPodiumRaces": 8,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "kuzma",
+        "name": "Kuzma",
+        "fullName": "Kuzma",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 10,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lancia",
+        "name": "Lancia",
+        "fullName": "Lancia",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "langley",
+        "name": "Langley",
+        "fullName": "Langley",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "larrousse",
+        "name": "Larrousse",
+        "fullName": "Larrousse F1",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 32,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lds",
+        "name": "LDS",
+        "fullName": "LDS",
+        "countryId": "south-africa",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lec",
+        "name": "LEC",
+        "fullName": "LEC Refrigeration Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lesovsky",
+        "name": "Lesovsky",
+        "fullName": "Lesovsky",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 9,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "leyton-house",
+        "name": "Leyton House",
+        "fullName": "Leyton House Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 32,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "life",
+        "name": "Life",
+        "fullName": "Life Racing Engines",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 14,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ligier",
+        "name": "Ligier",
+        "fullName": "Equipe Ligier",
+        "countryId": "france",
+        "totalRaceWins": 9,
+        "totalRaceEntries": 330,
+        "totalPodiumRaces": 45,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lola",
+        "name": "Lola",
+        "fullName": "Lola Cars",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 152,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lotus-f1",
+        "name": "Lotus",
+        "fullName": "Lotus F1 Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 2,
+        "totalRaceEntries": 77,
+        "totalPodiumRaces": 20,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lotus-racing",
+        "name": "Lotus Racing",
+        "fullName": "Lotus Racing",
+        "countryId": "malaysia",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 38,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "lotus",
+        "name": "Lotus",
+        "fullName": "Team Lotus",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 79,
+        "totalRaceEntries": 493,
+        "totalPodiumRaces": 157,
+        "totalChampionshipWins": 7
+    },
+    {
+        "id": "lyncar",
+        "name": "Lyncar",
+        "fullName": "Lyncar",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "maki",
+        "name": "Maki",
+        "fullName": "Maki Engineering",
+        "countryId": "japan",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 8,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "manor",
+        "name": "Manor",
+        "fullName": "Manor Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 21,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "march",
+        "name": "March",
+        "fullName": "March Engineering",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 3,
+        "totalRaceEntries": 208,
+        "totalPodiumRaces": 20,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "marchese",
+        "name": "Marchese",
+        "fullName": "Marchese",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "martini",
+        "name": "Martini",
+        "fullName": "Automobiles Martini",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 7,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "marussia",
+        "name": "Marussia",
+        "fullName": "Marussia F1 Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 74,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "maserati",
+        "name": "Maserati",
+        "fullName": "Maserati",
+        "countryId": "italy",
+        "totalRaceWins": 9,
+        "totalRaceEntries": 73,
+        "totalPodiumRaces": 28,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "matra",
+        "name": "Matra",
+        "fullName": "Equipe Matra Sports",
+        "countryId": "france",
+        "totalRaceWins": 9,
+        "totalRaceEntries": 63,
+        "totalPodiumRaces": 17,
+        "totalChampionshipWins": 1
+    },
+    {
+        "id": "mcguire",
+        "name": "McGuire",
+        "fullName": "McGuire",
+        "countryId": "australia",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "mclaren",
+        "name": "McLaren",
+        "fullName": "McLaren Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 188,
+        "totalRaceEntries": 969,
+        "totalPodiumRaces": 421,
+        "totalChampionshipWins": 8
+    },
+    {
+        "id": "mercedes",
+        "name": "Mercedes",
+        "fullName": "Mercedes AMG F1",
+        "countryId": "germany",
+        "totalRaceWins": 128,
+        "totalRaceEntries": 312,
+        "totalPodiumRaces": 200,
+        "totalChampionshipWins": 8
+    },
+    {
+        "id": "merzario",
+        "name": "Merzario",
+        "fullName": "Team Merzario",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 31,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "meskowski",
+        "name": "Meskowski",
+        "fullName": "Meskowski",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "midland",
+        "name": "Midland",
+        "fullName": "Midland F1 Racing",
+        "countryId": "russia",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 18,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "minardi",
+        "name": "Minardi",
+        "fullName": "Minardi F1 Team",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 346,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "modena",
+        "name": "Modena",
+        "fullName": "Modena Team",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 16,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "moore",
+        "name": "Moore",
+        "fullName": "Moore",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 3,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "nacke",
+        "name": "Nacke",
+        "fullName": "Nacke",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "nichels",
+        "name": "Nichels",
+        "fullName": "Nichels",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "olson",
+        "name": "Olson",
+        "fullName": "Olson",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "onyx",
+        "name": "Onyx",
+        "fullName": "Onyx Grand Prix",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 26,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "osca",
+        "name": "O.S.C.A.",
+        "fullName": "Officine Specializzate Costruzione Automobili",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 7,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "osella",
+        "name": "Osella",
+        "fullName": "Osella Squadra Corse",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 172,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "pacific",
+        "name": "Pacific",
+        "fullName": "Pacific Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 33,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "pankratz",
+        "name": "Pankratz",
+        "fullName": "Pankratz",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "parnelli",
+        "name": "Parnelli",
+        "fullName": "Vel's Parnelli Jones Racing",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 16,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "pawl",
+        "name": "Pawl",
+        "fullName": "Pawl",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 3,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "penske",
+        "name": "Penske",
+        "fullName": "Team Penske",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 41,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "phillips",
+        "name": "Phillips",
+        "fullName": "Phillips",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 7,
+        "totalPodiumRaces": 1,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "politoys",
+        "name": "Politoys",
+        "fullName": "Politoys",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "porsche",
+        "name": "Porsche",
+        "fullName": "Porsche",
+        "countryId": "germany",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 35,
+        "totalPodiumRaces": 5,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "prost",
+        "name": "Prost",
+        "fullName": "Prost Grand Prix",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 83,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "protos",
+        "name": "Protos",
+        "fullName": "Protos",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "racing-point",
+        "name": "Racing Point",
+        "fullName": "Racing Point F1 Team",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 38,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "rae",
+        "name": "Rae",
+        "fullName": "Rae",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "ram",
+        "name": "RAM",
+        "fullName": "RAM Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 44,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "rb",
+        "name": "RB",
+        "fullName": "Racing Bulls",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 19,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "rebaque",
+        "name": "Rebaque",
+        "fullName": "Team Rebaque",
+        "countryId": "mexico",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 3,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "red-bull",
+        "name": "Red Bull",
+        "fullName": "Red Bull Racing",
+        "countryId": "austria",
+        "totalRaceWins": 120,
+        "totalRaceEntries": 389,
+        "totalPodiumRaces": 216,
+        "totalChampionshipWins": 6
+    },
+    {
+        "id": "reif",
+        "name": "Reif",
+        "fullName": "Reif",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "renault",
+        "name": "Renault",
+        "fullName": "Renault Sport Formula One Team",
+        "countryId": "france",
+        "totalRaceWins": 35,
+        "totalRaceEntries": 403,
+        "totalPodiumRaces": 91,
+        "totalChampionshipWins": 2
+    },
+    {
+        "id": "rial",
+        "name": "Rial",
+        "fullName": "Rial Racing",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 32,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "sauber",
+        "name": "Sauber",
+        "fullName": "Sauber F1 Team",
+        "countryId": "switzerland",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 395,
+        "totalPodiumRaces": 10,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "scarab",
+        "name": "Scarab",
+        "fullName": "Scarab",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 5,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "schroeder",
+        "name": "Schroeder",
+        "fullName": "Schroeder",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "scirocco",
+        "name": "Scirocco",
+        "fullName": "Scirocco-Powell",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 7,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "shadow",
+        "name": "Shadow",
+        "fullName": "Shadow Racing Cars",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 112,
+        "totalPodiumRaces": 7,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "shannon",
+        "name": "Shannon",
+        "fullName": "Shannon Racing Cars",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "sherman",
+        "name": "Sherman",
+        "fullName": "Sherman",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 2,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "simca-gordini",
+        "name": "Simca-Gordini",
+        "fullName": "Simca-Gordini",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 15,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "simtek",
+        "name": "Simtek",
+        "fullName": "Simtek",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 21,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "snowberger",
+        "name": "Snowberger",
+        "fullName": "Snowberger",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "spirit",
+        "name": "Spirit",
+        "fullName": "Spirit Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 25,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "spyker",
+        "name": "Spyker",
+        "fullName": "Spyker F1 Team",
+        "countryId": "netherlands",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 17,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "stebro",
+        "name": "Stebro",
+        "fullName": "Stebro",
+        "countryId": "canada",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "stevens",
+        "name": "Stevens",
+        "fullName": "Stevens",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 6,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "stewart",
+        "name": "Stewart",
+        "fullName": "Stewart Grand Prix",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 49,
+        "totalPodiumRaces": 4,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "super-aguri",
+        "name": "Super Aguri",
+        "fullName": "Super Aguri F1 Team",
+        "countryId": "japan",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 39,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "surtees",
+        "name": "Surtees",
+        "fullName": "Surtees Racing Organisation",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 119,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "sutton",
+        "name": "Sutton",
+        "fullName": "Sutton",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "talbot-lago",
+        "name": "Talbot-Lago",
+        "fullName": "Talbot-Lago",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 13,
+        "totalPodiumRaces": 2,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "tec-mec",
+        "name": "Tec-Mec",
+        "fullName": "Studio Tecnica Meccanica",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "tecno",
+        "name": "Tecno",
+        "fullName": "Tecno Racing Team",
+        "countryId": "italy",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 14,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "theodore",
+        "name": "Theodore",
+        "fullName": "Theodore Racing",
+        "countryId": "hong-kong",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 51,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "token",
+        "name": "Token",
+        "fullName": "Token Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "toleman",
+        "name": "Toleman",
+        "fullName": "Toleman Motorsport",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 70,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "toro-rosso",
+        "name": "Toro Rosso",
+        "fullName": "Scuderia Toro Rosso",
+        "countryId": "italy",
+        "totalRaceWins": 1,
+        "totalRaceEntries": 268,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "toyota",
+        "name": "Toyota",
+        "fullName": "Toyota Racing",
+        "countryId": "japan",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 140,
+        "totalPodiumRaces": 13,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "trevis",
+        "name": "Trevis",
+        "fullName": "Trevis",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 4,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "trojan",
+        "name": "Trojan",
+        "fullName": "Trojan-Tauranac Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 8,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "turner",
+        "name": "Turner",
+        "fullName": "Turner",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "tyrrell",
+        "name": "Tyrrell",
+        "fullName": "Tyrrell Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 23,
+        "totalRaceEntries": 433,
+        "totalPodiumRaces": 66,
+        "totalChampionshipWins": 1
+    },
+    {
+        "id": "vanwall",
+        "name": "Vanwall",
+        "fullName": "Vanwall",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 9,
+        "totalRaceEntries": 29,
+        "totalPodiumRaces": 11,
+        "totalChampionshipWins": 1
+    },
+    {
+        "id": "venturi",
+        "name": "Venturi",
+        "fullName": "Venturi Automobiles",
+        "countryId": "france",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 16,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "veritas",
+        "name": "Veritas",
+        "fullName": "Veritas",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 6,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "virgin",
+        "name": "Virgin",
+        "fullName": "Virgin Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 38,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "watson",
+        "name": "Watson",
+        "fullName": "Watson",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 3,
+        "totalRaceEntries": 9,
+        "totalPodiumRaces": 3,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "wetteroth",
+        "name": "Wetteroth",
+        "fullName": "Wetteroth",
+        "countryId": "united-states-of-america",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 1,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "williams",
+        "name": "Williams",
+        "fullName": "Williams Grand Prix Engineering",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 114,
+        "totalRaceEntries": 822,
+        "totalPodiumRaces": 243,
+        "totalChampionshipWins": 9
+    },
+    {
+        "id": "wolf-williams",
+        "name": "Wolf-Williams",
+        "fullName": "Wolf-Williams Racing",
+        "countryId": "united-kingdom",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 16,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "wolf",
+        "name": "Wolf",
+        "fullName": "Walter Wolf Racing",
+        "countryId": "canada",
+        "totalRaceWins": 3,
+        "totalRaceEntries": 48,
+        "totalPodiumRaces": 13,
+        "totalChampionshipWins": 0
+    },
+    {
+        "id": "zakspeed",
+        "name": "Zakspeed",
+        "fullName": "Zakspeed Racing",
+        "countryId": "germany",
+        "totalRaceWins": 0,
+        "totalRaceEntries": 74,
+        "totalPodiumRaces": 0,
+        "totalChampionshipWins": 0
+    }
+]

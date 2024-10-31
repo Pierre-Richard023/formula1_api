@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ConstructorsRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -15,29 +17,42 @@ class Constructors
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    private ?string $name = null;
+
+    #[ORM\Column(length: 255)]
     private ?string $full_name = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $base = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $team_chief = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $technical_chief = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $power_unit = null;
 
     #[ORM\Column]
     private ?int $wolrd_championships = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
-    private ?\DateTimeInterface $team_entry = null;
+    #[ORM\Column]
+    private ?int $race_entries = null;
+
+    #[ORM\Column]
+    private ?int $race_wins = null;
+
+    #[ORM\Column]
+    private ?int $podiums = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $country = null;
+
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): static
+    {
+        $this->name = $name;
+
+        return $this;
     }
 
     public function getFullName(): ?string
@@ -48,54 +63,6 @@ class Constructors
     public function setFullName(string $full_name): static
     {
         $this->full_name = $full_name;
-
-        return $this;
-    }
-
-    public function getBase(): ?string
-    {
-        return $this->base;
-    }
-
-    public function setBase(string $base): static
-    {
-        $this->base = $base;
-
-        return $this;
-    }
-
-    public function getTeamChief(): ?string
-    {
-        return $this->team_chief;
-    }
-
-    public function setTeamChief(string $team_chief): static
-    {
-        $this->team_chief = $team_chief;
-
-        return $this;
-    }
-
-    public function getTechnicalChief(): ?string
-    {
-        return $this->technical_chief;
-    }
-
-    public function setTechnicalChief(string $technical_chief): static
-    {
-        $this->technical_chief = $technical_chief;
-
-        return $this;
-    }
-
-    public function getPowerUnit(): ?string
-    {
-        return $this->power_unit;
-    }
-
-    public function setPowerUnit(string $power_unit): static
-    {
-        $this->power_unit = $power_unit;
 
         return $this;
     }
@@ -112,14 +79,50 @@ class Constructors
         return $this;
     }
 
-    public function getTeamEntry(): ?\DateTimeInterface
+    public function getRaceEntries(): ?int
     {
-        return $this->team_entry;
+        return $this->race_entries;
     }
 
-    public function setTeamEntry(\DateTimeInterface $team_entry): static
+    public function setRaceEntries(int $race_entries): static
     {
-        $this->team_entry = $team_entry;
+        $this->race_entries = $race_entries;
+
+        return $this;
+    }
+
+    public function getRaceWins(): ?int
+    {
+        return $this->race_wins;
+    }
+
+    public function setRaceWins(int $race_wins): static
+    {
+        $this->race_wins = $race_wins;
+
+        return $this;
+    }
+
+    public function getPodiums(): ?int
+    {
+        return $this->podiums;
+    }
+
+    public function setPodiums(int $podiums): static
+    {
+        $this->podiums = $podiums;
+
+        return $this;
+    }
+
+    public function getCountry(): ?string
+    {
+        return $this->country;
+    }
+
+    public function setCountry(string $country): static
+    {
+        $this->country = $country;
 
         return $this;
     }
