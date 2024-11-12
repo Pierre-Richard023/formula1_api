@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: ConstructorsRepository::class)]
 class Constructors
@@ -14,27 +15,35 @@ class Constructors
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['constructors.search', 'constructors.show'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['constructors.search', 'constructors.show'])]
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['constructors.search', 'constructors.show'])]
     private ?string $full_name = null;
 
     #[ORM\Column]
+    #[Groups(['constructors.show'])]
     private ?int $wolrd_championships = null;
 
     #[ORM\Column]
+    #[Groups(['constructors.show'])]
     private ?int $race_entries = null;
 
     #[ORM\Column]
+    #[Groups(['constructors.show'])]
     private ?int $race_wins = null;
 
     #[ORM\Column]
+    #[Groups(['constructors.show'])]
     private ?int $podiums = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['constructors.search', 'constructors.show'])]
     private ?string $country = null;
 
 

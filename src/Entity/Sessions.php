@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\SessionsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: SessionsRepository::class)]
 class Sessions
@@ -15,13 +16,15 @@ class Sessions
     private ?int $id = null;
 
     #[ORM\Column(length: 100)]
+    #[Groups(['races.show'])]
     private ?string $name = null;
 
     #[ORM\ManyToOne(inversedBy: 'sessions')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Races $race = null;
 
-    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    #[ORM\OneToOne(inversedBy: 'session', cascade: ['persist', 'remove'])]
+    #[Groups(['races.show'])]
     private ?Standings $standing = null;
 
     public function getId(): ?int

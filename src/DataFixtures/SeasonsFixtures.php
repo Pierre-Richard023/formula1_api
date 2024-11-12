@@ -21,19 +21,19 @@ class SeasonsFixtures extends Fixture
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/seasons.json';
         $jsonData = file_get_contents($jsonFile);
         $data = json_decode($jsonData, true);
+        $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         if (isset($data)) {
             foreach ($data as $s) {
-
                 $season = new Seasons();
                 $season->setYear($s['year']);
-
                 $this->addReference('season__'.$s['year'], $season);
                 $manager->persist($season);
             }
-
         }
         $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 
 }

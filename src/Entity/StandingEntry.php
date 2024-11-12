@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\StandingEntryRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: StandingEntryRepository::class)]
 class StandingEntry
@@ -14,12 +15,15 @@ class StandingEntry
     private ?int $id = null;
 
     #[ORM\Column(nullable: true)]
+//    #[Groups(['races.show'])]
     private ?int $position = null;
 
     #[ORM\Column(nullable: true)]
+//    #[Groups(['races.show'])]
     private ?float $points = null;
 
     #[ORM\Column(length: 50, nullable: true)]
+//    #[Groups(['races.show'])]
     private ?string $raceTime = null;
 
     #[ORM\ManyToOne(inversedBy: 'entries')]
@@ -27,6 +31,7 @@ class StandingEntry
     private ?Standings $standings = null;
 
     #[ORM\ManyToOne]
+    #[Groups(['races.show'])]
     private ?Drivers $driver = null;
 
     #[ORM\ManyToOne]

@@ -18,15 +18,11 @@ class CircuitsFixtures extends Fixture
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/circuits.json';
         $jsonData = file_get_contents($jsonFile);
         $data = json_decode($jsonData, true);
-
-
+        $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         if (isset($data)) {
-
             foreach ($data as $c) {
-
                 $circuit=new Circuits();
-
                 $circuit->setName($c['fullName'])
                     ->setShortName($c['name'])
                     ->setType($c['type'])
@@ -36,10 +32,10 @@ class CircuitsFixtures extends Fixture
                 $this->addReference('circuit__'.$c['id'], $circuit);
                 $manager->persist($circuit);
             }
-
-            $manager->flush();
-
         }
 
+        $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 }

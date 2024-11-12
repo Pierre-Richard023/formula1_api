@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Constructors;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -15,6 +16,26 @@ class ConstructorsRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Constructors::class);
     }
+
+    public function searchAndPaginatConstructor(?string $country, int $page, int $limit): Paginator
+    {
+
+
+        $query = $this->createQueryBuilder('s');
+
+        if ($country !== null) {
+            $query->andWhere('s.country = :country')->setParameter('country', $country);
+        }
+
+        $query
+            ->setFirstResult(($page - 1) * $limit)
+            ->setMaxResults($limit)
+            ->getQuery()
+            ->setHint(Paginator::HINT_ENABLE_DISTINCT, false);
+
+        return new Paginator($query, false);
+    }
+
 
     //    /**
     //     * @return Constructors[] Returns an array of Constructors objects

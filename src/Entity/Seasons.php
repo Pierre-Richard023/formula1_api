@@ -6,6 +6,7 @@ use App\Repository\SeasonsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: SeasonsRepository::class)]
 class Seasons
@@ -13,22 +14,29 @@ class Seasons
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['seasons.index', 'seasons.show'])]
     private ?int $id = null;
 
-    /**
-     * @var Collection<int, Standings>
-     */
-    #[ORM\OneToMany(targetEntity: Standings::class, mappedBy: 'season')]
-    private Collection $standings;
-
     #[ORM\Column]
+    #[Groups(['seasons.index', 'seasons.show'])]
     private ?int $year = null;
 
     /**
      * @var Collection<int, Races>
      */
+    #[Groups(['seasons.show'])]
     #[ORM\OneToMany(targetEntity: Races::class, mappedBy: 'season', orphanRemoval: true)]
     private Collection $meetings;
+
+
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    #[Groups(['seasons.show'])]
+    private ?Standings $driverStandings = null;
+
+
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    #[Groups(['seasons.show'])]
+    private ?Standings $constructorStandings = null;
 
     public function __construct()
     {
@@ -39,36 +47,6 @@ class Seasons
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    /**
-     * @return Collection<int, Standings>
-     */
-    public function getStandings(): Collection
-    {
-        return $this->standings;
-    }
-
-    public function addStanding(Standings $standing): static
-    {
-        if (!$this->standings->contains($standing)) {
-            $this->standings->add($standing);
-            $standing->setSeason($this);
-        }
-
-        return $this;
-    }
-
-    public function removeStanding(Standings $standing): static
-    {
-        if ($this->standings->removeElement($standing)) {
-            // set the owning side to null (unless already changed)
-            if ($standing->getSeason() === $this) {
-                $standing->setSeason(null);
-            }
-        }
-
-        return $this;
     }
 
     public function getYear(): ?int
@@ -109,6 +87,30 @@ class Seasons
                 $meeting->setSeason(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getDriverStandings(): ?Standings
+    {
+        return $this->driverStandings;
+    }
+
+    public function setDriverStandings(?Standings $driverStandings): static
+    {
+        $this->driverStandings = $driverStandings;
+
+        return $this;
+    }
+
+    public function getConstructorStandings(): ?Standings
+    {
+        return $this->constructorStandings;
+    }
+
+    public function setConstructorStandings(?Standings $constructorStandings): static
+    {
+        $this->constructorStandings = $constructorStandings;
 
         return $this;
     }

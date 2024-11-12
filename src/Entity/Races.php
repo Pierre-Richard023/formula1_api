@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: RacesRepository::class)]
 class Races
@@ -14,25 +15,31 @@ class Races
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['seasons.show','races.show','races.search'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['seasons.show','races.show'])]
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['seasons.show','races.show','races.search'])]
     private ?string $official_name = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[Groups(['seasons.show','races.show','races.search'])]
     private ?\DateTimeInterface $raceDate = null;
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['seasons.show','races.show','races.search'])]
     private ?Circuits $circuit = null;
 
     /**
      * @var Collection<int, Sessions>
      */
     #[ORM\OneToMany(targetEntity: Sessions::class, mappedBy: 'race', orphanRemoval: true)]
+    #[Groups(['races.show'])]
     private Collection $sessions;
 
     #[ORM\ManyToOne(inversedBy: 'meetings')]
@@ -40,12 +47,15 @@ class Races
     private ?Seasons $season = null;
 
     #[ORM\Column]
+    #[Groups(['races.show','races.search'])]
     private ?int $laps = null;
 
     #[ORM\Column]
+    #[Groups(['races.show'])]
     private ?float $distance = null;
 
     #[ORM\Column(length: 100)]
+    #[Groups(['races.show'])]
     private ?string $qualifyingFormat = null;
 
     public function __construct()

@@ -6,6 +6,7 @@ use App\Repository\StandingsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: StandingsRepository::class)]
 class Standings
@@ -18,11 +19,12 @@ class Standings
     /**
      * @var Collection<int, StandingEntry>
      */
+    #[Groups(['races.show',"seasons.show.standing.driver"])]
     #[ORM\OneToMany(targetEntity: StandingEntry::class, mappedBy: 'standings', orphanRemoval: true)]
     private Collection $entries;
 
-    #[ORM\ManyToOne(inversedBy: 'standings')]
-    private ?Seasons $season = null;
+    #[ORM\OneToOne(mappedBy: 'standing', cascade: ['persist', 'remove'])]
+    private ?Sessions $session = null;
 
     public function __construct()
     {
@@ -64,14 +66,25 @@ class Standings
         return $this;
     }
 
-    public function getSeason(): ?Seasons
+
+    public function getSession(): ?Sessions
     {
-        return $this->season;
+        return $this->session;
     }
 
-    public function setSeason(?Seasons $season): static
+    public function setSession(?Sessions $sessions): static
     {
-        $this->season = $season;
+        // unset the owning side of the relation if necessary
+        if ($sessions === null && $this->session !== null) {
+            $this->session->setStanding(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($sessions !== null && $sessions->getStanding() !== $this) {
+            $sessions->setStanding($this);
+        }
+
+        $this->session = $sessions;
 
         return $this;
     }

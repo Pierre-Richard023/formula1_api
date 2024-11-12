@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\CircuitsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: CircuitsRepository::class)]
 class Circuits
@@ -12,21 +13,27 @@ class Circuits
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['seasons.show', 'races.show', 'races.search', 'circuits.search', 'circuits.show'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['seasons.show', 'races.show', 'races.search', 'circuits.search', 'circuits.show'])]
     private ?string $name = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['races.show', 'races.search', 'circuits.search', 'circuits.show'])]
     private ?string $country = null;
 
     #[ORM\Column(length: 100)]
+    #[Groups(['races.show', 'races.search', 'circuits.search', 'circuits.show'])]
     private ?string $short_name = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['circuits.show'])]
     private ?string $location = null;
 
     #[ORM\Column(length: 20)]
+    #[Groups(['circuits.show'])]
     private ?string $type = null;
 
     public function getId(): ?int
@@ -57,7 +64,7 @@ class Circuits
 
         return $this;
     }
-    
+
     public function getShortName(): ?string
     {
         return $this->short_name;

@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Seasons;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -15,6 +16,20 @@ class SeasonsRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Seasons::class);
     }
+
+    public function paginateSeasons(int $page,int $limit): Paginator
+    {
+        return new Paginator(
+            $this->createQueryBuilder('s')
+                ->setFirstResult(($page - 1) * $limit)
+                ->setMaxResults($limit)
+                ->getQuery()
+                ->setHint(Paginator::HINT_ENABLE_DISTINCT, false)
+            , false
+        );
+    }
+
+
 
     //    /**
     //     * @return Seasons[] Returns an array of Seasons objects

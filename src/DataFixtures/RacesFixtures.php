@@ -21,12 +21,11 @@ class RacesFixtures extends Fixture implements DependentFixtureInterface
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/races.json';
         $jsonData = file_get_contents($jsonFile);
         $data = json_decode($jsonData, true);
+        $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         if (isset($data)) {
             foreach ($data as $r) {
-
                 $races = new Races();
-
                 $races->setName($r['grandPrixId'])
                     ->setOfficialName($r['officialName'])
                     ->setRaceDate(date_create_from_format('Y-n-d', $r['date']))
@@ -37,13 +36,13 @@ class RacesFixtures extends Fixture implements DependentFixtureInterface
                     ->setCircuit($this->getReference('circuit__' . $r['circuitId']));
 
                 $this->addReference('races__' . $r['id'], $races);
-
                 $manager->persist($races);
             }
         }
 
-
         $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 
     public function getDependencies()

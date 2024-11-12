@@ -3,6 +3,8 @@
 namespace App\DataFixtures;
 
 use App\Entity\Sessions;
+use App\Entity\StandingEntry;
+use App\Entity\Standings;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
@@ -20,6 +22,7 @@ class SessionsFP3Fixtures extends Fixture implements DependentFixtureInterface
 
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/standingsFP3.json';
         $data = Items::fromFile($jsonFile);
+        $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         foreach ($data as $k => $entries) {
             if ($k === 'free-practice-3') {
@@ -27,13 +30,29 @@ class SessionsFP3Fixtures extends Fixture implements DependentFixtureInterface
                     $session = new Sessions();
                     $session->setName("free-practice-3")
                         ->setRace($this->getReference('races__' . $entry->raceId));
-                    $this->addReference('sessions__fp3__' . $entry->raceId, $session);
+                    $standings = new Standings();
+                    $session->setStanding($standings);
+                    $manager->persist($standings);
                     $manager->persist($session);
+
+                    foreach ($entry->standing as $e) {
+                        $standingEntry = new StandingEntry();
+                        $standingEntry->setStandings($standings)
+                            ->setDriver($this->getReference('driver__' . $e->driverId));
+                        if (isset($e->positionNumber))
+                            $standingEntry->setPosition($e->positionNumber);
+                        if (isset($e->time))
+                            $standingEntry->setRaceTime($e->time);
+                        $manager->persist($standingEntry);
+                    }
                 }
             }
         }
 
         $manager->flush();
+        $manager->clear();
+        unset($data);
+
     }
 
     public function getDependencies()

@@ -17,11 +17,11 @@ class StandingEntryRacesFixtures extends Fixture implements DependentFixtureInte
 
     public function load(ObjectManager $manager): void
     {
-        ini_set('memory_limit', '512M');
+        ini_set('memory_limit', '1224M');
 
-        $jsonFileFP4 = $this->parameterBag->get('kernel.project_dir') . '/public/utils/standingsR.json';
-        $dataFP4 = Items::fromFile($jsonFileFP4);
-        foreach ($dataFP4 as $k => $entries) {
+        $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/standingsR.json';
+        $data = Items::fromFile($jsonFile);
+        foreach ($data as $k => $entries) {
             if ($k === 'races') {
                 foreach ($entries as $e) {
                     $standing = $this->getReference("standings__r__" . $e->raceId);
@@ -34,20 +34,23 @@ class StandingEntryRacesFixtures extends Fixture implements DependentFixtureInte
                         $standingEntry->setRaceTime($e->time);
                     if (isset($e->points))
                         $standingEntry->setPoints($e->points);
+                    else
+                        $standingEntry->setPoints(0);
 
                     $manager->persist($standingEntry);
-
                 }
             }
         }
 
         $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 
     public function getDependencies()
     {
         return [
-            StandingsRacesFixtures::class
+            SessionsRacesFixtures::class
         ];
     }
 }

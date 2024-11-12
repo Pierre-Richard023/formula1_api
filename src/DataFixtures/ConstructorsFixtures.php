@@ -21,12 +21,11 @@ class ConstructorsFixtures extends Fixture
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/constructors.json';
         $jsonData = file_get_contents($jsonFile);
         $data = json_decode($jsonData, true);
-
+        $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         if (isset($data)) {
             foreach ($data as $c) {
                 $constructor = new Constructors();
-
                 $constructor->setName($c['name'])
                     ->setFullName($c['fullName'])
                     ->setCountry($c['countryId'])
@@ -35,14 +34,13 @@ class ConstructorsFixtures extends Fixture
                     ->setRaceWins($c['totalRaceWins'])
                     ->setWolrdChampionships($c['totalChampionshipWins']);
 
-
                 $this->addReference('constructor__'.$c["id"], $constructor);
-
-
                 $manager->persist($constructor);
             }
         }
 
         $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 }

@@ -5,6 +5,8 @@ namespace App\Entity;
 use App\Repository\DriversRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Serializer\Attribute\SerializedName;
 
 #[ORM\Entity(repositoryClass: DriversRepository::class)]
 class Drivers
@@ -12,51 +14,69 @@ class Drivers
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['drivers.search', 'drivers.show', "races.show"])]
     private ?int $id = null;
 
     #[ORM\Column(length: 100)]
+    #[Groups(['drivers.search', 'drivers.show'])]
     private ?string $first_name = null;
 
     #[ORM\Column(length: 100)]
+    #[Groups(['drivers.search', 'drivers.show'])]
     private ?string $last_name = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['drivers.show', 'races.show'])]
+    #[SerializedName('name')]
     private ?string $full_name = null;
 
     #[ORM\Column(length: 5)]
+    #[Groups(['drivers.search', 'drivers.show'])]
     private ?string $abbreviation = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $Country = null;
+    #[Groups(['drivers.search', 'drivers.show'])]
+    private ?string $country = null;
 
     #[ORM\Column]
+    #[Groups(['drivers.show'])]
     private ?int $world_championships = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[Groups(['drivers.show'])]
     private ?\DateTimeInterface $date_of_birth = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['drivers.search', 'drivers.show'])]
     private ?string $place_of_birth = null;
 
     #[ORM\Column]
+    #[Groups(['drivers.show'])]
     private ?int $podiums = null;
 
     #[ORM\Column]
+    #[Groups(['drivers.show'])]
     private ?int $grands_prix_entered = null;
 
     #[ORM\Column]
+    #[Groups(['drivers.show'])]
     private ?int $race_wins = null;
 
     #[ORM\Column]
+    #[Groups(['drivers.show'])]
     private ?int $pole_positions = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['drivers.show'])]
     private ?string $nationality = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    #[Groups(['drivers.show'])]
     private ?\DateTimeInterface $date_of_death = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['drivers.search', 'drivers.show', 'races.show'])]
+    #[SerializedName('number')]
     private ?int $permanent_number = null;
 
     public function getId(): ?int
@@ -114,12 +134,12 @@ class Drivers
 
     public function getCountry(): ?string
     {
-        return $this->Country;
+        return $this->country;
     }
 
     public function setCountry(string $Country): static
     {
-        $this->Country = $Country;
+        $this->country = $Country;
 
         return $this;
     }

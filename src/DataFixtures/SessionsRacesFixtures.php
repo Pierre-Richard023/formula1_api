@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Sessions;
+use App\Entity\Standings;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
@@ -21,17 +22,19 @@ class SessionsRacesFixtures extends Fixture implements DependentFixtureInterface
         $data = Items::fromFile($jsonFile);
 
         foreach ($data as $entries) {
-
             $session = new Sessions();
             $session->setName("race")
                 ->setRace($this->getReference('races__' . $entries->id));
-            $this->addReference('sessions__r__' . $entries->id, $session);
+            $standings = new Standings();
+            $this->addReference('standings__r__' . $entries->id, $standings);
+            $session->setStanding($standings);
+            $manager->persist($standings);
             $manager->persist($session);
-
-
         }
 
         $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 
     public function getDependencies()

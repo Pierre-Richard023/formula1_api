@@ -18,13 +18,11 @@ class DriversFixtures extends Fixture
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/drivers.json';
         $jsonData = file_get_contents($jsonFile);
         $data = json_decode($jsonData, true);
+        $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
         if (isset($data)) {
-
             foreach ($data as $d) {
-
                 $driver = new Drivers();
-
                 $driver->setFirstName($d['firstName'])
                     ->setLastName($d['lastName'])
                     ->setFullName($d['name'])
@@ -49,5 +47,7 @@ class DriversFixtures extends Fixture
         }
 
         $manager->flush();
+        $manager->clear();
+        unset($data);
     }
 }
