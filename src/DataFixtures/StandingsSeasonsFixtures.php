@@ -2,6 +2,9 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Constructors;
+use App\Entity\Drivers;
+use App\Entity\Seasons;
 use App\Entity\StandingEntry;
 use App\Entity\Standings;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -25,7 +28,7 @@ class StandingsSeasonsFixtures extends Fixture implements DependentFixtureInterf
         foreach ($data as $k => $entries) {
             if ($k == 'drivers') {
                 foreach ($entries as $entry) {
-                    $season=$this->getReference('season__' . $entry->year);
+                    $season=$this->getReference('season__' . $entry->year,Seasons::class);
                     $standings = new Standings();
                     $season->setDriverStandings($standings);
                     $manager->persist($standings);
@@ -33,7 +36,7 @@ class StandingsSeasonsFixtures extends Fixture implements DependentFixtureInterf
                     foreach ($entry->standing as $s) {
                         $standingEntry = new StandingEntry();
                         $standingEntry->setStandings($standings)
-                            ->setDriver($this->getReference('driver__' . $s->driverId));
+                            ->setDriver($this->getReference('driver__' . $s->driverId,Drivers::class));
                         if (isset($s->positionNumber))
                             $standingEntry->setPosition($s->positionNumber);
                         if (isset($s->points))
@@ -46,7 +49,7 @@ class StandingsSeasonsFixtures extends Fixture implements DependentFixtureInterf
             }
             if ($k == 'constructors') {
                 foreach ($entries as $entry) {
-                    $season=$this->getReference('season__' . $entry->year);
+                    $season=$this->getReference('season__' . $entry->year,Seasons::class);
                     $standings = new Standings();
                     $season->setConstructorStandings($standings);
                     $manager->persist($standings);
@@ -54,7 +57,7 @@ class StandingsSeasonsFixtures extends Fixture implements DependentFixtureInterf
                     foreach ($entry->standing as $s) {
                         $standingEntry = new StandingEntry();
                         $standingEntry->setStandings($standings)
-                            ->setConstructor($this->getReference('constructor__' . $s->constructorId));
+                            ->setConstructor($this->getReference('constructor__' . $s->constructorId,Constructors::class));
                         if (isset($s->positionNumber))
                             $standingEntry->setPosition($s->positionNumber);
                         if (isset($s->points))
@@ -72,7 +75,7 @@ class StandingsSeasonsFixtures extends Fixture implements DependentFixtureInterf
         unset($data);
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             SeasonsFixtures::class,

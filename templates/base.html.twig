@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>{% block title %}Formula One API{% endblock %}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href={{ asset("ico/apple-touch-icon.png") }}>
+    <link rel="icon" type="image/png" sizes="32x32" href={{ asset("ico/favicon-32x32.png") }}>
+    <link rel="icon" type="image/png" sizes="16x16" href={{ asset("ico/favicon-16x16.png") }}>
+    <link rel="manifest" href={{ asset("ico/site.webmanifest") }}>
+
+    {% block stylesheets %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+    {% endblock %}
+</head>
+<body>
+
+<div class="antialiased ">
+    {% include '_header.html.twig' %}
+    {% include '_sidebar.html.twig' %}
+    <main class=" relative p-4 md:ml-64 h-auto pt-20 ">
+        <h1 class="text-3xl">Formula One API</h1>
+        {% block body %}{% endblock %}
+    </main>
+</div>
+</body>
+</html>

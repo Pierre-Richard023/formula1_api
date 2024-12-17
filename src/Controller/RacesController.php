@@ -27,9 +27,8 @@ class RacesController extends AbstractController
     #[Route('/', methods: ['GET'])]
     public function findRaces(Request $request, RacesRepository $racesRepository, SerializerInterface $serializer): JsonResponse
     {
-
-        $limit = 8;
         $page = $request->query->getInt('page', 1);
+        $limit = $request->query->getInt('limit', 8);
         $country = $request->query->get('country');
         $circuit = $request->query->getInt('circuit', -1);
         $minLaps = $request->query->getInt('min_laps', -1);

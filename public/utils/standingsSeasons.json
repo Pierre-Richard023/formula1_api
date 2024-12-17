@@ -10055,138 +10055,144 @@
                     "year": 2024,
                     "positionNumber": 1,
                     "driverId": "max-verstappen",
-                    "points": 354
+                    "points": 437
                 },
                 {
                     "year": 2024,
                     "positionNumber": 2,
                     "driverId": "lando-norris",
-                    "points": 297
+                    "points": 374
                 },
                 {
                     "year": 2024,
                     "positionNumber": 3,
                     "driverId": "charles-leclerc",
-                    "points": 275
+                    "points": 356
                 },
                 {
                     "year": 2024,
                     "positionNumber": 4,
                     "driverId": "oscar-piastri",
-                    "points": 247
+                    "points": 292
                 },
                 {
                     "year": 2024,
                     "positionNumber": 5,
                     "driverId": "carlos-sainz-jr",
-                    "points": 215
+                    "points": 290
                 },
                 {
                     "year": 2024,
                     "positionNumber": 6,
-                    "driverId": "lewis-hamilton",
-                    "points": 177
+                    "driverId": "george-russell",
+                    "points": 245
                 },
                 {
                     "year": 2024,
                     "positionNumber": 7,
-                    "driverId": "george-russell",
-                    "points": 167
+                    "driverId": "lewis-hamilton",
+                    "points": 223
                 },
                 {
                     "year": 2024,
                     "positionNumber": 8,
                     "driverId": "sergio-perez",
-                    "points": 150
+                    "points": 152
                 },
                 {
                     "year": 2024,
                     "positionNumber": 9,
                     "driverId": "fernando-alonso",
-                    "points": 62
+                    "points": 70
                 },
                 {
                     "year": 2024,
                     "positionNumber": 10,
-                    "driverId": "nico-hulkenberg",
-                    "points": 29
+                    "driverId": "pierre-gasly",
+                    "points": 42
                 },
                 {
                     "year": 2024,
                     "positionNumber": 11,
-                    "driverId": "lance-stroll",
-                    "points": 24
+                    "driverId": "nico-hulkenberg",
+                    "points": 41
                 },
                 {
                     "year": 2024,
                     "positionNumber": 12,
                     "driverId": "yuki-tsunoda",
-                    "points": 22
+                    "points": 30
                 },
                 {
                     "year": 2024,
                     "positionNumber": 13,
-                    "driverId": "alexander-albon",
-                    "points": 12
+                    "driverId": "lance-stroll",
+                    "points": 24
                 },
                 {
                     "year": 2024,
                     "positionNumber": 14,
-                    "driverId": "daniel-ricciardo",
-                    "points": 12
+                    "driverId": "esteban-ocon",
+                    "points": 23
                 },
                 {
                     "year": 2024,
                     "positionNumber": 15,
                     "driverId": "kevin-magnussen",
-                    "points": 8
+                    "points": 16
                 },
                 {
                     "year": 2024,
                     "positionNumber": 16,
-                    "driverId": "pierre-gasly",
-                    "points": 8
+                    "driverId": "alexander-albon",
+                    "points": 12
                 },
                 {
                     "year": 2024,
                     "positionNumber": 17,
+                    "driverId": "daniel-ricciardo",
+                    "points": 12
+                },
+                {
+                    "year": 2024,
+                    "positionNumber": 18,
                     "driverId": "oliver-bearman",
                     "points": 7
                 },
                 {
                     "year": 2024,
-                    "positionNumber": 18,
+                    "positionNumber": 19,
                     "driverId": "franco-colapinto",
                     "points": 5
                 },
                 {
                     "year": 2024,
-                    "positionNumber": 19,
-                    "driverId": "esteban-ocon",
-                    "points": 5
-                },
-                {
-                    "year": 2024,
                     "positionNumber": 20,
-                    "driverId": "liam-lawson",
-                    "points": 2
+                    "driverId": "guanyu-zhou",
+                    "points": 4
                 },
                 {
                     "year": 2024,
                     "positionNumber": 21,
-                    "driverId": "guanyu-zhou",
-                    "points": 0
+                    "driverId": "liam-lawson",
+                    "points": 4
                 },
                 {
                     "year": 2024,
                     "positionNumber": 22,
-                    "driverId": "logan-sargeant",
+                    "driverId": "valtteri-bottas",
                     "points": 0
                 },
                 {
                     "year": 2024,
                     "positionNumber": 23,
-                    "driverId": "valtteri-bottas",
+                    "driverId": "logan-sargeant",
+                    "points": 0
+                },
+                {
+                    "year": 2024,
+                    "positionNumber": 24,
+                    "driverId": "jack-doohan",
                     "points": 0
                 }
             ]
@@ -14670,61 +14676,61 @@
                     "year": 2024,
                     "positionNumber": 1,
                     "constructorId": "mclaren",
-                    "points": 544
+                    "points": 666
                 },
                 {
                     "year": 2024,
                     "positionNumber": 2,
-                    "constructorId": "red-bull",
-                    "points": 504
+                    "constructorId": "ferrari",
+                    "points": 652
                 },
                 {
                     "year": 2024,
                     "positionNumber": 3,
-                    "constructorId": "ferrari",
-                    "points": 496
+                    "constructorId": "red-bull",
+                    "points": 589
                 },
                 {
                     "year": 2024,
                     "positionNumber": 4,
                     "constructorId": "mercedes",
-                    "points": 344
+                    "points": 468
                 },
                 {
                     "year": 2024,
                     "positionNumber": 5,
                     "constructorId": "aston-martin",
-                    "points": 86
+                    "points": 94
                 },
                 {
                     "year": 2024,
                     "positionNumber": 6,
-                    "constructorId": "haas",
-                    "points": 38
+                    "constructorId": "alpine",
+                    "points": 65
                 },
                 {
                     "year": 2024,
                     "positionNumber": 7,
-                    "constructorId": "rb",
-                    "points": 36
+                    "constructorId": "haas",
+                    "points": 58
                 },
                 {
                     "year": 2024,
                     "positionNumber": 8,
+                    "constructorId": "rb",
+                    "points": 46
+                },
+                {
+                    "year": 2024,
+                    "positionNumber": 9,
                     "constructorId": "williams",
                     "points": 17
                 },
                 {
                     "year": 2024,
-                    "positionNumber": 9,
-                    "constructorId": "alpine",
-                    "points": 13
-                },
-                {
-                    "year": 2024,
                     "positionNumber": 10,
                     "constructorId": "kick-sauber",
-                    "points": 0
+                    "points": 4
                 }
             ]
         }

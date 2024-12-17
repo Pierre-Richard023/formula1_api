@@ -25,15 +25,16 @@ class CircuitsController extends AbstractController
     #[Route('/', methods: ['GET'])]
     public function index(Request $request, CircuitsRepository $circuitsRepository, SerializerInterface $serializer): JsonResponse
     {
-        $limit = 8;
         $page = $request->query->getInt('page', 1);
+        $limit = $request->query->getInt('limit', 8);
+        $season = $request->query->getInt('season', 0);
         $country = $request->query->get('country');
-        $key = 'getAllCircuits_' . $country . '_' . $page . '_' . $limit;
+        $key = 'getAllCircuits_' . $country . '_' . $season . '_' . $page . '_' . $limit;
 
-        $circuits = $this->myCachePool->get($key, function (ItemInterface $item) use ($circuitsRepository, $country, $page, $limit, $serializer) {
+        $circuits = $this->myCachePool->get($key, function (ItemInterface $item) use ($circuitsRepository, $country, $season, $page, $limit, $serializer) {
             $item->get('circuitsCaches');
             $item->expiresAfter(3600);
-            $circuitsLists = $circuitsRepository->SearchAndPaginateCircuits($country, $page, $limit);
+            $circuitsLists = $circuitsRepository->SearchAndPaginateCircuits($country, $season, $page, $limit);
             $context = [
                 'currentPage' => $page,
                 'itemsPerPage' => $limit,

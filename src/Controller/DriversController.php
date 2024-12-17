@@ -25,8 +25,8 @@ class DriversController extends AbstractController
     #[Route('/', methods: ['GET'])]
     public function index(Request $request, DriversRepository $driversRepository, SerializerInterface $serializer): JsonResponse
     {
-        $limit = 8;
         $page = $request->query->getInt('page', 1);
+        $limit = $request->query->getInt('limit', 8);
         $country = $request->query->get('country');
         $key = 'getAllDrivers_' . $country . '_' . $page . '_' . $limit;
         $drivers = $this->myCachePool->get($key, function (ItemInterface $item) use ($country, $driversRepository, $page, $limit, $serializer) {

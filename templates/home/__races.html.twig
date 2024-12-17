@@ -1,0 +1,798 @@
+<section class="my-4 px-4">
+    <h1 class="text-3xl">Races</h1>
+    <div id="all_races" class="mt-4 scroll-mt-12 ">
+        <div class="mb-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                List of all races
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint allows you to retrieve a list of all races in Formula One, across all seasons. The
+                        data includes race details such as the race name, date, location, and associated season. The
+                        response can be filtered by race location, or other criteria. If no filters are applied,
+                        the endpoint will return all races available in the database.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/races
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    country
+                                </th>
+                                <td class="px-6 py-4">
+                                    string
+                                </td>
+                                <td class="px-6 py-4">
+                                    France
+                                </td>
+                                <td class="px-6 py-4">
+                                    Filters the results to include only data related to the specified country.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    circuit
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    5
+                                </td>
+                                <td class="px-6 py-4">
+                                    Filters the results based on unique identifier of a specific circuit.
+                                    Use this parameter to retrieve information about a particular race circuit.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    min_laps
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    50
+                                </td>
+                                <td class="px-6 py-4">
+                                    Filters the results to include only races or events where the number of laps is
+                                    greater than or equal to the specified value. Use this parameter to narrow down data
+                                    based on the minimum number of laps completed during a race.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    max_laps
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    70
+                                </td>
+                                <td class="px-6 py-4">
+                                    Filters the results to include only races or events where the number of laps is less
+                                    than or equal to the specified value. Use this parameter to narrow down data based
+                                    on the maximum number of laps completed during a race.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    page
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    Specifies the page number of the results to retrieve when the data is paginated. Use
+                                    this parameter to navigate through large datasets.(default is 1)
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    limit
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    8
+                                </td>
+                                <td class="px-6 py-4">
+                                    Defines the maximum number of results to return per page when retrieving paginated
+                                    data. (default limit is 8)
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/races?min_laps=55&max_laps=70
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+
+                        {% set data =
+                            {
+                                "results": [
+                                {
+                                    "id": 6,
+                                    "official_name": "Grand Prix de France 1950",
+                                    "raceDate": "02-07-1950",
+                                    "circuit": {
+                                    "id": 60,
+                                    "name": "Reims-Gueux",
+                                    "country": "FRANCE",
+                                    "short_name": "Reims-Gueux"
+                                },
+                                    "laps": 64
+                                },
+                                {
+                                    "id": 16,
+                                    "official_name": "Grosser Preis der Schweiz 1952",
+                                    "raceDate": "18-05-1952",
+                                    "circuit": {
+                                    "id": 11,
+                                    "name": "Circuit Bremgarten",
+                                    "country": "SWITZERLAND",
+                                    "short_name": "Bremgarten"
+                                },
+                                    "laps": 62
+                                },
+                                {
+                                    "id": 28,
+                                    "official_name": "Grand Prix de France 1953",
+                                    "raceDate": "05-07-1953",
+                                    "circuit": {
+                                    "id": 60,
+                                    "name": "Reims-Gueux",
+                                    "country": "FRANCE",
+                                    "short_name": "Reims-Gueux"
+                                },
+                                    "laps": 60
+                                },
+                                {
+                                    "id": 31,
+                                    "official_name": "Grosser Preis der Schweiz 1953",
+                                    "raceDate": "23-08-1953",
+                                    "circuit": {
+                                    "id": 11,
+                                    "name": "Circuit Bremgarten",
+                                    "country": "SWITZERLAND",
+                                    "short_name": "Bremgarten"
+                                },
+                                    "laps": 65
+                                },
+                                {
+                                    "id": 36,
+                                    "official_name": "Grand Prix de France 1954",
+                                    "raceDate": "04-07-1954",
+                                    "circuit": {
+                                    "id": 60,
+                                    "name": "Reims-Gueux",
+                                    "country": "FRANCE",
+                                    "short_name": "Reims-Gueux"
+                                },
+                                    "laps": 61
+                                },
+                                {
+                                    "id": 39,
+                                    "official_name": "Grosser Preis der Schweiz 1954",
+                                    "raceDate": "22-08-1954",
+                                    "circuit": {
+                                    "id": 11,
+                                    "name": "Circuit Bremgarten",
+                                    "country": "SWITZERLAND",
+                                    "short_name": "Bremgarten"
+                                },
+                                    "laps": 66
+                                },
+                                {
+                                    "id": 53,
+                                    "official_name": "Grand Prix de France 1956",
+                                    "raceDate": "01-07-1956",
+                                    "circuit": {
+                                    "id": 60,
+                                    "name": "Reims-Gueux",
+                                    "country": "FRANCE",
+                                    "short_name": "Reims-Gueux"
+                                },
+                                    "laps": 61
+                                },
+                                {
+                                    "id": 81,
+                                    "official_name": "Grosser Preis von Deutschland 1959",
+                                    "raceDate": "02-08-1959",
+                                    "circuit": {
+                                    "id": 7,
+                                    "name": "AVUS",
+                                    "country": "GERMANY",
+                                    "short_name": "AVUS"
+                                },
+                                    "laps": 60
+                                }
+                            ],
+                                "totalItems": 351,
+                                "currentPage": 1,
+                                "itemsPerPage": 8,
+                                "totalPages": 44
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="race_information" class="mt-4 scroll-mt-12 ">
+        <div class="my-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                Race Information
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint retrieves detailed information about a specific Formula One race by using its
+                        unique identifier in the database. The returned data includes details such as the race name,
+                        circuit, date, participating drivers and teams, and results, including positions and lap times.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/races/{id}
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    id
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    The id of the race.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/races/222
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+                        {% set data =
+                            {
+                                "id": 222,
+                                "name": "brazil",
+                                "official_name": "Grande Prêmio do Brasil 1973",
+                                "raceDate": "11-02-1973",
+                                "circuit": {
+                                "id": 29,
+                                "name": "Autódromo José Carlos Pace",
+                                "country": "BRAZIL",
+                                "short_name": "José Carlos Pace"
+                            },
+                                "sessions": [
+                                {
+                                    "name": "qualifying",
+                                    "standing": {
+                                    "entries": [
+                                        {
+                                            "driver": {
+                                            "id": 792,
+                                            "name": "Ronnie Peterson",
+                                            "number": null
+                                        },
+                                            "position": 1,
+                                            "raceTime": "2:30.500"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 243,
+                                            "name": "Emerson Fittipaldi",
+                                            "number": null
+                                        },
+                                            "position": 2,
+                                            "raceTime": "2:30.700"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 410,
+                                            "name": "Jacky Ickx",
+                                            "number": null
+                                        },
+                                            "position": 3,
+                                            "raceTime": "2:32.000"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 166,
+                                            "name": "Clay Regazzoni",
+                                            "number": null
+                                        },
+                                            "position": 4,
+                                            "raceTime": "2:32.400"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 205,
+                                            "name": "Denny Hulme",
+                                            "number": null
+                                        },
+                                            "position": 5,
+                                            "raceTime": "2:32.700"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 136,
+                                            "name": "Carlos Pace",
+                                            "number": null
+                                        },
+                                            "position": 6,
+                                            "raceTime": "2:32.700"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 137,
+                                            "name": "Carlos Reutemann",
+                                            "number": null
+                                        },
+                                            "position": 7,
+                                            "raceTime": "2:32.900"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 409,
+                                            "name": "Jackie Stewart",
+                                            "number": null
+                                        },
+                                            "position": 8,
+                                            "raceTime": "2:33.300"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 285,
+                                            "name": "François Cevert",
+                                            "number": null
+                                        },
+                                            "position": 9,
+                                            "raceTime": "2:33.400"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 436,
+                                            "name": "Jean-Pierre Beltoise",
+                                            "number": null
+                                        },
+                                            "position": 10,
+                                            "raceTime": "2:33.500"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 894,
+                                            "name": "Wilson Fittipaldi",
+                                            "number": null
+                                        },
+                                            "position": 11,
+                                            "raceTime": "2:34.300"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 713,
+                                            "name": "Peter Revson",
+                                            "number": null
+                                        },
+                                            "position": 12,
+                                            "raceTime": "2:34.300"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 655,
+                                            "name": "Niki Lauda",
+                                            "number": null
+                                        },
+                                            "position": 13,
+                                            "raceTime": "2:35.100"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 623,
+                                            "name": "Mike Hailwood",
+                                            "number": null
+                                        },
+                                            "position": 14,
+                                            "raceTime": "2:35.500"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 438,
+                                            "name": "Jean-Pierre Jarier",
+                                            "number": null
+                                        },
+                                            "position": 15,
+                                            "raceTime": "2:37.600"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 384,
+                                            "name": "Howden Ganley",
+                                            "number": null
+                                        },
+                                            "position": 16,
+                                            "raceTime": "2:37.600"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 67,
+                                            "name": "Arturo Merzario",
+                                            "number": null
+                                        },
+                                            "position": 17,
+                                            "raceTime": "2:37.700"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 638,
+                                            "name": "Nanni Galli",
+                                            "number": null
+                                        },
+                                            "position": 18,
+                                            "raceTime": "2:38.700"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 621,
+                                            "name": "Mike Beuttler",
+                                            "number": null
+                                        },
+                                            "position": 19,
+                                            "raceTime": "2:39.900"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 573,
+                                            "name": "Luiz Bueno",
+                                            "number": null
+                                        },
+                                            "position": 20,
+                                            "raceTime": "2:42.500"
+                                        }
+                                    ]
+                                }
+                                },
+                                {
+                                    "name": "race",
+                                    "standing": {
+                                    "entries": [
+                                        {
+                                            "driver": {
+                                            "id": 243,
+                                            "name": "Emerson Fittipaldi",
+                                            "number": null
+                                        },
+                                            "position": 1,
+                                            "points": 9.0,
+                                            "raceTime": "1:43:55.600"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 409,
+                                            "name": "Jackie Stewart",
+                                            "number": null
+                                        },
+                                            "position": 2,
+                                            "points": 6.0,
+                                            "raceTime": "1:44:09.100"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 205,
+                                            "name": "Denny Hulme",
+                                            "number": null
+                                        },
+                                            "position": 3,
+                                            "points": 4.0,
+                                            "raceTime": "1:45:42.000"
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 67,
+                                            "name": "Arturo Merzario",
+                                            "number": null
+                                        },
+                                            "position": 4,
+                                            "points": 3.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 410,
+                                            "name": "Jacky Ickx",
+                                            "number": null
+                                        },
+                                            "position": 5,
+                                            "points": 2.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 166,
+                                            "name": "Clay Regazzoni",
+                                            "number": null
+                                        },
+                                            "position": 6,
+                                            "points": 1.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 384,
+                                            "name": "Howden Ganley",
+                                            "number": null
+                                        },
+                                            "position": 7,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 655,
+                                            "name": "Niki Lauda",
+                                            "number": null
+                                        },
+                                            "position": 8,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 638,
+                                            "name": "Nanni Galli",
+                                            "number": null
+                                        },
+                                            "position": 9,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 285,
+                                            "name": "François Cevert",
+                                            "number": null
+                                        },
+                                            "position": 10,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 137,
+                                            "name": "Carlos Reutemann",
+                                            "number": null
+                                        },
+                                            "position": 11,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 573,
+                                            "name": "Luiz Bueno",
+                                            "number": null
+                                        },
+                                            "position": 12,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 436,
+                                            "name": "Jean-Pierre Beltoise",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 621,
+                                            "name": "Mike Beuttler",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 136,
+                                            "name": "Carlos Pace",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 623,
+                                            "name": "Mike Hailwood",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 438,
+                                            "name": "Jean-Pierre Jarier",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 792,
+                                            "name": "Ronnie Peterson",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 894,
+                                            "name": "Wilson Fittipaldi",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        },
+                                        {
+                                            "driver": {
+                                            "id": 713,
+                                            "name": "Peter Revson",
+                                            "number": null
+                                        },
+                                            "position": null,
+                                            "points": 0.0,
+                                            "raceTime": null
+                                        }
+                                    ]
+                                }
+                                }
+                            ],
+                                "laps": 40,
+                                "distance": 318.4,
+                                "qualifyingFormat": "TWO_SESSION"
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

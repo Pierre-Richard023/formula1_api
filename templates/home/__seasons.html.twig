@@ -1,0 +1,584 @@
+<section class="my-4 px-4">
+    <h1 class="text-3xl">Seasons</h1>
+
+    <div id="all_seasons" class="mt-4 scroll-mt-12 ">
+        <div class="mb-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                List of all seasons
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint allows you to retrieve a list of all Formula One seasons, including both
+                        historical and current seasons.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/seasons
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    page
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    Specifies the page number of the results to retrieve when the data is paginated. Use
+                                    this parameter to navigate through large datasets.(default is 1)
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    limit
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    8
+                                </td>
+                                <td class="px-6 py-4">
+                                    Defines the maximum number of results to return per page when retrieving paginated
+                                    data. (default limit is 8)
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/seasons?limit=4
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+
+                        {% set data =
+                            {
+                                "results": [
+                                {
+                                    "id": 1,
+                                    "year": 1950
+                                },
+                                {
+                                    "id": 2,
+                                    "year": 1951
+                                },
+                                {
+                                    "id": 3,
+                                    "year": 1952
+                                },
+                                {
+                                    "id": 4,
+                                    "year": 1953
+                                }
+                            ],
+                                "totalItems": 75,
+                                "currentPage": 1,
+                                "itemsPerPage": 4,
+                                "totalPages": 19
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="season_information" class="mt-4 scroll-mt-12 ">
+        <div class="my-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                Season Information
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint allows you to retrieve detailed information about a specific Formula One season.
+                        You can get data on the races, results, drivers, constructors, and other key details relevant to
+                        that season.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/seasons/{id}
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    id
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    The id of the season.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/seasons/72
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+                        {% set data =
+                            {
+                                "id": 50,
+                                "year": 1999,
+                                "meetings": [
+                                {
+                                    "id": 631,
+                                    "name": "australia",
+                                    "official_name": "1999 Qantas Australian Grand Prix",
+                                    "raceDate": "07-03-1999",
+                                    "circuit": {
+                                    "id": 41,
+                                    "name": "Melbourne Grand Prix Circuit"
+                                }
+                                },
+                                {
+                                    "id": 632,
+                                    "name": "brazil",
+                                    "official_name": "Grande Prêmio Marlboro do Brasil 1999",
+                                    "raceDate": "11-04-1999",
+                                    "circuit": {
+                                    "id": 29,
+                                    "name": "Autódromo José Carlos Pace"
+                                }
+                                },
+                                {
+                                    "id": 633,
+                                    "name": "san-marino",
+                                    "official_name": "Gran Premio Warsteiner di San Marino 1999",
+                                    "raceDate": "02-05-1999",
+                                    "circuit": {
+                                    "id": 27,
+                                    "name": "Autodromo Internazionale Enzo e Dino Ferrari"
+                                }
+                                },
+                                {
+                                    "id": 634,
+                                    "name": "monaco",
+                                    "official_name": "Grand Prix de Monaco 1999",
+                                    "raceDate": "16-05-1999",
+                                    "circuit": {
+                                    "id": 44,
+                                    "name": "Circuit de Monaco"
+                                }
+                                },
+                                {
+                                    "id": 635,
+                                    "name": "spain",
+                                    "official_name": "Gran Premio Marlboro de España 1999",
+                                    "raceDate": "30-05-1999",
+                                    "circuit": {
+                                    "id": 16,
+                                    "name": "Circuit de Barcelona-Catalunya"
+                                }
+                                },
+                                {
+                                    "id": 636,
+                                    "name": "canada",
+                                    "official_name": "Grand Prix Air Canada 1999",
+                                    "raceDate": "13-06-1999",
+                                    "circuit": {
+                                    "id": 48,
+                                    "name": "Circuit Gilles Villeneuve"
+                                }
+                                },
+                                {
+                                    "id": 637,
+                                    "name": "france",
+                                    "official_name": "Mobil 1 Grand Prix de France 1999",
+                                    "raceDate": "27-06-1999",
+                                    "circuit": {
+                                    "id": 39,
+                                    "name": "Circuit de Nevers Magny-Cours"
+                                }
+                                },
+                                {
+                                    "id": 638,
+                                    "name": "great-britain",
+                                    "official_name": "1999 RAC British Grand Prix",
+                                    "raceDate": "11-07-1999",
+                                    "circuit": {
+                                    "id": 66,
+                                    "name": "Silverstone Circuit"
+                                }
+                                },
+                                {
+                                    "id": 639,
+                                    "name": "austria",
+                                    "official_name": "Grosser Preis von Österreich 1999",
+                                    "raceDate": "25-07-1999",
+                                    "circuit": {
+                                    "id": 69,
+                                    "name": "Red Bull Ring"
+                                }
+                                },
+                                {
+                                    "id": 640,
+                                    "name": "germany",
+                                    "official_name": "Grosser Mobil 1 Preis von Deutschland 1999",
+                                    "raceDate": "01-08-1999",
+                                    "circuit": {
+                                    "id": 25,
+                                    "name": "Hockenheimring"
+                                }
+                                },
+                                {
+                                    "id": 641,
+                                    "name": "hungary",
+                                    "official_name": "Marlboro Magyar Nagydíj 1999",
+                                    "raceDate": "15-08-1999",
+                                    "circuit": {
+                                    "id": 26,
+                                    "name": "Hungaroring"
+                                }
+                                },
+                                {
+                                    "id": 642,
+                                    "name": "belgium",
+                                    "official_name": "1999 Foster's Belgian Grand Prix",
+                                    "raceDate": "29-08-1999",
+                                    "circuit": {
+                                    "id": 68,
+                                    "name": "Circuit de Spa-Francorchamps"
+                                }
+                                },
+                                {
+                                    "id": 643,
+                                    "name": "italy",
+                                    "official_name": "Gran Premio Campari d'Italia 1999",
+                                    "raceDate": "12-09-1999",
+                                    "circuit": {
+                                    "id": 49,
+                                    "name": "Autodromo Nazionale Monza"
+                                }
+                                },
+                                {
+                                    "id": 644,
+                                    "name": "europe",
+                                    "official_name": "1999 Warsteiner Grand Prix of Europe",
+                                    "raceDate": "26-09-1999",
+                                    "circuit": {
+                                    "id": 53,
+                                    "name": "Nürburgring"
+                                }
+                                },
+                                {
+                                    "id": 645,
+                                    "name": "malaysia",
+                                    "official_name": "1999 Petronas Malaysian Grand Prix",
+                                    "raceDate": "17-10-1999",
+                                    "circuit": {
+                                    "id": 64,
+                                    "name": "Sepang International Circuit"
+                                }
+                                },
+                                {
+                                    "id": 646,
+                                    "name": "japan",
+                                    "official_name": "1999 Fuji Television Japanese Grand Prix",
+                                    "raceDate": "31-10-1999",
+                                    "circuit": {
+                                    "id": 70,
+                                    "name": "Suzuka Circuit"
+                                }
+                                }
+                            ],
+                                "driverStandings": {
+                                "entries":[
+                                    {
+                                        "driverId": 619,
+                                        "name": "Mika Häkkinen",
+                                        "position": 1,
+                                        "points": 76.0
+                                    },
+                                    {
+                                        "driverId": 230,
+                                        "name": "Eddie Irvine",
+                                        "position": 2,
+                                        "points": 74.0
+                                    },
+                                    {
+                                        "driverId": 368,
+                                        "name": "Heinz-Harald Frentzen",
+                                        "position": 3,
+                                        "points": 54.0
+                                    },
+                                    {
+                                        "driverId": 192,
+                                        "name": "David Coulthard",
+                                        "position": 4,
+                                        "points": 48.0
+                                    },
+                                    {
+                                        "driverId": 614,
+                                        "name": "Michael Schumacher",
+                                        "position": 5,
+                                        "points": 44.0
+                                    },
+                                    {
+                                        "driverId": 738,
+                                        "name": "Ralf Schumacher",
+                                        "position": 6,
+                                        "points": 35.0
+                                    },
+                                    {
+                                        "driverId": 795,
+                                        "name": "Rubens Barrichello",
+                                        "position": 7,
+                                        "points": 21.0
+                                    },
+                                    {
+                                        "driverId": 490,
+                                        "name": "Johnny Herbert",
+                                        "position": 8,
+                                        "points": 15.0
+                                    },
+                                    {
+                                        "driverId": 324,
+                                        "name": "Giancarlo Fisichella",
+                                        "position": 9,
+                                        "points": 13.0
+                                    },
+                                    {
+                                        "driverId": 620,
+                                        "name": "Mika Salo",
+                                        "position": 10,
+                                        "points": 10.0
+                                    },
+                                    {
+                                        "driverId": 424,
+                                        "name": "Jarno Trulli",
+                                        "position": 11,
+                                        "points": 7.0
+                                    },
+                                    {
+                                        "driverId": 180,
+                                        "name": "Damon Hill",
+                                        "position": 12,
+                                        "points": 7.0
+                                    },
+                                    {
+                                        "driverId": 35,
+                                        "name": "Alexander Wurz",
+                                        "position": 13,
+                                        "points": 3.0
+                                    },
+                                    {
+                                        "driverId": 701,
+                                        "name": "Pedro Diniz",
+                                        "position": 14,
+                                        "points": 3.0
+                                    },
+                                    {
+                                        "driverId": 666,
+                                        "name": "Olivier Panis",
+                                        "position": 15,
+                                        "points": 2.0
+                                    },
+                                    {
+                                        "driverId": 426,
+                                        "name": "Jean Alesi",
+                                        "position": 16,
+                                        "points": 2.0
+                                    },
+                                    {
+                                        "driverId": 700,
+                                        "name": "Pedro de la Rosa",
+                                        "position": 17,
+                                        "points": 1.0
+                                    },
+                                    {
+                                        "driverId": 580,
+                                        "name": "Marc Gené",
+                                        "position": 18,
+                                        "points": 1.0
+                                    }
+                                ]
+                            },
+                                "constructorStandings": {
+                                "entries":[
+                                    {
+                                        "constructorId": 57,
+                                        "name": "Scuderia Ferrari",
+                                        "position": 1,
+                                        "points": 128.0
+                                    },
+                                    {
+                                        "constructorId": 112,
+                                        "name": "McLaren Racing",
+                                        "position": 2,
+                                        "points": 124.0
+                                    },
+                                    {
+                                        "constructorId": 81,
+                                        "name": "Jordan Grand Prix",
+                                        "position": 3,
+                                        "points": 61.0
+                                    },
+                                    {
+                                        "constructorId": 159,
+                                        "name": "Stewart Grand Prix",
+                                        "position": 4,
+                                        "points": 36.0
+                                    },
+                                    {
+                                        "constructorId": 181,
+                                        "name": "Williams Grand Prix Engineering",
+                                        "position": 5,
+                                        "points": 35.0
+                                    },
+                                    {
+                                        "constructorId": 22,
+                                        "name": "Benetton Formula",
+                                        "position": 6,
+                                        "points": 16.0
+                                    },
+                                    {
+                                        "constructorId": 134,
+                                        "name": "Prost Grand Prix",
+                                        "position": 7,
+                                        "points": 9.0
+                                    },
+                                    {
+                                        "constructorId": 145,
+                                        "name": "Sauber F1 Team",
+                                        "position": 8,
+                                        "points": 5.0
+                                    },
+                                    {
+                                        "constructorId": 12,
+                                        "name": "Arrows Grand Prix International",
+                                        "position": 9,
+                                        "points": 1.0
+                                    },
+                                    {
+                                        "constructorId": 117,
+                                        "name": "Minardi F1 Team",
+                                        "position": 10,
+                                        "points": 1.0
+                                    }
+                                ]
+                            },
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

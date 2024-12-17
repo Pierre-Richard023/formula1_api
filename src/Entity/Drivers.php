@@ -47,7 +47,7 @@ class Drivers
     private ?\DateTimeInterface $date_of_birth = null;
 
     #[ORM\Column(length: 255)]
-    #[Groups(['drivers.search', 'drivers.show'])]
+    #[Groups(['drivers.show'])]
     private ?string $place_of_birth = null;
 
     #[ORM\Column]

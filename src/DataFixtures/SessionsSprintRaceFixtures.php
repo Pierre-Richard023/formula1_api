@@ -2,6 +2,8 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Drivers;
+use App\Entity\Races;
 use App\Entity\Sessions;
 use App\Entity\StandingEntry;
 use App\Entity\Standings;
@@ -29,7 +31,7 @@ class SessionsSprintRaceFixtures extends Fixture implements DependentFixtureInte
                 foreach ($entries as $entry) {
                     $session = new Sessions();
                     $session->setName("sprint-race")
-                        ->setRace($this->getReference('races__' . $entry->raceId));
+                        ->setRace($this->getReference('races__' . $entry->raceId,Races::class));
                     $standings = new Standings();
                     $session->setStanding($standings);
                     $manager->persist($standings);
@@ -38,7 +40,7 @@ class SessionsSprintRaceFixtures extends Fixture implements DependentFixtureInte
                     foreach ($entry->standing as $e) {
                         $standingEntry = new StandingEntry();
                         $standingEntry->setStandings($standings)
-                            ->setDriver($this->getReference('driver__' . $e->driverId));
+                            ->setDriver($this->getReference('driver__' . $e->driverId,Drivers::class));
                         if (isset($e->positionNumber))
                             $standingEntry->setPosition($e->positionNumber);
                         if (isset($e->time))
@@ -54,7 +56,7 @@ class SessionsSprintRaceFixtures extends Fixture implements DependentFixtureInte
         unset($data);
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             RacesFixtures::class,

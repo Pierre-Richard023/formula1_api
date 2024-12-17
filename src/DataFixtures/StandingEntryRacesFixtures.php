@@ -2,7 +2,9 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Drivers;
 use App\Entity\StandingEntry;
+use App\Entity\Standings;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
@@ -24,10 +26,10 @@ class StandingEntryRacesFixtures extends Fixture implements DependentFixtureInte
         foreach ($data as $k => $entries) {
             if ($k === 'races') {
                 foreach ($entries as $e) {
-                    $standing = $this->getReference("standings__r__" . $e->raceId);
+                    $standing = $this->getReference("standings__r__" . $e->raceId,Standings::class);
                     $standingEntry = new StandingEntry();
                     $standingEntry->setStandings($standing)
-                        ->setDriver($this->getReference('driver__' . $e->driverId));
+                        ->setDriver($this->getReference('driver__' . $e->driverId,Drivers::class));
                     if (isset($e->positionNumber))
                         $standingEntry->setPosition($e->positionNumber);
                     if (isset($e->time))
@@ -47,7 +49,7 @@ class StandingEntryRacesFixtures extends Fixture implements DependentFixtureInte
         unset($data);
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             SessionsRacesFixtures::class

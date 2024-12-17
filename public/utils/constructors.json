@@ -65,8 +65,8 @@
         "fullName": "Alpine F1 Team",
         "countryId": "france",
         "totalRaceWins": 1,
-        "totalRaceEntries": 85,
-        "totalPodiumRaces": 4,
+        "totalRaceEntries": 90,
+        "totalPodiumRaces": 5,
         "totalChampionshipWins": 0
     },
     {
@@ -145,7 +145,7 @@
         "fullName": "Aston Martin",
         "countryId": "united-kingdom",
         "totalRaceWins": 0,
-        "totalRaceEntries": 91,
+        "totalRaceEntries": 96,
         "totalPodiumRaces": 9,
         "totalChampionshipWins": 0
     },
@@ -564,9 +564,9 @@
         "name": "Ferrari",
         "fullName": "Scuderia Ferrari",
         "countryId": "italy",
-        "totalRaceWins": 247,
-        "totalRaceEntries": 1095,
-        "totalPodiumRaces": 628,
+        "totalRaceWins": 248,
+        "totalRaceEntries": 1100,
+        "totalPodiumRaces": 632,
         "totalChampionshipWins": 16
     },
     {
@@ -695,7 +695,7 @@
         "fullName": "Haas F1 Team",
         "countryId": "united-states-of-america",
         "totalRaceWins": 0,
-        "totalRaceEntries": 185,
+        "totalRaceEntries": 190,
         "totalPodiumRaces": 0,
         "totalChampionshipWins": 0
     },
@@ -825,7 +825,7 @@
         "fullName": "Kick Sauber F1 Team",
         "countryId": "germany",
         "totalRaceWins": 0,
-        "totalRaceEntries": 19,
+        "totalRaceEntries": 24,
         "totalPodiumRaces": 0,
         "totalChampionshipWins": 0
     },
@@ -1114,19 +1114,19 @@
         "name": "McLaren",
         "fullName": "McLaren Racing",
         "countryId": "united-kingdom",
-        "totalRaceWins": 188,
-        "totalRaceEntries": 969,
-        "totalPodiumRaces": 421,
-        "totalChampionshipWins": 8
+        "totalRaceWins": 189,
+        "totalRaceEntries": 974,
+        "totalPodiumRaces": 424,
+        "totalChampionshipWins": 9
     },
     {
         "id": "mercedes",
         "name": "Mercedes",
         "fullName": "Mercedes AMG F1",
         "countryId": "germany",
-        "totalRaceWins": 128,
-        "totalRaceEntries": 312,
-        "totalPodiumRaces": 200,
+        "totalRaceWins": 129,
+        "totalRaceEntries": 317,
+        "totalPodiumRaces": 201,
         "totalChampionshipWins": 8
     },
     {
@@ -1385,7 +1385,7 @@
         "fullName": "Racing Bulls",
         "countryId": "italy",
         "totalRaceWins": 0,
-        "totalRaceEntries": 19,
+        "totalRaceEntries": 24,
         "totalPodiumRaces": 0,
         "totalChampionshipWins": 0
     },
@@ -1404,9 +1404,9 @@
         "name": "Red Bull",
         "fullName": "Red Bull Racing",
         "countryId": "austria",
-        "totalRaceWins": 120,
-        "totalRaceEntries": 389,
-        "totalPodiumRaces": 216,
+        "totalRaceWins": 122,
+        "totalRaceEntries": 394,
+        "totalPodiumRaces": 218,
         "totalChampionshipWins": 6
     },
     {
@@ -1805,7 +1805,7 @@
         "fullName": "Williams Grand Prix Engineering",
         "countryId": "united-kingdom",
         "totalRaceWins": 114,
-        "totalRaceEntries": 822,
+        "totalRaceEntries": 827,
         "totalPodiumRaces": 243,
         "totalChampionshipWins": 9
     },

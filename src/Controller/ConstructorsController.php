@@ -25,8 +25,8 @@ class ConstructorsController extends AbstractController
     #[Route('/', methods: ['GET'])]
     public function index(Request $request, ConstructorsRepository $constructorsRepository, SerializerInterface $serializer): JsonResponse
     {
-        $limit = 8;
         $page = $request->query->getInt('page', 1);
+        $limit = $request->query->getInt('limit', 8);
         $country = $request->query->get('country');
         $key = 'getAllConstructors_' . $country . '_' . $page . '_' . $limit;
         $constructors = $this->myCachePool->get($key, function (ItemInterface $item) use ($constructorsRepository, $page, $limit, $country, $serializer) {

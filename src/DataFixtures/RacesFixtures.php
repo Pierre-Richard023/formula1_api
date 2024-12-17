@@ -2,7 +2,9 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Circuits;
 use App\Entity\Races;
+use App\Entity\Seasons;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
@@ -32,8 +34,8 @@ class RacesFixtures extends Fixture implements DependentFixtureInterface
                     ->setQualifyingFormat($r['qualifyingFormat'])
                     ->setLaps($r['laps'])
                     ->setDistance($r['distance'])
-                    ->setSeason($this->getReference('season__' . $r['year']))
-                    ->setCircuit($this->getReference('circuit__' . $r['circuitId']));
+                    ->setSeason($this->getReference('season__' . $r['year'],Seasons::class))
+                    ->setCircuit($this->getReference('circuit__' . $r['circuitId'],Circuits::class));
 
                 $this->addReference('races__' . $r['id'], $races);
                 $manager->persist($races);
@@ -45,7 +47,7 @@ class RacesFixtures extends Fixture implements DependentFixtureInterface
         unset($data);
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             SeasonsFixtures::class

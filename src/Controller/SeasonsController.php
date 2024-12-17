@@ -24,8 +24,8 @@ class SeasonsController extends AbstractController
     #[Route('/', name: 'seasons', methods: ['GET'])]
     public function index(Request $request, SeasonsRepository $seasonsRepository, SerializerInterface $serializer): JsonResponse
     {
-        $limit = 8;
         $page = $request->query->getInt('page', 1);
+        $limit = $request->query->getInt('limit', 8);
 
         $key = 'getAllSeasons_' . $page . '_' . $limit;
         $seasons = $this->myCachePool->get($key,

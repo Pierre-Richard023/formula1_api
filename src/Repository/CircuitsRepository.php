@@ -17,15 +17,23 @@ class CircuitsRepository extends ServiceEntityRepository
         parent::__construct($registry, Circuits::class);
     }
 
-    public function SearchAndPaginateCircuits(?string $country, int $page, int $limit): Paginator
+    public function SearchAndPaginateCircuits(?string $country, int $season, int $page, int $limit): Paginator
     {
+        $query = $this->createQueryBuilder('c');
 
-
-        $query = $this->createQueryBuilder('s');
+        if ($season !== 0) {
+            $query
+                ->join('App\Entity\Races', 'r', 'WITH', 'r.circuit = c')
+                ->join('r.season', 's')
+                ->where('s.year = :season')
+                ->setParameter('season', $season)
+            ;
+        }
 
         if ($country !== null) {
-            $query->andWhere('s.country = :country')->setParameter('country', $country);
+            $query->andWhere('c.country = :country')->setParameter('country', $country);
         }
+
 
         $query
             ->setFirstResult(($page - 1) * $limit)

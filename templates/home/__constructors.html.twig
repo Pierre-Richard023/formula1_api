@@ -1,0 +1,264 @@
+<section class="my-4 px-4">
+    <h1 class="text-3xl">Constructors</h1>
+
+    <div id="all_constructor" class="mt-4 scroll-mt-12 ">
+        <div class="mb-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                List of all constructors
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint allows you to search and retrieve a list of constructors in the Formula One
+                        database. The search can include both active and historical constructors, depending on the
+                        provided query parameters. It supports filtering by attributes such as country, enabling you to
+                        narrow down the results. If no filters are applied, the endpoint
+                        returns all constructors in the database.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/constructors
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    country
+                                </th>
+                                <td class="px-6 py-4">
+                                    string
+                                </td>
+                                <td class="px-6 py-4">
+                                    France
+                                </td>
+                                <td class="px-6 py-4">
+                                    Filters the results to include only data related to the specified country.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    page
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    Specifies the page number of the results to retrieve when the data is paginated. Use
+                                    this parameter to navigate through large datasets.(default is 1)
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    limit
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    8
+                                </td>
+                                <td class="px-6 py-4">
+                                    Defines the maximum number of results to return per page when retrieving paginated
+                                    data. (default limit is 8)
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/constructors?country=France&page=1&limit=2
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+                        {% set data =
+                            {
+                                "results": [
+                                {
+                                    "id": 3,
+                                    "name": "AGS",
+                                    "full_name": "Automobiles Gonfaronnaises Sportives",
+                                    "country": "france"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Alpine",
+                                    "full_name": "Alpine F1 Team",
+                                    "country": "france"
+                                }
+                            ],
+                                "totalItems": 13,
+                                "currentPage": 1,
+                                "itemsPerPage": 2,
+                                "totalPages": 7
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="constructor_information" class="mt-4 scroll-mt-12 ">
+        <div class="my-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                Constructor Information
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint retrieves detailed information about a specific Formula One constructor by using
+                        their unique identifier in the database. The returned data includes key details such as the
+                        constructor's name, nationality, team history, and achievements.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/constructors/{id}
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    id
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    The id of the constructor.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/constructors/23
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+                        {% set data =
+                            {
+                                "id": 23,
+                                "name": "BMW Sauber",
+                                "full_name": "BMW Sauber F1 Team",
+                                "wolrd_championships": 0,
+                                "race_entries": 70,
+                                "race_wins": 1,
+                                "podiums": 16,
+                                "country": "germany",
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

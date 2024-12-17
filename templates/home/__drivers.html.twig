@@ -1,0 +1,278 @@
+<section class="my-4 px-4">
+    <h1 class="text-3xl">Drivers</h1>
+
+    <div id="all_drivers" class="mt-4 scroll-mt-12 ">
+        <div class="mb-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                List of all drivers
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint allows you to search and retrieve a comprehensive list of drivers in the Formula
+                        One database. The search can include both active and historical drivers, depending on the
+                        provided query parameters. It supports filtering by attributes such as season, nationality (...
+                        more later)
+                        enabling you to narrow down the results to match specific criteria. If no filters
+                        are applied, the endpoint will return all drivers available in the database.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/drivers
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 md:py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    country
+                                </th>
+                                <td class="px-6 md:py-4">
+                                    string
+                                </td>
+                                <td class="px-6 md:py-4">
+                                    France
+                                </td>
+                                <td class="px-6 md:py-4">
+                                    Filters the results to include only data related to the specified country.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 md:py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    page
+                                </th>
+                                <td class="px-6 md:py-4">
+                                    number
+                                </td>
+                                <td class="px-6 md:py-4">
+                                    1
+                                </td>
+                                <td class="px-6 md:py-4">
+                                    Specifies the page number of the results to retrieve when the data is paginated. Use
+                                    this parameter to navigate through large datasets.(default is 1)
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    limit
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    8
+                                </td>
+                                <td class="px-6 py-4">
+                                    Defines the maximum number of results to return per page when retrieving paginated
+                                    data. (default limit is 8)
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/drivers?country=France&page=1&limit=2
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+
+                        {% set data =
+                            {
+                                "results": [
+                                {
+                                    "id": 11,
+                                    "first_name": "Alain",
+                                    "last_name": "Prost",
+                                    "abbreviation": "PRO",
+                                    "country": "FRANCE",
+                                    "number": null
+                                },
+                                {
+                                    "id": 36,
+                                    "first_name": "Alexandre",
+                                    "last_name": "Prémat",
+                                    "abbreviation": "PRE",
+                                    "country": "FRANCE",
+                                    "number": null
+                                }
+                            ],
+                                "totalItems": 79,
+                                "currentPage": 1,
+                                "itemsPerPage": 2,
+                                "totalPages": 40
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver_information" class="mt-4 scroll-mt-12">
+        <div class="my-2.5 flex font-serif text-xl px-2 w-full">
+            <div class="flex items-center text-green-700 ">
+                GET
+            </div>
+            <div class="flex-1 flex items-center p-2">
+                Driver Information
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="">
+                <div class="mb-4">
+                    <div class="my-1.5">
+                        This endpoint retrieves detailed information about a specific Formula One driver by using their
+                        unique identifier in the database. The returned data includes personal details.
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/drivers/{id}
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                    <div class="mb-2 px-4">
+                        <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                        <ul class="list-disc list-outside ps-5">
+                            <li class="bg-gray-200">
+                                Content-Type: application/json
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Type
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Example
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Description
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b ">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                    id
+                                </th>
+                                <td class="px-6 py-4">
+                                    number
+                                </td>
+                                <td class="px-6 py-4">
+                                    1
+                                </td>
+                                <td class="px-6 py-4">
+                                    The id of the driver.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex p-2 bg-gray-800 text-white">
+                        Example Request and Response
+                    </div>
+                    <div class="w-full flex p-2 bg-gray-700">
+                        <div class="flex items-center text-green-400 ">
+                            GET
+                        </div>
+                        <div class="flex-1 flex items-center px-4 text-white">
+                            https://formulaone.prb-dev.fr/api/drivers/556
+                        </div>
+                    </div>
+                    <div class="p-2 bg-gray-200 overflow-x-auto">
+                        {% set data =
+                            {
+                                "id": 556,
+                                "first_name": "Lloyd",
+                                "last_name": "Ruby",
+                                "name": "Lloyd Ruby",
+                                "abbreviation": "RUB",
+                                "country": "UNITED-STATES-OF-AMERICA",
+                                "world_championships": 0,
+                                "date_of_birth": "12-01-1928",
+                                "place_of_birth": "Wichita Falls",
+                                "podiums": 0,
+                                "grands_prix_entered": 2,
+                                "race_wins": 0,
+                                "pole_positions": 0,
+                                "nationality": "united-states-of-america",
+                                "date_of_death": "23-03-2009",
+                                "number": null
+                            } %}
+                        <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
