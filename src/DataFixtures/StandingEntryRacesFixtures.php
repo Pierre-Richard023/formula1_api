@@ -23,26 +23,28 @@ class StandingEntryRacesFixtures extends Fixture implements DependentFixtureInte
 
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/standingsR.json';
         $data = Items::fromFile($jsonFile);
-        foreach ($data as $k => $entries) {
-            if ($k === 'races') {
-                foreach ($entries as $e) {
-                    $standing = $this->getReference("standings__r__" . $e->raceId,Standings::class);
-                    $standingEntry = new StandingEntry();
-                    $standingEntry->setStandings($standing)
-                        ->setDriver($this->getReference('driver__' . $e->driverId,Drivers::class));
-                    if (isset($e->positionNumber))
-                        $standingEntry->setPosition($e->positionNumber);
-                    if (isset($e->time))
-                        $standingEntry->setRaceTime($e->time);
-                    if (isset($e->points))
-                        $standingEntry->setPoints($e->points);
-                    else
-                        $standingEntry->setPoints(0);
 
-                    $manager->persist($standingEntry);
-                }
+        foreach ($data as $e) {
+            $standing = $this->getReference("standings__r__" . $e->raceId, Standings::class);
+
+            foreach ($e->standing as $st) {
+                $standingEntry = new StandingEntry();
+                $standingEntry->setStandings($standing)
+                    ->setDriver($this->getReference('driver__' . $st->driverId, Drivers::class));
+                if (isset($st->positionNumber))
+                    $standingEntry->setPosition($st->positionNumber);
+                if (isset($st->time))
+                    $standingEntry->setRaceTime($st->time);
+                if (isset($st->points))
+                    $standingEntry->setPoints($st->points);
+                else
+                    $standingEntry->setPoints(0);
+
+                $manager->persist($standingEntry);
             }
+
         }
+
 
         $manager->flush();
         $manager->clear();

@@ -28,27 +28,23 @@ class SessionsFP1Fixtures extends Fixture implements DependentFixtureInterface
         $data = Items::fromFile($jsonFile);
         $manager->getConnection()->getConfiguration()->setSQLLogger(null);
 
-        foreach ($data as $k => $entries) {
-            if ($k == 'free-practice-1') {
-                foreach ($entries as $entry) {
-                    $session = new Sessions();
-                    $session->setName("free-practice-1")
-                        ->setRace($this->getReference('races__' . $entry->raceId,Races::class));
-                    $standings = new Standings();
-                    $session->setStanding($standings);
-                    $manager->persist($standings);
-                    $manager->persist($session);
-                    foreach ($entry->standing as $e) {
-                        $standingEntry = new StandingEntry();
-                        $standingEntry->setStandings($standings)
-                            ->setDriver($this->getReference('driver__' . $e->driverId,Drivers::class));
-                        if (isset($e->positionNumber))
-                            $standingEntry->setPosition($e->positionNumber);
-                        if (isset($e->time))
-                            $standingEntry->setRaceTime($e->time);
-                        $manager->persist($standingEntry);
-                    }
-                }
+        foreach ($data as $entry) {
+            $session = new Sessions();
+            $session->setName("free-practice-1")
+                ->setRace($this->getReference('races__' . $entry->raceId, Races::class));
+            $standings = new Standings();
+            $session->setStanding($standings);
+            $manager->persist($standings);
+            $manager->persist($session);
+            foreach ($entry->standing as $e) {
+                $standingEntry = new StandingEntry();
+                $standingEntry->setStandings($standings)
+                    ->setDriver($this->getReference('driver__' . $e->driverId, Drivers::class));
+                if (isset($e->positionNumber))
+                    $standingEntry->setPosition($e->positionNumber);
+                if (isset($e->time))
+                    $standingEntry->setRaceTime($e->time);
+                $manager->persist($standingEntry);
             }
         }
 

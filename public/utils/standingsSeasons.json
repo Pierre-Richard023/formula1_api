@@ -10196,6 +10196,131 @@
                     "points": 0
                 }
             ]
+        },
+        {
+            "year": 2025,
+            "standing": [
+                {
+                    "year": 2025,
+                    "positionNumber": 1,
+                    "driverId": "oscar-piastri",
+                    "points": 131
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 2,
+                    "driverId": "lando-norris",
+                    "points": 115
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 3,
+                    "driverId": "max-verstappen",
+                    "points": 99
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 4,
+                    "driverId": "george-russell",
+                    "points": 93
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 5,
+                    "driverId": "charles-leclerc",
+                    "points": 53
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 6,
+                    "driverId": "andrea-kimi-antonelli",
+                    "points": 48
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 7,
+                    "driverId": "lewis-hamilton",
+                    "points": 41
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 8,
+                    "driverId": "alexander-albon",
+                    "points": 30
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 9,
+                    "driverId": "esteban-ocon",
+                    "points": 14
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 10,
+                    "driverId": "lance-stroll",
+                    "points": 14
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 11,
+                    "driverId": "yuki-tsunoda",
+                    "points": 9
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 12,
+                    "driverId": "pierre-gasly",
+                    "points": 7
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 13,
+                    "driverId": "carlos-sainz-jr",
+                    "points": 7
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 14,
+                    "driverId": "nico-hulkenberg",
+                    "points": 6
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 15,
+                    "driverId": "oliver-bearman",
+                    "points": 6
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 16,
+                    "driverId": "isack-hadjar",
+                    "points": 5
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 17,
+                    "driverId": "fernando-alonso",
+                    "points": 0
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 18,
+                    "driverId": "liam-lawson",
+                    "points": 0
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 19,
+                    "driverId": "jack-doohan",
+                    "points": 0
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 20,
+                    "driverId": "gabriel-bortoleto",
+                    "points": 0
+                }
+            ]
         }
     ],
     "constructors": [
@@ -14731,6 +14856,71 @@
                     "positionNumber": 10,
                     "constructorId": "kick-sauber",
                     "points": 4
+                }
+            ]
+        },
+        {
+            "year": 2025,
+            "standing": [
+                {
+                    "year": 2025,
+                    "positionNumber": 1,
+                    "constructorId": "mclaren",
+                    "points": 246
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 2,
+                    "constructorId": "mercedes",
+                    "points": 141
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 3,
+                    "constructorId": "red-bull",
+                    "points": 105
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 4,
+                    "constructorId": "ferrari",
+                    "points": 94
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 5,
+                    "constructorId": "williams",
+                    "points": 37
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 6,
+                    "constructorId": "haas",
+                    "points": 20
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 7,
+                    "constructorId": "aston-martin",
+                    "points": 14
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 8,
+                    "constructorId": "racing-bulls",
+                    "points": 8
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 9,
+                    "constructorId": "alpine",
+                    "points": 7
+                },
+                {
+                    "year": 2025,
+                    "positionNumber": 10,
+                    "constructorId": "kick-sauber",
+                    "points": 6
                 }
             ]
         }
