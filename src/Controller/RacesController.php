@@ -15,7 +15,7 @@ use Symfony\Contracts\Cache\ItemInterface;
 use Symfony\Contracts\Cache\TagAwareCacheInterface;
 
 
-#[Route('/api/seasons/races')]
+#[Route('/api/races')]
 class RacesController extends AbstractController
 {
 
