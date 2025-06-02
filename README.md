@@ -23,4 +23,4 @@ Aucune raison particulière — juste l’envie de coder quelque chose autour de
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Pierre-Richard023/formula1_api/blob/main/LICENSE)
