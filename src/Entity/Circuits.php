@@ -13,17 +13,15 @@ class Circuits
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['seasons.show', 'races.show', 'races.search', 'circuits.search', 'circuits.show'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
     #[Groups(['seasons.show', 'races.show', 'races.search', 'circuits.search', 'circuits.show'])]
-    private ?string $name = null;
-
+    private ?string $circuitsId = null;
     #[ORM\Column(length: 255)]
-    #[Groups(['races.show', 'races.search', 'circuits.search', 'circuits.show'])]
-    private ?string $country = null;
-
+    #[Groups(['seasons.show', 'races.show', 'races.search', 'circuits.search', 'circuits.show'])]
+    private ?string $name = null;
+    
     #[ORM\Column(length: 100)]
     #[Groups(['races.show', 'races.search', 'circuits.search', 'circuits.show'])]
     private ?string $short_name = null;
@@ -36,9 +34,26 @@ class Circuits
     #[Groups(['circuits.show'])]
     private ?string $type = null;
 
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['seasons.show', 'races.show', 'races.search', 'circuits.search', 'circuits.show'])]
+    private ?Country $country = null;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getCircuitsId(): ?string
+    {
+        return $this->circuitsId;
+    }
+
+    public function setCircuitsId(string $circuitsId): static
+    {
+        $this->circuitsId = $circuitsId;
+
+        return $this;
     }
 
     public function getName(): ?string
@@ -49,18 +64,6 @@ class Circuits
     public function setName(string $name): static
     {
         $this->name = $name;
-
-        return $this;
-    }
-
-    public function getCountry(): ?string
-    {
-        return $this->country;
-    }
-
-    public function setCountry(string $country): static
-    {
-        $this->country = $country;
 
         return $this;
     }
@@ -97,6 +100,18 @@ class Circuits
     public function setType(string $type): static
     {
         $this->type = $type;
+
+        return $this;
+    }
+
+    public function getCountry(): ?Country
+    {
+        return $this->country;
+    }
+
+    public function setCountry(?Country $country): static
+    {
+        $this->country = $country;
 
         return $this;
     }

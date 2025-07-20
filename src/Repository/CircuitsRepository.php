@@ -17,6 +17,16 @@ class CircuitsRepository extends ServiceEntityRepository
         parent::__construct($registry, Circuits::class);
     }
 
+
+    public function getCircuitsInformations(string $id): ?Circuits
+    {
+        return $this->createQueryBuilder('c')
+            ->andWhere('c.circuitsId = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
     public function SearchAndPaginateCircuits(?string $country, int $season, int $page, int $limit): Paginator
     {
         $query = $this->createQueryBuilder('c');
@@ -26,12 +36,14 @@ class CircuitsRepository extends ServiceEntityRepository
                 ->join('App\Entity\Races', 'r', 'WITH', 'r.circuit = c')
                 ->join('r.season', 's')
                 ->where('s.year = :season')
-                ->setParameter('season', $season)
-            ;
+                ->setParameter('season', $season);
         }
 
+
         if ($country !== null) {
-            $query->andWhere('c.country = :country')->setParameter('country', $country);
+            $query
+                ->join('c.country', 'ct', 'WITH', 'ct.name = :country')
+                ->setParameter('country', $country);
         }
 
 
@@ -43,6 +55,8 @@ class CircuitsRepository extends ServiceEntityRepository
 
         return new Paginator($query, false);
     }
+
+
 
 
     //    /**

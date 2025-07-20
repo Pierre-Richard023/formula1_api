@@ -11,7 +11,7 @@ class StandingEntryNormalizer implements NormalizerInterface
 {
     public function __construct(
         #[Autowire(service: 'serializer.normalizer.object')]
-        private NormalizerInterface $normalizer
+        private readonly NormalizerInterface $normalizer
     )
     {
     }
@@ -19,7 +19,7 @@ class StandingEntryNormalizer implements NormalizerInterface
     public function normalize($object, ?string $format = null, array $context = []): array
     {
         if (!$object instanceof StandingEntry) {
-            return $object;
+            throw new \InvalidArgumentException();
         }
 
         $entry = $this->normalizer->normalize($object, $format, $context);
@@ -36,12 +36,12 @@ class StandingEntryNormalizer implements NormalizerInterface
         if (!$session) {
 
             if ($object->getConstructor()) {
-                $entry['constructorId'] = $object->getConstructor()->getId();
+                $entry['constructorId'] = $object->getConstructor()->getConstructorId();
                 $entry['name'] = $object->getConstructor()->getFullName();
             }
 
             if ($object->getDriver()) {
-                $entry['driverId'] = $object->getDriver()->getId();
+                $entry['driverId'] = $object->getDriver()->getDriverId();
                 $entry['name'] = $object->getDriver()->getFullName();
             }
 

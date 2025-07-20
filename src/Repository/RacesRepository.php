@@ -17,7 +17,17 @@ class RacesRepository extends ServiceEntityRepository
         parent::__construct($registry, Races::class);
     }
 
-    public function findRacesAndPaginate(?string $country, int $circuit, int $minLaps, int $maxLaps, int $page, int $limit): Paginator
+
+    public function getRacesInformations(string $id): ?Races
+    {
+        return $this->createQueryBuilder('r')
+            ->andWhere('r.racesId  = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
+    public function findRacesAndPaginate(?string $country, ?string $circuit, int $minLaps, int $maxLaps, int $page, int $limit): Paginator
     {
 
         $query = $this->createQueryBuilder('s')
@@ -25,11 +35,11 @@ class RacesRepository extends ServiceEntityRepository
 
 
         if ($country) {
-            $query->andWhere('c.country = :country')
+            $query->join('c.country', 'cn', 'WITH', 'cn.name = :country')
                 ->setParameter('country', $country);
         }
-        if ($circuit !== -1) {
-            $query->andWhere('c.id = :circuit')
+        if ($circuit) {
+            $query->andWhere('c.circuitsId = :circuit')
                 ->setParameter('circuit', $circuit);;
         }
 
@@ -46,6 +56,7 @@ class RacesRepository extends ServiceEntityRepository
 
         $query
             ->setFirstResult(($page - 1) * $limit)
+            ->orderBy('s.raceDate', 'ASC')
             ->setMaxResults($limit)
             ->getQuery()
             ->setHint(Paginator::HINT_ENABLE_DISTINCT, false);

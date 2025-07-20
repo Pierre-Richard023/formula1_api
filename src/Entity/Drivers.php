@@ -14,8 +14,11 @@ class Drivers
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['drivers.search', 'drivers.show', "races.show"])]
     private ?int $id = null;
+
+    #[ORM\Column(length: 255)]
+    #[Groups(['drivers.search', 'drivers.show', "races.show"])]
+    private ?string $driverId = null;
 
     #[ORM\Column(length: 100)]
     #[Groups(['drivers.search', 'drivers.show'])]
@@ -33,10 +36,6 @@ class Drivers
     #[ORM\Column(length: 5)]
     #[Groups(['drivers.search', 'drivers.show'])]
     private ?string $abbreviation = null;
-
-    #[ORM\Column(length: 255)]
-    #[Groups(['drivers.search', 'drivers.show'])]
-    private ?string $country = null;
 
     #[ORM\Column]
     #[Groups(['drivers.show'])]
@@ -66,10 +65,6 @@ class Drivers
     #[Groups(['drivers.show'])]
     private ?int $pole_positions = null;
 
-    #[ORM\Column(length: 255)]
-    #[Groups(['drivers.show'])]
-    private ?string $nationality = null;
-
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     #[Groups(['drivers.show'])]
     private ?\DateTimeInterface $date_of_death = null;
@@ -79,9 +74,33 @@ class Drivers
     #[SerializedName('number')]
     private ?int $permanent_number = null;
 
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['drivers.search', 'drivers.show'])]
+    private ?Country $countryOfBirth = null;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Country $nationality = null;
+
+    #[ORM\ManyToOne]
+    private ?Country $secondNationality = null;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getDriverId(): ?string
+    {
+        return $this->driverId;
+    }
+
+    public function setDriverId(string $driverId): static
+    {
+        $this->driverId = $driverId;
+
+        return $this;
     }
 
     public function getFirstName(): ?string
@@ -128,18 +147,6 @@ class Drivers
     public function setAbbreviation(string $abbreviation): static
     {
         $this->abbreviation = $abbreviation;
-
-        return $this;
-    }
-
-    public function getCountry(): ?string
-    {
-        return $this->country;
-    }
-
-    public function setCountry(string $Country): static
-    {
-        $this->country = $Country;
 
         return $this;
     }
@@ -228,18 +235,6 @@ class Drivers
         return $this;
     }
 
-    public function getNationality(): ?string
-    {
-        return $this->nationality;
-    }
-
-    public function setNationality(string $nationality): static
-    {
-        $this->nationality = $nationality;
-
-        return $this;
-    }
-
     public function getDateOfDeath(): ?\DateTimeInterface
     {
         return $this->date_of_death;
@@ -260,6 +255,42 @@ class Drivers
     public function setPermanentNumber(?int $permanent_number): static
     {
         $this->permanent_number = $permanent_number;
+
+        return $this;
+    }
+
+    public function getCountryOfBirth(): ?Country
+    {
+        return $this->countryOfBirth;
+    }
+
+    public function setCountryOfBirth(?Country $countryOfBirth): static
+    {
+        $this->countryOfBirth = $countryOfBirth;
+
+        return $this;
+    }
+
+    public function getNationality(): ?Country
+    {
+        return $this->nationality;
+    }
+
+    public function setNationality(?Country $nationality): static
+    {
+        $this->nationality = $nationality;
+
+        return $this;
+    }
+
+    public function getSecondNationality(): ?Country
+    {
+        return $this->secondNationality;
+    }
+
+    public function setSecondNationality(?Country $secondNationality): static
+    {
+        $this->secondNationality = $secondNationality;
 
         return $this;
     }

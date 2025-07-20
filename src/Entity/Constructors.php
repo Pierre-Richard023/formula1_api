@@ -15,8 +15,11 @@ class Constructors
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['constructors.search', 'constructors.show'])]
     private ?int $id = null;
+
+    #[ORM\Column(length: 255)]
+    #[Groups(['constructors.search', 'constructors.show','drivers.career'])]
+    private ?string $constructorId = null;
 
     #[ORM\Column(length: 255)]
     #[Groups(['constructors.search', 'constructors.show'])]
@@ -42,10 +45,10 @@ class Constructors
     #[Groups(['constructors.show'])]
     private ?int $podiums = null;
 
-    #[ORM\Column(length: 255)]
-    #[Groups(['constructors.search', 'constructors.show'])]
-    private ?string $country = null;
-
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['constructors.search','constructors.show'])]
+    private ?Country $country = null;
 
     public function getId(): ?int
     {
@@ -55,6 +58,18 @@ class Constructors
     public function getName(): ?string
     {
         return $this->name;
+    }
+
+    public function getConstructorId(): ?string
+    {
+        return $this->constructorId;
+    }
+
+    public function setConstructorId(string $constructorId): static
+    {
+        $this->constructorId = $constructorId;
+
+        return $this;
     }
 
     public function setName(string $name): static
@@ -124,12 +139,12 @@ class Constructors
         return $this;
     }
 
-    public function getCountry(): ?string
+    public function getCountry(): ?Country
     {
         return $this->country;
     }
 
-    public function setCountry(string $country): static
+    public function setCountry(?Country $country): static
     {
         $this->country = $country;
 

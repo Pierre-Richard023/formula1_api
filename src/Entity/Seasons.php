@@ -14,8 +14,11 @@ class Seasons
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['seasons.index', 'seasons.show'])]
     private ?int $id = null;
+
+    #[ORM\Column(length: 255)]
+    #[Groups(['seasons.index', 'seasons.show'])]
+    private ?string $seasonsId = null;
 
     #[ORM\Column]
     #[Groups(['seasons.index', 'seasons.show'])]
@@ -47,6 +50,18 @@ class Seasons
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getSeasonsId(): ?string
+    {
+        return $this->seasonsId;
+    }
+
+    public function setSeasonsId(string $seasonsId): static
+    {
+        $this->seasonsId = $seasonsId;
+
+        return $this;
     }
 
     public function getYear(): ?int

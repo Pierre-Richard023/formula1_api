@@ -21,7 +21,7 @@ class SessionsFP2Fixtures extends Fixture implements DependentFixtureInterface
 
     public function load(ObjectManager $manager): void
     {
-        ini_set('memory_limit', '512M');
+        ini_set('memory_limit', '1024M');
 
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/standingsFP2.json';
         $data = Items::fromFile($jsonFile);

@@ -1,0 +1,606 @@
+<div id="season_information" class="mt-4 scroll-mt-12 ">
+    <div class="my-2.5 flex font-serif text-xl px-2 w-full">
+        <div class="flex items-center text-green-700 ">
+            GET
+        </div>
+        <div class="flex-1 flex items-center p-2">
+            Season Information
+        </div>
+    </div>
+    <div class="px-4">
+        <div class="">
+            <div class="mb-4">
+                <div class="my-1.5">
+                    This endpoint allows you to retrieve detailed information about a specific Formula One season.
+                    You can get data on the races, results, drivers, constructors, and other key details relevant to
+                    that season.
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/seasons/{year}
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                <div class="mb-2 px-4">
+                    <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                    <ul class="list-disc list-outside ps-5">
+                        <li class="bg-gray-200">
+                            Content-Type: application/json
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Type
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Example
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Description
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                year
+                            </th>
+                            <td class="px-6 py-4">
+                                number
+                            </td>
+                            <td class="px-6 py-4">
+                                2021
+                            </td>
+                            <td class="px-6 py-4">
+                                Specifies the season year to retrieve data from. Must be a four-digit year (e.g., 2021, 2023). Filters results to include only data from the specified Formula One season.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="w-full flex p-2 bg-gray-800 text-white">
+                    Example Request and Response
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/seasons/2021
+                    </div>
+                </div>
+                <div class="p-2 bg-gray-200 overflow-x-auto">
+                    {% set data =
+                        {
+                            "seasonsId": "f1s2021",
+                            "year": 2021,
+                            "meetings": [
+                            {
+                                "racesId": "f1s2021_r1",
+                                "name": "bahrain",
+                                "official_name": "Formula 1 Gulf Air Bahrain Grand Prix 2021",
+                                "raceDate": "28-03-2021",
+                                "circuit": {
+                                "circuitsId": "bahrain",
+                                "name": "Bahrain International Circuit",
+                                "country": {
+                                    "name": "Bahrain",
+                                    "continent": "Asia"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r2",
+                                "name": "emilia-romagna",
+                                "official_name": "Formula 1 Pirelli Gran Premio del Made in Italy e dell'Emilia Romagna 2021",
+                                "raceDate": "18-04-2021",
+                                "circuit": {
+                                "circuitsId": "imola",
+                                "name": "Autodromo Internazionale Enzo e Dino Ferrari",
+                                "country": {
+                                    "name": "Italy",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r3",
+                                "name": "portugal",
+                                "official_name": "Formula 1 Heineken Grande Prémio de Portugal 2021",
+                                "raceDate": "02-05-2021",
+                                "circuit": {
+                                "circuitsId": "portimao",
+                                "name": "Algarve International Circuit",
+                                "country": {
+                                    "name": "Portugal",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r4",
+                                "name": "spain",
+                                "official_name": "Formula 1 Aramco Gran Premio de España 2021",
+                                "raceDate": "09-05-2021",
+                                "circuit": {
+                                "circuitsId": "catalunya",
+                                "name": "Circuit de Barcelona-Catalunya",
+                                "country": {
+                                    "name": "Spain",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r5",
+                                "name": "monaco",
+                                "official_name": "Formula 1 Grand Prix de Monaco 2021",
+                                "raceDate": "23-05-2021",
+                                "circuit": {
+                                "circuitsId": "monaco",
+                                "name": "Circuit de Monaco",
+                                "country": {
+                                    "name": "Monaco",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r6",
+                                "name": "azerbaijan",
+                                "official_name": "Formula 1 Azerbaijan Grand Prix 2021",
+                                "raceDate": "06-06-2021",
+                                "circuit": {
+                                "circuitsId": "baku",
+                                "name": "Baku City Circuit",
+                                "country": {
+                                    "name": "Azerbaijan",
+                                    "continent": "Asia"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r7",
+                                "name": "france",
+                                "official_name": "Formula 1 Emirates Grand Prix de France 2021",
+                                "raceDate": "20-06-2021",
+                                "circuit": {
+                                "circuitsId": "paul-ricard",
+                                "name": "Circuit Paul Ricard",
+                                "country": {
+                                    "name": "France",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r8",
+                                "name": "styria",
+                                "official_name": "Formula 1 BWT Grosser Preis der Steiermark 2021",
+                                "raceDate": "27-06-2021",
+                                "circuit": {
+                                "circuitsId": "spielberg",
+                                "name": "Red Bull Ring",
+                                "country": {
+                                    "name": "Austria",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r9",
+                                "name": "austria",
+                                "official_name": "Formula 1 BWT Grosser Preis von Österreich 2021",
+                                "raceDate": "04-07-2021",
+                                "circuit": {
+                                "circuitsId": "spielberg",
+                                "name": "Red Bull Ring",
+                                "country": {
+                                    "name": "Austria",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r10",
+                                "name": "great-britain",
+                                "official_name": "Formula 1 Pirelli British Grand Prix 2021",
+                                "raceDate": "18-07-2021",
+                                "circuit": {
+                                "circuitsId": "silverstone",
+                                "name": "Silverstone Circuit",
+                                "country": {
+                                    "name": "United Kingdom",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r11",
+                                "name": "hungary",
+                                "official_name": "Formula 1 Rolex Magyar Nagydíj 2021",
+                                "raceDate": "01-08-2021",
+                                "circuit": {
+                                "circuitsId": "hungaroring",
+                                "name": "Hungaroring",
+                                "country": {
+                                    "name": "Hungary",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r12",
+                                "name": "belgium",
+                                "official_name": "Formula 1 Rolex Belgian Grand Prix 2021",
+                                "raceDate": "29-08-2021",
+                                "circuit": {
+                                "circuitsId": "spa-francorchamps",
+                                "name": "Circuit de Spa-Francorchamps",
+                                "country": {
+                                    "name": "Belgium",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r13",
+                                "name": "netherlands",
+                                "official_name": "Formula 1 Heineken Dutch Grand Prix 2021",
+                                "raceDate": "05-09-2021",
+                                "circuit": {
+                                "circuitsId": "zandvoort",
+                                "name": "Circuit Park Zandvoort",
+                                "country": {
+                                    "name": "Netherlands",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r14",
+                                "name": "italy",
+                                "official_name": "Formula 1 Heineken Gran Premio d'Italia 2021",
+                                "raceDate": "12-09-2021",
+                                "circuit": {
+                                "circuitsId": "monza",
+                                "name": "Autodromo Nazionale Monza",
+                                "country": {
+                                    "name": "Italy",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r15",
+                                "name": "russia",
+                                "official_name": "Formula 1 VTB Russian Grand Prix 2021",
+                                "raceDate": "26-09-2021",
+                                "circuit": {
+                                "circuitsId": "sochi",
+                                "name": "Sochi Autodrom",
+                                "country": {
+                                    "name": "Russia",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r16",
+                                "name": "turkey",
+                                "official_name": "Formula 1 Rolex Turkish Grand Prix 2021",
+                                "raceDate": "03-10-2021",
+                                "circuit": {
+                                "circuitsId": "istanbul",
+                                "name": "Istanbul Park",
+                                "country": {
+                                    "name": "Turkey",
+                                    "continent": "Europe"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r17",
+                                "name": "united-states",
+                                "official_name": "Formula 1 Aramco United States Grand Prix 2021",
+                                "raceDate": "24-10-2021",
+                                "circuit": {
+                                "circuitsId": "austin",
+                                "name": "Circuit of the Americas",
+                                "country": {
+                                    "name": "United States of America",
+                                    "continent": "North America"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r18",
+                                "name": "mexico",
+                                "official_name": "Formula 1 Gran Premio de la Ciudad de México 2021",
+                                "raceDate": "07-11-2021",
+                                "circuit": {
+                                "circuitsId": "mexico-city",
+                                "name": "Autódromo Hermanos Rodríguez",
+                                "country": {
+                                    "name": "Mexico",
+                                    "continent": "North America"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r19",
+                                "name": "sao-paulo",
+                                "official_name": "Formula 1 Heineken Grande Prêmio de São Paulo 2021",
+                                "raceDate": "14-11-2021",
+                                "circuit": {
+                                "circuitsId": "interlagos",
+                                "name": "Autódromo José Carlos Pace",
+                                "country": {
+                                    "name": "Brazil",
+                                    "continent": "South America"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r20",
+                                "name": "qatar",
+                                "official_name": "Formula 1 Ooredoo Qatar Grand Prix 2021",
+                                "raceDate": "21-11-2021",
+                                "circuit": {
+                                "circuitsId": "lusail",
+                                "name": "Lusail International Circuit",
+                                "country": {
+                                    "name": "Qatar",
+                                    "continent": "Asia"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r21",
+                                "name": "saudi-arabia",
+                                "official_name": "Formula 1 stc Saudi Arabian Grand Prix 2021",
+                                "raceDate": "05-12-2021",
+                                "circuit": {
+                                "circuitsId": "jeddah",
+                                "name": "Jeddah Corniche Circuit",
+                                "country": {
+                                    "name": "Saudi Arabia",
+                                    "continent": "Asia"
+                                }
+                            }
+                            },
+                            {
+                                "racesId": "f1s2021_r22",
+                                "name": "abu-dhabi",
+                                "official_name": "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2021",
+                                "raceDate": "12-12-2021",
+                                "circuit": {
+                                "circuitsId": "yas-marina",
+                                "name": "Yas Marina Circuit",
+                                "country": {
+                                    "name": "United Arab Emirates",
+                                    "continent": "Asia"
+                                }
+                            }
+                            }
+                        ],
+                            "driverStandings": {
+                            "entries": [
+                                {
+                                    "driverId": "max-verstappen",
+                                    "name": "Max Verstappen",
+                                    "position": 1,
+                                    "points": 395.5
+                                },
+                                {
+                                    "driverId": "lewis-hamilton",
+                                    "name": "Lewis Hamilton",
+                                    "position": 2,
+                                    "points": 387.5
+                                },
+                                {
+                                    "driverId": "valtteri-bottas",
+                                    "name": "Valtteri Bottas",
+                                    "position": 3,
+                                    "points": 226.0
+                                },
+                                {
+                                    "driverId": "sergio-perez",
+                                    "name": "Sergio Pérez",
+                                    "position": 4,
+                                    "points": 190.0
+                                },
+                                {
+                                    "driverId": "carlos-sainz-jr",
+                                    "name": "Carlos Sainz Jr.",
+                                    "position": 5,
+                                    "points": 164.5
+                                },
+                                {
+                                    "driverId": "lando-norris",
+                                    "name": "Lando Norris",
+                                    "position": 6,
+                                    "points": 160.0
+                                },
+                                {
+                                    "driverId": "charles-leclerc",
+                                    "name": "Charles Leclerc",
+                                    "position": 7,
+                                    "points": 159.0
+                                },
+                                {
+                                    "driverId": "daniel-ricciardo",
+                                    "name": "Daniel Ricciardo",
+                                    "position": 8,
+                                    "points": 115.0
+                                },
+                                {
+                                    "driverId": "pierre-gasly",
+                                    "name": "Pierre Gasly",
+                                    "position": 9,
+                                    "points": 110.0
+                                },
+                                {
+                                    "driverId": "fernando-alonso",
+                                    "name": "Fernando Alonso",
+                                    "position": 10,
+                                    "points": 81.0
+                                },
+                                {
+                                    "driverId": "esteban-ocon",
+                                    "name": "Esteban Ocon",
+                                    "position": 11,
+                                    "points": 74.0
+                                },
+                                {
+                                    "driverId": "sebastian-vettel",
+                                    "name": "Sebastian Vettel",
+                                    "position": 12,
+                                    "points": 43.0
+                                },
+                                {
+                                    "driverId": "lance-stroll",
+                                    "name": "Lance Stroll",
+                                    "position": 13,
+                                    "points": 34.0
+                                },
+                                {
+                                    "driverId": "yuki-tsunoda",
+                                    "name": "Yuki Tsunoda",
+                                    "position": 14,
+                                    "points": 32.0
+                                },
+                                {
+                                    "driverId": "george-russell",
+                                    "name": "George Russell",
+                                    "position": 15,
+                                    "points": 16.0
+                                },
+                                {
+                                    "driverId": "kimi-raikkonen",
+                                    "name": "Kimi Räikkönen",
+                                    "position": 16,
+                                    "points": 10.0
+                                },
+                                {
+                                    "driverId": "nicholas-latifi",
+                                    "name": "Nicholas Latifi",
+                                    "position": 17,
+                                    "points": 7.0
+                                },
+                                {
+                                    "driverId": "antonio-giovinazzi",
+                                    "name": "Antonio Giovinazzi",
+                                    "position": 18,
+                                    "points": 3.0
+                                },
+                                {
+                                    "driverId": "mick-schumacher",
+                                    "name": "Mick Schumacher",
+                                    "position": 19,
+                                    "points": 0.0
+                                },
+                                {
+                                    "driverId": "robert-kubica",
+                                    "name": "Robert Kubica",
+                                    "position": 20,
+                                    "points": 0.0
+                                },
+                                {
+                                    "driverId": "nikita-mazepin",
+                                    "name": "Nikita Mazepin",
+                                    "position": 21,
+                                    "points": 0.0
+                                }
+                            ]
+                        },
+                            "constructorStandings": {
+                            "entries": [
+                                {
+                                    "constructorId": "mercedes",
+                                    "name": "Mercedes AMG F1",
+                                    "position": 1,
+                                    "points": 613.5
+                                },
+                                {
+                                    "constructorId": "red-bull",
+                                    "name": "Red Bull Racing",
+                                    "position": 2,
+                                    "points": 585.5
+                                },
+                                {
+                                    "constructorId": "ferrari",
+                                    "name": "Scuderia Ferrari",
+                                    "position": 3,
+                                    "points": 323.5
+                                },
+                                {
+                                    "constructorId": "mclaren",
+                                    "name": "McLaren Racing",
+                                    "position": 4,
+                                    "points": 275.0
+                                },
+                                {
+                                    "constructorId": "alpine",
+                                    "name": "Alpine F1 Team",
+                                    "position": 5,
+                                    "points": 155.0
+                                },
+                                {
+                                    "constructorId": "alphatauri",
+                                    "name": "Scuderia AlphaTauri",
+                                    "position": 6,
+                                    "points": 142.0
+                                },
+                                {
+                                    "constructorId": "aston-martin",
+                                    "name": "Aston Martin",
+                                    "position": 7,
+                                    "points": 77.0
+                                },
+                                {
+                                    "constructorId": "williams",
+                                    "name": "Williams Grand Prix Engineering",
+                                    "position": 8,
+                                    "points": 23.0
+                                },
+                                {
+                                    "constructorId": "alfa-romeo",
+                                    "name": "Alfa Romeo Racing",
+                                    "position": 9,
+                                    "points": 13.0
+                                },
+                                {
+                                    "constructorId": "haas",
+                                    "name": "Haas F1 Team",
+                                    "position": 10,
+                                    "points": 0.0
+                                }
+                            ]
+                        }
+                        } %}
+                    <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

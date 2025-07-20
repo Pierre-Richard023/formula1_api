@@ -30,7 +30,7 @@ class RacesController extends AbstractController
         $page = $request->query->getInt('page', 1);
         $limit = $request->query->getInt('limit', 8);
         $country = $request->query->get('country');
-        $circuit = $request->query->getInt('circuit', -1);
+        $circuit = $request->query->get('circuit');
         $minLaps = $request->query->getInt('min_laps', -1);
         $maxLaps = $request->query->getInt('max_laps', -1);
 
@@ -53,9 +53,10 @@ class RacesController extends AbstractController
     }
 
 
-    #[Route('/{id}', requirements: ['id' => Requirement::DIGITS], methods: ['GET'])]
-    public function show(Races $race, SerializerInterface $serializer): JsonResponse
+    #[Route('/{id}', requirements: ['id' => '[a-z0-9\-_]+'], methods: ['GET'])]
+    public function show(string $id, RacesRepository $racesRepository, SerializerInterface $serializer): JsonResponse
     {
+        $race = $racesRepository->getRacesInformations($id);
 
         $cacheKey = 'race_' . $race->getId();
         $cacheTag = 'race_' . $race->getId();

@@ -5,8 +5,8 @@
         "fullName": "Adelaide Street Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "ADELAIDE",
-        "country": "AUSTRALIA"
+        "placeName": "Adelaide",
+        "countryId": "australia"
     },
     {
         "id": "aida",
@@ -16,8 +16,8 @@
             "TI Circuit Aida"
         ],
         "type": "RACE",
-        "placeName": "AIDA",
-        "country": "JAPAN"
+        "placeName": "Aida",
+        "countryId": "japan"
     },
     {
         "id": "ain-diab",
@@ -25,8 +25,8 @@
         "fullName": "Ain-Diab Circuit",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "CASABLANCA",
-        "country": "MOROCCO"
+        "placeName": "Casablanca",
+        "countryId": "morocco"
     },
     {
         "id": "aintree",
@@ -34,8 +34,8 @@
         "fullName": "Aintree Motor Racing Circuit",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "AINTREE",
-        "country": "UNITED-KINGDOM"
+        "placeName": "Aintree",
+        "countryId": "united-kingdom"
     },
     {
         "id": "anderstorp",
@@ -45,8 +45,8 @@
             "Scandinavian Raceway"
         ],
         "type": "RACE",
-        "placeName": "ANDERSTORP",
-        "country": "SWEDEN"
+        "placeName": "Anderstorp",
+        "countryId": "sweden"
     },
     {
         "id": "austin",
@@ -54,8 +54,8 @@
         "fullName": "Circuit of the Americas",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "AUSTIN",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Austin",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "avus",
@@ -63,8 +63,8 @@
         "fullName": "AVUS",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "BERLIN",
-        "country": "GERMANY"
+        "placeName": "Berlin",
+        "countryId": "germany"
     },
     {
         "id": "bahrain",
@@ -72,8 +72,8 @@
         "fullName": "Bahrain International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SAKHIR",
-        "country": "BAHRAIN"
+        "placeName": "Sakhir",
+        "countryId": "bahrain"
     },
     {
         "id": "baku",
@@ -81,8 +81,8 @@
         "fullName": "Baku City Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "BAKU",
-        "country": "AZERBAIJAN"
+        "placeName": "Baku",
+        "countryId": "azerbaijan"
     },
     {
         "id": "brands-hatch",
@@ -90,8 +90,8 @@
         "fullName": "Brands Hatch",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "FAWKHAM",
-        "country": "UNITED-KINGDOM"
+        "placeName": "Fawkham",
+        "countryId": "united-kingdom"
     },
     {
         "id": "bremgarten",
@@ -99,8 +99,8 @@
         "fullName": "Circuit Bremgarten",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "BERN",
-        "country": "SWITZERLAND"
+        "placeName": "Bern",
+        "countryId": "switzerland"
     },
     {
         "id": "buddh",
@@ -108,8 +108,8 @@
         "fullName": "Buddh International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "GREATER NOIDA",
-        "country": "INDIA"
+        "placeName": "Greater Noida",
+        "countryId": "india"
     },
     {
         "id": "buenos-aires",
@@ -122,8 +122,8 @@
             "Autódromo Oscar Alfredo Gálvez"
         ],
         "type": "RACE",
-        "placeName": "BUENOS AIRES",
-        "country": "ARGENTINA"
+        "placeName": "Buenos Aires",
+        "countryId": "argentina"
     },
     {
         "id": "bugatti",
@@ -131,8 +131,8 @@
         "fullName": "Bugatti Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "LE MANS",
-        "country": "FRANCE"
+        "placeName": "Le Mans",
+        "countryId": "france"
     },
     {
         "id": "caesars-palace",
@@ -140,8 +140,8 @@
         "fullName": "Caesars Palace",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "LAS VEGAS",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Las Vegas",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "catalunya",
@@ -149,8 +149,8 @@
         "fullName": "Circuit de Barcelona-Catalunya",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "MONTMELÓ",
-        "country": "SPAIN"
+        "placeName": "Montmeló",
+        "countryId": "spain"
     },
     {
         "id": "clermont-ferrand",
@@ -158,8 +158,8 @@
         "fullName": "Charade Circuit",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "CLERMONT-FERRAND",
-        "country": "FRANCE"
+        "placeName": "Clermont-Ferrand",
+        "countryId": "france"
     },
     {
         "id": "dallas",
@@ -167,8 +167,8 @@
         "fullName": "Fair Park",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "DALLAS",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Dallas",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "detroit",
@@ -176,8 +176,8 @@
         "fullName": "Detroit Street Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "DETROIT",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Detroit",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "dijon",
@@ -185,8 +185,8 @@
         "fullName": "Dijon-Prenois",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "DIJON",
-        "country": "FRANCE"
+        "placeName": "Dijon",
+        "countryId": "france"
     },
     {
         "id": "donington",
@@ -194,8 +194,8 @@
         "fullName": "Donington Park",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "LEICESTERSHIRE",
-        "country": "UNITED-KINGDOM"
+        "placeName": "Leicestershire",
+        "countryId": "united-kingdom"
     },
     {
         "id": "east-london",
@@ -203,8 +203,8 @@
         "fullName": "Prince George Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "EAST LONDON",
-        "country": "SOUTH-AFRICA"
+        "placeName": "East London",
+        "countryId": "south-africa"
     },
     {
         "id": "estoril",
@@ -212,8 +212,8 @@
         "fullName": "Autódromo do Estoril",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "ESTORIL",
-        "country": "PORTUGAL"
+        "placeName": "Estoril",
+        "countryId": "portugal"
     },
     {
         "id": "fuji",
@@ -221,8 +221,8 @@
         "fullName": "Fuji Speedway",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "OYAMA",
-        "country": "JAPAN"
+        "placeName": "Oyama",
+        "countryId": "japan"
     },
     {
         "id": "hockenheimring",
@@ -230,8 +230,8 @@
         "fullName": "Hockenheimring",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "HOCKENHEIM",
-        "country": "GERMANY"
+        "placeName": "Hockenheim",
+        "countryId": "germany"
     },
     {
         "id": "hungaroring",
@@ -239,8 +239,8 @@
         "fullName": "Hungaroring",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "BUDAPEST",
-        "country": "HUNGARY"
+        "placeName": "Budapest",
+        "countryId": "hungary"
     },
     {
         "id": "imola",
@@ -250,8 +250,8 @@
             "Autodromo Dino Ferrari"
         ],
         "type": "RACE",
-        "placeName": "IMOLA",
-        "country": "ITALY"
+        "placeName": "Imola",
+        "countryId": "italy"
     },
     {
         "id": "indianapolis",
@@ -259,8 +259,8 @@
         "fullName": "Indianapolis Motor Speedway",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "INDIANAPOLIS",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Indianapolis",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "interlagos",
@@ -270,8 +270,8 @@
             "Interlagos"
         ],
         "type": "RACE",
-        "placeName": "SÃO PAULO",
-        "country": "BRAZIL"
+        "placeName": "São Paulo",
+        "countryId": "brazil"
     },
     {
         "id": "istanbul",
@@ -281,8 +281,8 @@
             "Istanbul Otodrom"
         ],
         "type": "RACE",
-        "placeName": "ISTANBUL",
-        "country": "TURKEY"
+        "placeName": "Istanbul",
+        "countryId": "turkey"
     },
     {
         "id": "jacarepagua",
@@ -292,8 +292,8 @@
             "Jacarepaguá"
         ],
         "type": "RACE",
-        "placeName": "RIO DE JANEIRO",
-        "country": "BRAZIL"
+        "placeName": "Rio de Janeiro",
+        "countryId": "brazil"
     },
     {
         "id": "jarama",
@@ -303,8 +303,8 @@
             "Circuito Permanente del Jarama"
         ],
         "type": "RACE",
-        "placeName": "MADRID",
-        "country": "SPAIN"
+        "placeName": "Madrid",
+        "countryId": "spain"
     },
     {
         "id": "jeddah",
@@ -312,8 +312,8 @@
         "fullName": "Jeddah Corniche Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "JEDDAH",
-        "country": "SAUDI-ARABIA"
+        "placeName": "Jeddah",
+        "countryId": "saudi-arabia"
     },
     {
         "id": "jerez",
@@ -323,8 +323,8 @@
             "Circuito Permanente de Jerez"
         ],
         "type": "RACE",
-        "placeName": "JEREZ DE LA FRONTERA",
-        "country": "SPAIN"
+        "placeName": "Jerez de la Frontera",
+        "countryId": "spain"
     },
     {
         "id": "kyalami",
@@ -332,8 +332,8 @@
         "fullName": "Kyalami Racing Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "MIDRAND",
-        "country": "SOUTH-AFRICA"
+        "placeName": "Midrand",
+        "countryId": "south-africa"
     },
     {
         "id": "las-vegas",
@@ -341,8 +341,8 @@
         "fullName": "Las Vegas Street Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "LAS VEGAS",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Las Vegas",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "long-beach",
@@ -350,8 +350,8 @@
         "fullName": "Long Beach",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "LONG BEACH",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Long Beach",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "lusail",
@@ -359,8 +359,8 @@
         "fullName": "Lusail International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "LUSAIL",
-        "country": "QATAR"
+        "placeName": "Lusail",
+        "countryId": "qatar"
     },
     {
         "id": "magny-cours",
@@ -368,8 +368,8 @@
         "fullName": "Circuit de Nevers Magny-Cours",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "NEVERS",
-        "country": "FRANCE"
+        "placeName": "Nevers",
+        "countryId": "france"
     },
     {
         "id": "marina-bay",
@@ -377,8 +377,8 @@
         "fullName": "Marina Bay Street Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "SINGAPORE",
-        "country": "SINGAPORE"
+        "placeName": "Singapore",
+        "countryId": "singapore"
     },
     {
         "id": "melbourne",
@@ -388,8 +388,8 @@
             "Albert Park Circuit"
         ],
         "type": "STREET",
-        "placeName": "MELBOURNE",
-        "country": "AUSTRALIA"
+        "placeName": "Melbourne",
+        "countryId": "australia"
     },
     {
         "id": "mexico-city",
@@ -399,8 +399,8 @@
             "Autódromo Ricardo Rodríguez"
         ],
         "type": "RACE",
-        "placeName": "MEXICO CITY",
-        "country": "MEXICO"
+        "placeName": "Mexico City",
+        "countryId": "mexico"
     },
     {
         "id": "miami",
@@ -408,8 +408,8 @@
         "fullName": "Miami International Autodrome",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "MIAMI GARDENS",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Miami Gardens",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "monaco",
@@ -417,8 +417,8 @@
         "fullName": "Circuit de Monaco",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "MONTE CARLO",
-        "country": "MONACO"
+        "placeName": "Monte Carlo",
+        "countryId": "monaco"
     },
     {
         "id": "monsanto",
@@ -426,8 +426,8 @@
         "fullName": "Circuito de Monsanto",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "LISBON",
-        "country": "PORTUGAL"
+        "placeName": "Lisbon",
+        "countryId": "portugal"
     },
     {
         "id": "mont-tremblant",
@@ -435,8 +435,8 @@
         "fullName": "Circuit Mont-Tremblant",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "MONT-TREMBLANT",
-        "country": "CANADA"
+        "placeName": "Mont-Tremblant",
+        "countryId": "canada"
     },
     {
         "id": "montjuic",
@@ -444,8 +444,8 @@
         "fullName": "Circuito de Montjuïc",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "BARCELONA",
-        "country": "SPAIN"
+        "placeName": "Barcelona",
+        "countryId": "spain"
     },
     {
         "id": "montreal",
@@ -455,8 +455,8 @@
             "Île Notre-Dame Circuit"
         ],
         "type": "STREET",
-        "placeName": "MONTREAL",
-        "country": "CANADA"
+        "placeName": "Montreal",
+        "countryId": "canada"
     },
     {
         "id": "monza",
@@ -464,8 +464,8 @@
         "fullName": "Autodromo Nazionale Monza",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "MONZA",
-        "country": "ITALY"
+        "placeName": "Monza",
+        "countryId": "italy"
     },
     {
         "id": "mosport",
@@ -476,8 +476,8 @@
             "Mosport International Raceway"
         ],
         "type": "RACE",
-        "placeName": "BOWMANVILLE",
-        "country": "CANADA"
+        "placeName": "Bowmanville",
+        "countryId": "canada"
     },
     {
         "id": "mugello",
@@ -485,8 +485,8 @@
         "fullName": "Autodromo Internazionale del Mugello",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SCARPERIA E SAN PIERO",
-        "country": "ITALY"
+        "placeName": "Scarperia e San Piero",
+        "countryId": "italy"
     },
     {
         "id": "nivelles",
@@ -494,8 +494,8 @@
         "fullName": "Nivelles-Baulers",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "NIVELLES",
-        "country": "BELGIUM"
+        "placeName": "Nivelles",
+        "countryId": "belgium"
     },
     {
         "id": "nurburgring",
@@ -503,8 +503,8 @@
         "fullName": "Nürburgring",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "NÜRBURG",
-        "country": "GERMANY"
+        "placeName": "Nürburg",
+        "countryId": "germany"
     },
     {
         "id": "paul-ricard",
@@ -512,8 +512,8 @@
         "fullName": "Circuit Paul Ricard",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "LE CASTELLET",
-        "country": "FRANCE"
+        "placeName": "Le Castellet",
+        "countryId": "france"
     },
     {
         "id": "pedralbes",
@@ -521,8 +521,8 @@
         "fullName": "Pedralbes Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "BARCELONA",
-        "country": "SPAIN"
+        "placeName": "Barcelona",
+        "countryId": "spain"
     },
     {
         "id": "pescara",
@@ -530,8 +530,8 @@
         "fullName": "Pescara Circuit",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "PESCARA",
-        "country": "ITALY"
+        "placeName": "Pescara",
+        "countryId": "italy"
     },
     {
         "id": "phoenix",
@@ -539,8 +539,8 @@
         "fullName": "Phoenix Street Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "PHOENIX",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Phoenix",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "portimao",
@@ -548,8 +548,8 @@
         "fullName": "Algarve International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "PORTIMÃO",
-        "country": "PORTUGAL"
+        "placeName": "Portimão",
+        "countryId": "portugal"
     },
     {
         "id": "porto",
@@ -557,8 +557,8 @@
         "fullName": "Circuito da Boavista",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "PORTO",
-        "country": "PORTUGAL"
+        "placeName": "Porto",
+        "countryId": "portugal"
     },
     {
         "id": "reims",
@@ -566,8 +566,8 @@
         "fullName": "Reims-Gueux",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "REIMS",
-        "country": "FRANCE"
+        "placeName": "Reims",
+        "countryId": "france"
     },
     {
         "id": "riverside",
@@ -575,8 +575,8 @@
         "fullName": "Riverside International Raceway",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "RIVERSIDE",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Riverside",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "rouen",
@@ -584,8 +584,8 @@
         "fullName": "Rouen-Les-Essarts",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "ROUEN",
-        "country": "FRANCE"
+        "placeName": "Rouen",
+        "countryId": "france"
     },
     {
         "id": "sebring",
@@ -593,8 +593,8 @@
         "fullName": "Sebring International Raceway",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "SEBRING",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Sebring",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "sepang",
@@ -602,8 +602,8 @@
         "fullName": "Sepang International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SEPANG",
-        "country": "MALAYSIA"
+        "placeName": "Sepang",
+        "countryId": "malaysia"
     },
     {
         "id": "shanghai",
@@ -611,8 +611,8 @@
         "fullName": "Shanghai International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SHANGHAI",
-        "country": "CHINA"
+        "placeName": "Shanghai",
+        "countryId": "china"
     },
     {
         "id": "silverstone",
@@ -620,8 +620,8 @@
         "fullName": "Silverstone Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SILVERSTONE",
-        "country": "UNITED-KINGDOM"
+        "placeName": "Silverstone",
+        "countryId": "united-kingdom"
     },
     {
         "id": "sochi",
@@ -632,8 +632,8 @@
             "Sochi Olympic Park Circuit"
         ],
         "type": "ROAD",
-        "placeName": "SOCHI",
-        "country": "RUSSIA"
+        "placeName": "Sochi",
+        "countryId": "russia"
     },
     {
         "id": "spa-francorchamps",
@@ -641,8 +641,8 @@
         "fullName": "Circuit de Spa-Francorchamps",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SPA",
-        "country": "BELGIUM"
+        "placeName": "Spa",
+        "countryId": "belgium"
     },
     {
         "id": "spielberg",
@@ -653,8 +653,8 @@
             "A1-Ring"
         ],
         "type": "RACE",
-        "placeName": "SPIELBERG",
-        "country": "AUSTRIA"
+        "placeName": "Spielberg",
+        "countryId": "austria"
     },
     {
         "id": "suzuka",
@@ -662,8 +662,8 @@
         "fullName": "Suzuka Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "SUZUKA",
-        "country": "JAPAN"
+        "placeName": "Suzuka",
+        "countryId": "japan"
     },
     {
         "id": "valencia",
@@ -671,8 +671,8 @@
         "fullName": "Valencia Street Circuit",
         "previousNames": null,
         "type": "STREET",
-        "placeName": "VALENCIA",
-        "country": "SPAIN"
+        "placeName": "Valencia",
+        "countryId": "spain"
     },
     {
         "id": "watkins-glen",
@@ -680,8 +680,8 @@
         "fullName": "Watkins Glen International",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "WATKINS GLEN",
-        "country": "UNITED-STATES-OF-AMERICA"
+        "placeName": "Watkins Glen",
+        "countryId": "united-states-of-america"
     },
     {
         "id": "yas-marina",
@@ -689,8 +689,8 @@
         "fullName": "Yas Marina Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "ABU DHABI",
-        "country": "UNITED-ARAB-EMIRATES"
+        "placeName": "Abu Dhabi",
+        "countryId": "united-arab-emirates"
     },
     {
         "id": "yeongam",
@@ -698,8 +698,8 @@
         "fullName": "Korea International Circuit",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "YEONGAM",
-        "country": "SOUTH-KOREA"
+        "placeName": "Yeongam",
+        "countryId": "south-korea"
     },
     {
         "id": "zandvoort",
@@ -707,8 +707,8 @@
         "fullName": "Circuit Park Zandvoort",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "ZANDVOORT",
-        "country": "NETHERLANDS"
+        "placeName": "Zandvoort",
+        "countryId": "netherlands"
     },
     {
         "id": "zeltweg",
@@ -716,8 +716,8 @@
         "fullName": "Zeltweg",
         "previousNames": null,
         "type": "ROAD",
-        "placeName": "ZELTWEG",
-        "country": "AUSTRIA"
+        "placeName": "Zeltweg",
+        "countryId": "austria"
     },
     {
         "id": "zolder",
@@ -725,7 +725,7 @@
         "fullName": "Circuit Zolder",
         "previousNames": null,
         "type": "RACE",
-        "placeName": "HEUSDEN-ZOLDER",
-        "country": "BELGIUM"
+        "placeName": "Heusden-Zolder",
+        "countryId": "belgium"
     }
 ]

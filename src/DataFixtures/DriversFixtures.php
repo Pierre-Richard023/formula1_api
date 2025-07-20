@@ -2,12 +2,14 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Country;
 use App\Entity\Drivers;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
-class DriversFixtures extends Fixture
+class DriversFixtures extends Fixture implements DependentFixtureInterface
 {
     public function __construct(private ParameterBagInterface $parameterBag)
     {
@@ -23,14 +25,16 @@ class DriversFixtures extends Fixture
         if (isset($data)) {
             foreach ($data as $d) {
                 $driver = new Drivers();
-                $driver->setFirstName($d['firstName'])
+
+                $driver->setDriverId($d['id'])
+                    ->setFirstName($d['firstName'])
                     ->setLastName($d['lastName'])
                     ->setFullName($d['name'])
                     ->setAbbreviation($d['abbreviation'])
                     ->setDateOfBirth(date_create_from_format('Y-n-d', $d['dateOfBirth']))
                     ->setPlaceOfBirth($d['placeOfBirth'])
-                    ->setCountry($d['countryOfBirthCountryId'])
-                    ->setNationality($d['nationalityCountryId'])
+                    ->setNationality($this->getReference('country__' . $d["nationalityCountryId"], Country::class))
+                    ->setCountryOfBirth($this->getReference('country__' . $d["countryOfBirthCountryId"], Country::class))
                     ->setPermanentNumber($d['permanentNumber'])
                     ->setGrandsPrixEntered($d['totalRaceEntries'])
                     ->setPolePositions($d['totalPolePositions'])
@@ -41,6 +45,9 @@ class DriversFixtures extends Fixture
                 if ($d['dateOfDeath'] !== null)
                     $driver->setDateOfDeath(date_create_from_format('Y-n-d', $d['dateOfDeath']));
 
+                if ($d['secondNationalityCountryId'] !== null)
+                    $driver->setSecondNationality($this->getReference('country__' . $d["secondNationalityCountryId"], Country::class));
+
                 $this->addReference('driver__' . $d['id'], $driver);
                 $manager->persist($driver);
             }
@@ -49,5 +56,12 @@ class DriversFixtures extends Fixture
         $manager->flush();
         $manager->clear();
         unset($data);
+    }
+
+    public function getDependencies(): array
+    {
+        return [
+            CountryFixtures::class,
+        ];
     }
 }

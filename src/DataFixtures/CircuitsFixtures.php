@@ -3,11 +3,13 @@
 namespace App\DataFixtures;
 
 use App\Entity\Circuits;
+use App\Entity\Country;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
-class CircuitsFixtures extends Fixture
+class CircuitsFixtures extends Fixture implements DependentFixtureInterface
 {
     public function __construct(private ParameterBagInterface $parameterBag)
     {
@@ -24,10 +26,11 @@ class CircuitsFixtures extends Fixture
             foreach ($data as $c) {
                 $circuit=new Circuits();
                 $circuit->setName($c['fullName'])
+                    ->setCircuitsId($c['id'])
                     ->setShortName($c['name'])
                     ->setType($c['type'])
                     ->setLocation($c['placeName'])
-                    ->setCountry($c['country'])
+                    ->setCountry($this->getReference('country__'. $c["countryId"],Country::class))
                 ;
                 $this->addReference('circuit__'.$c['id'], $circuit);
                 $manager->persist($circuit);
@@ -37,5 +40,12 @@ class CircuitsFixtures extends Fixture
         $manager->flush();
         $manager->clear();
         unset($data);
+    }
+
+    public function getDependencies(): array
+    {
+        return [
+            CountryFixtures::class,
+        ];
     }
 }

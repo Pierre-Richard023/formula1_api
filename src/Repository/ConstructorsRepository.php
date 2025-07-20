@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Constructors;
+use App\Entity\Drivers;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
@@ -17,6 +18,16 @@ class ConstructorsRepository extends ServiceEntityRepository
         parent::__construct($registry, Constructors::class);
     }
 
+
+    public function getConstructorInfomrations(string $id): ?Constructors
+    {
+        return $this->createQueryBuilder('d')
+            ->andWhere('d.constructorId = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
     public function searchAndPaginatConstructor(?string $country, int $page, int $limit): Paginator
     {
 
@@ -24,7 +35,9 @@ class ConstructorsRepository extends ServiceEntityRepository
         $query = $this->createQueryBuilder('s');
 
         if ($country !== null) {
-            $query->andWhere('s.country = :country')->setParameter('country', $country);
+            $query
+                ->join('s.country', 'c', 'WITH', 'c.name = :country')
+                ->setParameter('country', $country);
         }
 
         $query

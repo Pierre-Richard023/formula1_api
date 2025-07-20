@@ -15,8 +15,11 @@ class Races
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['seasons.show','races.show','races.search'])]
     private ?int $id = null;
+
+    #[ORM\Column(length: 255)]
+    #[Groups(['seasons.show','races.show','races.search'])]
+    private ?string $racesId = null;
 
     #[ORM\Column(length: 255)]
     #[Groups(['seasons.show','races.show'])]
@@ -66,6 +69,18 @@ class Races
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getRacesId(): ?string
+    {
+        return $this->racesId;
+    }
+
+    public function setRacesId(string $racesId): static
+    {
+        $this->racesId = $racesId;
+
+        return $this;
     }
 
     public function getName(): ?string

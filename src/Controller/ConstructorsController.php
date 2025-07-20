@@ -46,10 +46,11 @@ class ConstructorsController extends AbstractController
 
     }
 
-    #[Route('/{id}', methods: ['GET'])]
-    public function show(Constructors $constructors, SerializerInterface $serializer): JsonResponse
+    #[Route('/{id}', requirements: ['id' => '[a-z0-9\-]+'], methods: ['GET'])]
+    public function show(string $id,ConstructorsRepository $constructorsRepository, SerializerInterface $serializer): JsonResponse
     {
 
+        $constructors=$constructorsRepository->getConstructorInfomrations($id);
         $cacheKey = 'constructor_' . $constructors->getId();
         $cacheTag = 'constructor_' . $constructors->getId();
 

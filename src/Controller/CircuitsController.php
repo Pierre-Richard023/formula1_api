@@ -47,9 +47,12 @@ class CircuitsController extends AbstractController
         return new JsonResponse($circuits, Response::HTTP_OK, [], true);
     }
 
-    #[Route('/{id}', requirements: ['id' => Requirement::DIGITS], methods: ['GET'])]
-    public function show(Circuits $circuit, SerializerInterface $serializer): JsonResponse
+    #[Route('/{id}',  requirements: ['id' => '[a-z0-9\-]+'], methods: ['GET'])]
+    public function show(string $id,CircuitsRepository $circuitsRepository, SerializerInterface $serializer): JsonResponse
     {
+
+        $circuit = $circuitsRepository->getCircuitsInformations($id);
+
         $cacheKey = 'circuit_' . $circuit->getId();
         $cacheTag = 'circuit_' . $circuit->getId();
         $data = $this->myCachePool->get($cacheKey, function (ItemInterface $item) use ($cacheTag, $circuit, $serializer) {

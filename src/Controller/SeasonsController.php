@@ -45,9 +45,11 @@ class SeasonsController extends AbstractController
         return new JsonResponse($seasons, Response::HTTP_OK, [], true);
     }
 
-    #[Route('/{id}', requirements: ['id' => Requirement::DIGITS], methods: ['GET'])]
-    public function show(Seasons $season, SerializerInterface $serializer): JsonResponse
+    #[Route('/{year}', requirements: ['year' => Requirement::DIGITS], methods: ['GET'])]
+    public function show(int $year, SeasonsRepository $seasonsRepository, SerializerInterface $serializer): JsonResponse
     {
+        $season = $seasonsRepository->getSeasonsInformations($year);
+
         $cacheKey = 'season_' . $season->getId();
         $cacheTag = 'season_' . $season->getId();
 

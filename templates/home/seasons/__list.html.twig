@@ -1,0 +1,139 @@
+<div id="all_seasons" class="mt-4 scroll-mt-12 ">
+    <div class="mb-2.5 flex font-serif text-xl px-2 w-full">
+        <div class="flex items-center text-green-700 ">
+            GET
+        </div>
+        <div class="flex-1 flex items-center p-2">
+            List of all seasons
+        </div>
+    </div>
+    <div class="px-4">
+        <div class="">
+            <div class="mb-4">
+                <div class="my-1.5">
+                    This endpoint allows you to retrieve a list of all Formula One seasons, including both
+                    historical and current seasons.
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/seasons
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                <div class="mb-2 px-4">
+                    <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                    <ul class="list-disc list-outside ps-5">
+                        <li class="bg-gray-200">
+                            Content-Type: application/json
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Type
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Example
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Description
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                page
+                            </th>
+                            <td class="px-6 py-4">
+                                number
+                            </td>
+                            <td class="px-6 py-4">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                Specifies the page number of the results to retrieve when the data is paginated. Use
+                                this parameter to navigate through large datasets.(default is 1)
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                limit
+                            </th>
+                            <td class="px-6 py-4">
+                                number
+                            </td>
+                            <td class="px-6 py-4">
+                                8
+                            </td>
+                            <td class="px-6 py-4">
+                                Defines the maximum number of results to return per page when retrieving paginated
+                                data. (default limit is 8)
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="w-full flex p-2 bg-gray-800 text-white">
+                    Example Request and Response
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/seasons?limit=4
+                    </div>
+                </div>
+                <div class="p-2 bg-gray-200 overflow-x-auto">
+
+                    {% set data =
+                        {
+                            "results": [
+                            {
+                                "seasonsId": "f1s1950",
+                                "year": 1950
+                            },
+                            {
+                                "seasonsId": "f1s1951",
+                                "year": 1951
+                            },
+                            {
+                                "seasonsId": "f1s1952",
+                                "year": 1952
+                            },
+                            {
+                                "seasonsId": "f1s1953",
+                                "year": 1953
+                            }
+                        ],
+                            "totalItems": 76,
+                            "currentPage": 1,
+                            "itemsPerPage": 4,
+                            "totalPages": 19
+                        } %}
+                    <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

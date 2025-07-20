@@ -1,0 +1,174 @@
+<div id="driver_career" class="mt-4 scroll-mt-12 ">
+    <div class="mb-2.5 flex font-serif text-xl px-2 w-full">
+        <div class="flex items-center text-green-700 ">
+            GET
+        </div>
+        <div class="flex-1 flex items-center p-2">
+            Driver Career
+        </div>
+    </div>
+    <div class="px-4">
+        <div class="">
+            <div class="mb-4">
+                <div class="my-1.5">
+                    This endpoint retrieves the complete career history of a specific Formula One driver by using their
+                    unique identifier. The returned data includes the list of teams the driver has raced for, along with
+                    season-by-season participation and performance across races.
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/drivers/{id}/career
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                <div class="mb-2 px-4">
+                    <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                    <ul class="list-disc list-outside ps-5">
+                        <li class="bg-gray-200">
+                            Content-Type: application/json
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Type
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Example
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Description
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                id
+                            </th>
+                            <td class="px-6 py-4">
+                                string
+                            </td>
+                            <td class="px-6 py-4">
+                                isack-hadjar
+                            </td>
+                            <td class="px-6 py-4">
+                                The id of the driver.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="w-full flex p-2 bg-gray-800 text-white">
+                    Example Request and Response
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/drivers/isack-hadjar/career
+                    </div>
+                </div>
+                <div class="p-2 bg-gray-200 overflow-x-auto">
+
+                    {% set data =
+                        {
+                            "drivers": "isack-hadjar",
+                            "career": [
+                            {
+                                "season": 2023,
+                                "constructors": "red-bull",
+                                "testDriver": true,
+                                "races": []
+                            },
+                            {
+                                "season": 2023,
+                                "constructors": "alphatauri",
+                                "testDriver": true,
+                                "races": []
+                            },
+                            {
+                                "season": 2024,
+                                "constructors": "red-bull",
+                                "testDriver": true,
+                                "races": []
+                            },
+                            {
+                                "season": 2025,
+                                "constructors": "racing-bulls",
+                                "testDriver": false,
+                                "races": [
+                                {
+                                    "racesId": "f1s2025_1",
+                                    "circuitId": "melbourne",
+                                    "date": "16-03-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_2",
+                                    "circuitId": "shanghai",
+                                    "date": "23-03-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_3",
+                                    "circuitId": "suzuka",
+                                    "date": "06-04-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_4",
+                                    "circuitId": "bahrain",
+                                    "date": "13-04-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_5",
+                                    "circuitId": "jeddah",
+                                    "date": "20-04-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_6",
+                                    "circuitId": "miami",
+                                    "date": "04-05-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_7",
+                                    "circuitId": "imola",
+                                    "date": "18-05-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_8",
+                                    "circuitId": "monaco",
+                                    "date": "25-05-2025"
+                                },
+                                {
+                                    "racesId": "f1s2025_9",
+                                    "circuitId": "catalunya",
+                                    "date": "01-06-2025"
+                                }
+                            ]
+                            }
+                        ]
+                        } %}
+                    <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

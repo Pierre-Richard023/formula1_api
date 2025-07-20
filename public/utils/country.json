@@ -1,0 +1,1745 @@
+[
+    {
+        "id": "afghanistan",
+        "name": "Afghanistan",
+        "demonym": "Afghan",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "aland-islands",
+        "name": "Åland Islands",
+        "demonym": "Ålandic",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "albania",
+        "name": "Albania",
+        "demonym": "Albanian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "algeria",
+        "name": "Algeria",
+        "demonym": "Algerian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "american-samoa",
+        "name": "American Samoa",
+        "demonym": "Samoan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "andorra",
+        "name": "Andorra",
+        "demonym": "Andorran",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "angola",
+        "name": "Angola",
+        "demonym": "Angolan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "anguilla",
+        "name": "Anguilla",
+        "demonym": "Anguillan",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "antarctica",
+        "name": "Antarctica",
+        "demonym": "Antarctican",
+        "continent": "Antarctica",
+        "continent_code": "AN"
+    },
+    {
+        "id": "antigua-and-barbuda",
+        "name": "Antigua and Barbuda",
+        "demonym": "Antiguan",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "argentina",
+        "name": "Argentina",
+        "demonym": "Argentine",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "armenia",
+        "name": "Armenia",
+        "demonym": "Armenian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "aruba",
+        "name": "Aruba",
+        "demonym": "Arubian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "australia",
+        "name": "Australia",
+        "demonym": "Australian",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "austria",
+        "name": "Austria",
+        "demonym": "Austrian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "azerbaijan",
+        "name": "Azerbaijan",
+        "demonym": "Azerbaijanian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "bahamas",
+        "name": "Bahamas",
+        "demonym": "Bahamian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "bahrain",
+        "name": "Bahrain",
+        "demonym": "Bahraini",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "bangladesh",
+        "name": "Bangladesh",
+        "demonym": "Bangladeshi",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "barbados",
+        "name": "Barbados",
+        "demonym": "Barbadian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "belarus",
+        "name": "Belarus",
+        "demonym": "Belarusian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "belgium",
+        "name": "Belgium",
+        "demonym": "Belgian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "belize",
+        "name": "Belize",
+        "demonym": "Belizean",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "benin",
+        "name": "Benin",
+        "demonym": "Beninese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "bermuda",
+        "name": "Bermuda",
+        "demonym": "Bermudian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "bhutan",
+        "name": "Bhutan",
+        "demonym": "Bhutanese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "bolivia",
+        "name": "Bolivia",
+        "demonym": "Bolivian",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "bonaire",
+        "name": "Bonaire",
+        "demonym": "Bonairian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "bosnia-and-herzegovina",
+        "name": "Bosnia and Herzegovina",
+        "demonym": "Bosnian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "botswana",
+        "name": "Botswana",
+        "demonym": "Motswana",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "bouvet-island",
+        "name": "Bouvet Island",
+        "demonym": null,
+        "continent": "Antarctica",
+        "continent_code": "AN"
+    },
+    {
+        "id": "brazil",
+        "name": "Brazil",
+        "demonym": "Brazilian",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "british-indian-ocean-territory",
+        "name": "British Indian Ocean Territory",
+        "demonym": null,
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "british-virgin-islands",
+        "name": "British Virgin Islands",
+        "demonym": "Virgin Islander",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "brunei",
+        "name": "Brunei",
+        "demonym": "Bruneian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "bulgaria",
+        "name": "Bulgaria",
+        "demonym": "Bulgarian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "burkina-faso",
+        "name": "Burkina Faso",
+        "demonym": "Burkinabe",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "burundi",
+        "name": "Burundi",
+        "demonym": "Burundian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "cambodia",
+        "name": "Cambodia",
+        "demonym": "Cambodian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "cameroon",
+        "name": "Cameroon",
+        "demonym": "Cameroonian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "canada",
+        "name": "Canada",
+        "demonym": "Canadian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "cape-verde",
+        "name": "Cape Verde",
+        "demonym": "Cape Verdean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "cayman-islands",
+        "name": "Cayman Islands",
+        "demonym": "Caymanian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "central-african-republic",
+        "name": "Central African Republic",
+        "demonym": "Central African",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "chad",
+        "name": "Chad",
+        "demonym": "Chadian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "chile",
+        "name": "Chile",
+        "demonym": "Chilean",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "china",
+        "name": "China",
+        "demonym": "Chinese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "christmas-island",
+        "name": "Christmas Island",
+        "demonym": "Christmas Islander",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "cocos-keeling-islands",
+        "name": "Cocos (Keeling) Islands",
+        "demonym": "Cocossian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "colombia",
+        "name": "Colombia",
+        "demonym": "Colombian",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "comoros",
+        "name": "Comoros",
+        "demonym": "Comoran",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "cook-islands",
+        "name": "Cook Islands",
+        "demonym": "Cook Islander",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "costa-rica",
+        "name": "Costa Rica",
+        "demonym": "Costa Rican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "croatia",
+        "name": "Croatia",
+        "demonym": "Croatian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "cuba",
+        "name": "Cuba",
+        "demonym": "Cuban",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "curacao",
+        "name": "Curaçao",
+        "demonym": "Curaçaoan",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "cyprus",
+        "name": "Cyprus",
+        "demonym": "Cypriot",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "czech-republic",
+        "name": "Czech Republic",
+        "demonym": "Czech",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "democratic-republic-of-the-congo",
+        "name": "Democratic Republic of the Congo",
+        "demonym": "Congolese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "denmark",
+        "name": "Denmark",
+        "demonym": "Danish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "djibouti",
+        "name": "Djibouti",
+        "demonym": "Djiboutian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "dominica",
+        "name": "Dominica",
+        "demonym": "Dominican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "dominican-republic",
+        "name": "Dominican Republic",
+        "demonym": "Dominican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "east-timor",
+        "name": "East Timor",
+        "demonym": "East Timorese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "ecuador",
+        "name": "Ecuador",
+        "demonym": "Ecuadorian",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "egypt",
+        "name": "Egypt",
+        "demonym": "Egyptian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "el-salvador",
+        "name": "El Salvador",
+        "demonym": "Salvadoran",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "equatorial-guinea",
+        "name": "Equatorial Guinea",
+        "demonym": "Equatorial Guinean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "eritrea",
+        "name": "Eritrea",
+        "demonym": "Eritrean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "estonia",
+        "name": "Estonia",
+        "demonym": "Estonian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "ethiopia",
+        "name": "Ethiopia",
+        "demonym": "Ethiopian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "falkland-islands",
+        "name": "Falkland Islands",
+        "demonym": "Falkland Islander",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "faroe-islands",
+        "name": "Faroe Islands",
+        "demonym": "Faroese",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "federated-states-of-micronesia",
+        "name": "Federated States of Micronesia",
+        "demonym": "Micronesian",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "fiji",
+        "name": "Fiji",
+        "demonym": "Fijian",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "finland",
+        "name": "Finland",
+        "demonym": "Finnish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "france",
+        "name": "France",
+        "demonym": "French",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "french-guiana",
+        "name": "French Guiana",
+        "demonym": "French Guianese",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "french-polynesia",
+        "name": "French Polynesia",
+        "demonym": "French Polynesian",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "french-southern-territories",
+        "name": "French Southern Territories",
+        "demonym": "French",
+        "continent": "Antarctica",
+        "continent_code": "AN"
+    },
+    {
+        "id": "gabon",
+        "name": "Gabon",
+        "demonym": "Gabonese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "gambia",
+        "name": "Gambia",
+        "demonym": "Gambian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "georgia",
+        "name": "Georgia",
+        "demonym": "Georgian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "germany",
+        "name": "Germany",
+        "demonym": "German",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "ghana",
+        "name": "Ghana",
+        "demonym": "Ghanaian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "gibraltar",
+        "name": "Gibraltar",
+        "demonym": "Gibraltarian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "greece",
+        "name": "Greece",
+        "demonym": "Greek",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "greenland",
+        "name": "Greenland",
+        "demonym": "Greenlander",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "grenada",
+        "name": "Grenada",
+        "demonym": "Grenadian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "guadeloupe",
+        "name": "Guadeloupe",
+        "demonym": "Guadeloupean",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "guam",
+        "name": "Guam",
+        "demonym": "Guamanian",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "guatemala",
+        "name": "Guatemala",
+        "demonym": "Guatemalan",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "guernsey",
+        "name": "Guernsey",
+        "demonym": "Sarnian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "guinea-bissau",
+        "name": "Guinea-Bissau",
+        "demonym": "Guinean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "guinea",
+        "name": "Guinea",
+        "demonym": "Guinean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "guyana",
+        "name": "Guyana",
+        "demonym": "Guyanese",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "haiti",
+        "name": "Haiti",
+        "demonym": "Haitian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "heard-island-and-mcdonald-islands",
+        "name": "Heard Island and McDonald Islands",
+        "demonym": null,
+        "continent": "Antarctica",
+        "continent_code": "AN"
+    },
+    {
+        "id": "honduras",
+        "name": "Honduras",
+        "demonym": "Honduran",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "hong-kong",
+        "name": "Hong Kong",
+        "demonym": "Hongkongese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "hungary",
+        "name": "Hungary",
+        "demonym": "Hungarian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "iceland",
+        "name": "Iceland",
+        "demonym": "Icelander",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "india",
+        "name": "India",
+        "demonym": "Indian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "indonesia",
+        "name": "Indonesia",
+        "demonym": "Indonesian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "iran",
+        "name": "Iran",
+        "demonym": "Iranian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "iraq",
+        "name": "Iraq",
+        "demonym": "Iraqi",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "ireland",
+        "name": "Ireland",
+        "demonym": "Irish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "isle-of-man",
+        "name": "Isle of Man",
+        "demonym": "Manx",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "israel",
+        "name": "Israel",
+        "demonym": "Israeli",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "italy",
+        "name": "Italy",
+        "demonym": "Italian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "ivory-coast",
+        "name": "Ivory Coast",
+        "demonym": "Ivorian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "jamaica",
+        "name": "Jamaica",
+        "demonym": "Jamaican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "japan",
+        "name": "Japan",
+        "demonym": "Japanese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "jersey",
+        "name": "Jersey",
+        "demonym": null,
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "jordan",
+        "name": "Jordan",
+        "demonym": "Jordanian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "kazakhstan",
+        "name": "Kazakhstan",
+        "demonym": "Kazakhstani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "kenya",
+        "name": "Kenya",
+        "demonym": "Kenyan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "kiribati",
+        "name": "Kiribati",
+        "demonym": "I-Kiribati",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "kuwait",
+        "name": "Kuwait",
+        "demonym": "Kuwaiti",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "kyrgyzstan",
+        "name": "Kyrgyzstan",
+        "demonym": "Kyrgyzstani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "laos",
+        "name": "Laos",
+        "demonym": "Laotian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "latvia",
+        "name": "Latvia",
+        "demonym": "Latvian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "lebanon",
+        "name": "Lebanon",
+        "demonym": "Lebanese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "lesotho",
+        "name": "Lesotho",
+        "demonym": "Mosotho",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "liberia",
+        "name": "Liberia",
+        "demonym": "Liberian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "libya",
+        "name": "Libya",
+        "demonym": "Libyan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "liechtenstein",
+        "name": "Liechtenstein",
+        "demonym": "Liechtensteiner",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "lithuania",
+        "name": "Lithuania",
+        "demonym": "Lithuanian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "luxembourg",
+        "name": "Luxembourg",
+        "demonym": "Luxembourger",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "macau",
+        "name": "Macau",
+        "demonym": "Macanese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "macedonia",
+        "name": "Macedonia",
+        "demonym": "Macedonian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "madagascar",
+        "name": "Madagascar",
+        "demonym": "Malagasy",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "malawi",
+        "name": "Malawi",
+        "demonym": "Malawian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "malaysia",
+        "name": "Malaysia",
+        "demonym": "Malaysian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "maldives",
+        "name": "Maldives",
+        "demonym": "Maldivian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "mali",
+        "name": "Mali",
+        "demonym": "Malian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "malta",
+        "name": "Malta",
+        "demonym": "Maltese",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "marshall-islands",
+        "name": "Marshall Islands",
+        "demonym": "Marshallese",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "martinique",
+        "name": "Martinique",
+        "demonym": "Martinican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "mauritania",
+        "name": "Mauritania",
+        "demonym": "Mauritanian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "mauritius",
+        "name": "Mauritius",
+        "demonym": "Mauritian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "mayotte",
+        "name": "Mayotte",
+        "demonym": "Mahoran",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "mexico",
+        "name": "Mexico",
+        "demonym": "Mexican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "moldova",
+        "name": "Moldova",
+        "demonym": "Moldovan",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "monaco",
+        "name": "Monaco",
+        "demonym": "Monégasque",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "mongolia",
+        "name": "Mongolia",
+        "demonym": "Mongolian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "montenegro",
+        "name": "Montenegro",
+        "demonym": "Montenegrin",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "montserrat",
+        "name": "Montserrat",
+        "demonym": "Montserratian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "morocco",
+        "name": "Morocco",
+        "demonym": "Moroccan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "mozambique",
+        "name": "Mozambique",
+        "demonym": "Mozambican",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "myanmar",
+        "name": "Myanmar",
+        "demonym": "Burmese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "namibia",
+        "name": "Namibia",
+        "demonym": "Namibian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "nauru",
+        "name": "Nauru",
+        "demonym": "Nauruan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "nepal",
+        "name": "Nepal",
+        "demonym": "Nepalese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "netherlands",
+        "name": "Netherlands",
+        "demonym": "Dutch",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "new-caledonia",
+        "name": "New Caledonia",
+        "demonym": "New Caledonians",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "new-zealand",
+        "name": "New Zealand",
+        "demonym": "New Zealander",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "nicaragua",
+        "name": "Nicaragua",
+        "demonym": "Nicaraguan",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "niger",
+        "name": "Niger",
+        "demonym": "Nigerian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "nigeria",
+        "name": "Nigeria",
+        "demonym": "Nigerian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "niue",
+        "name": "Niue",
+        "demonym": "Niueans",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "norfolk-island",
+        "name": "Norfolk Island",
+        "demonym": "Norfolk Islander",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "north-korea",
+        "name": "North Korea",
+        "demonym": "North Korean",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "northern-mariana-islands",
+        "name": "Northern Mariana Islands",
+        "demonym": "Northern Marianan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "norway",
+        "name": "Norway",
+        "demonym": "Norwegian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "oman",
+        "name": "Oman",
+        "demonym": "Omani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "pakistan",
+        "name": "Pakistan",
+        "demonym": "Pakistani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "palau",
+        "name": "Palau",
+        "demonym": "Palauan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "palestine",
+        "name": "Palestine",
+        "demonym": "Palestinian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "panama",
+        "name": "Panama",
+        "demonym": "Panamanian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "papua-new-guinea",
+        "name": "Papua New Guinea",
+        "demonym": "Papua New Guinean",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "paraguay",
+        "name": "Paraguay",
+        "demonym": "Paraguayan",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "peru",
+        "name": "Peru",
+        "demonym": "Peruvian",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "philippines",
+        "name": "Philippines",
+        "demonym": "Filipino",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "pitcairn-islands",
+        "name": "Pitcairn Islands",
+        "demonym": "Pitcairn Islander",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "poland",
+        "name": "Poland",
+        "demonym": "Polish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "portugal",
+        "name": "Portugal",
+        "demonym": "Portuguese",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "puerto-rico",
+        "name": "Puerto Rico",
+        "demonym": "Puerto Rican",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "qatar",
+        "name": "Qatar",
+        "demonym": "Qatari",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "republic-of-the-congo",
+        "name": "Republic of the Congo",
+        "demonym": "Congolese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "reunion",
+        "name": "Réunion",
+        "demonym": "Réunionese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "romania",
+        "name": "Romania",
+        "demonym": "Romanian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "russia",
+        "name": "Russia",
+        "demonym": "Russian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "rwanda",
+        "name": "Rwanda",
+        "demonym": "Rwandan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "saint-barthelemy",
+        "name": "Saint Barthélemy",
+        "demonym": "Barthélemois",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "saint-helena-ascension-and-tristan-da-cunha",
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "demonym": "Saint Helenian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "saint-kitts-and-nevis",
+        "name": "Saint Kitts and Nevis",
+        "demonym": "Kittian/Nevisian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "saint-lucia",
+        "name": "Saint Lucia",
+        "demonym": null,
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "saint-martin",
+        "name": "Saint Martin",
+        "demonym": null,
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "saint-pierre-and-miquelon",
+        "name": "Saint Pierre and Miquelon",
+        "demonym": "Saint-Pierrais/Miquelonnais",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "saint-vincent-and-the-grenadines",
+        "name": "Saint Vincent and the Grenadines",
+        "demonym": "Saint Vincentian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "samoa",
+        "name": "Samoa",
+        "demonym": "Samoan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "san-marino",
+        "name": "San Marino",
+        "demonym": "Sammarinese",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "sao-tome-and-principe",
+        "name": "São Tomé and Príncipe",
+        "demonym": "São Toméan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "saudi-arabia",
+        "name": "Saudi Arabia",
+        "demonym": "Saudi Arabian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "senegal",
+        "name": "Senegal",
+        "demonym": "Senegalese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "serbia",
+        "name": "Serbia",
+        "demonym": "Serbian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "seychelles",
+        "name": "Seychelles",
+        "demonym": "Seychellois",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "sierra-leone",
+        "name": "Sierra Leone",
+        "demonym": "Sierra Leonean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "singapore",
+        "name": "Singapore",
+        "demonym": "Singaporean",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "sint-maarten",
+        "name": "Sint Maarten",
+        "demonym": "Sint Maartener",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "slovakia",
+        "name": "Slovakia",
+        "demonym": "Slovakian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "slovenia",
+        "name": "Slovenia",
+        "demonym": "Slovenian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "solomon-islands",
+        "name": "Solomon Islands",
+        "demonym": "Solomon Islander",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "somalia",
+        "name": "Somalia",
+        "demonym": "Somali",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "south-africa",
+        "name": "South Africa",
+        "demonym": "South African",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "south-georgia-and-the-south-sandwich-islands",
+        "name": "South Georgia and the South Sandwich Islands",
+        "demonym": null,
+        "continent": "Antarctica",
+        "continent_code": "AN"
+    },
+    {
+        "id": "south-korea",
+        "name": "South Korea",
+        "demonym": "South Korean",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "south-sudan",
+        "name": "South Sudan",
+        "demonym": "South Sudanese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "spain",
+        "name": "Spain",
+        "demonym": "Spanish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "sri-lanka",
+        "name": "Sri Lanka",
+        "demonym": "Sri Lankan",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "sudan",
+        "name": "Sudan",
+        "demonym": "Sudanese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "suriname",
+        "name": "Suriname",
+        "demonym": "Surinamese",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "svalbard-and-jan-mayen",
+        "name": "Svalbard and Jan Mayen",
+        "demonym": null,
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "swaziland",
+        "name": "Swaziland",
+        "demonym": "Swazi",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "sweden",
+        "name": "Sweden",
+        "demonym": "Swedish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "switzerland",
+        "name": "Switzerland",
+        "demonym": "Swiss",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "syria",
+        "name": "Syria",
+        "demonym": "Syrian",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "taiwan",
+        "name": "Taiwan",
+        "demonym": "Taiwanese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "tajikistan",
+        "name": "Tajikistan",
+        "demonym": "Tajikistani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "tanzania",
+        "name": "Tanzania",
+        "demonym": "Tanzanian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "thailand",
+        "name": "Thailand",
+        "demonym": "Thai",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "togo",
+        "name": "Togo",
+        "demonym": "Togolese",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "tokelau",
+        "name": "Tokelau",
+        "demonym": "Tokelauan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "tonga",
+        "name": "Tonga",
+        "demonym": "Tongan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "trinidad-and-tobago",
+        "name": "Trinidad and Tobago",
+        "demonym": "Trinidadian/Tobagonian",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "tunisia",
+        "name": "Tunisia",
+        "demonym": "Tunisian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "turkey",
+        "name": "Turkey",
+        "demonym": "Turkish",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "turkmenistan",
+        "name": "Turkmenistan",
+        "demonym": "Turkmenistani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "turks-and-caicos-islands",
+        "name": "Turks and Caicos Islands",
+        "demonym": "Turks and Caicos Islander",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "tuvalu",
+        "name": "Tuvalu",
+        "demonym": "Tuvaluan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "uganda",
+        "name": "Uganda",
+        "demonym": "Ugandan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "ukraine",
+        "name": "Ukraine",
+        "demonym": "Ukrainian",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "united-arab-emirates",
+        "name": "United Arab Emirates",
+        "demonym": "Emirati",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "united-kingdom",
+        "name": "United Kingdom",
+        "demonym": "British",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "united-states-minor-outlying-islands",
+        "name": "United States Minor Outlying Islands",
+        "demonym": null,
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "united-states-of-america",
+        "name": "United States of America",
+        "demonym": "American",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "united-states-virgin-islands",
+        "name": "United States Virgin Islands",
+        "demonym": "Virgin Islander",
+        "continent": "North America",
+        "continent_code": "NA"
+    },
+    {
+        "id": "uruguay",
+        "name": "Uruguay",
+        "demonym": "Uruguayan",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "uzbekistan",
+        "name": "Uzbekistan",
+        "demonym": "Uzbekistani",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "vanuatu",
+        "name": "Vanuatu",
+        "demonym": "Ni-Vanuatu",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "vatican-city",
+        "name": "Vatican City",
+        "demonym": "Vatican",
+        "continent": "Europe",
+        "continent_code": "EU"
+    },
+    {
+        "id": "venezuela",
+        "name": "Venezuela",
+        "demonym": "Venezuelan",
+        "continent": "South America",
+        "continent_code": "SA"
+    },
+    {
+        "id": "vietnam",
+        "name": "Vietnam",
+        "demonym": "Vietnamese",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "wallis-and-futuna",
+        "name": "Wallis and Futuna",
+        "demonym": "Wallisian/Futunan",
+        "continent": "Australia",
+        "continent_code": "OC"
+    },
+    {
+        "id": "western-sahara",
+        "name": "Western Sahara",
+        "demonym": "Western Saharan",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "yemen",
+        "name": "Yemen",
+        "demonym": "Yemeni",
+        "continent": "Asia",
+        "continent_code": "AS"
+    },
+    {
+        "id": "zambia",
+        "name": "Zambia",
+        "demonym": "Zambian",
+        "continent": "Africa",
+        "continent_code": "AF"
+    },
+    {
+        "id": "zimbabwe",
+        "name": "Zimbabwe",
+        "demonym": "Zimbabwean",
+        "continent": "Africa",
+        "continent_code": "AF"
+    }
+]

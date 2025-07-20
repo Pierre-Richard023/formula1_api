@@ -17,7 +17,17 @@ class SeasonsRepository extends ServiceEntityRepository
         parent::__construct($registry, Seasons::class);
     }
 
-    public function paginateSeasons(int $page,int $limit): Paginator
+
+    public function getSeasonsInformations(?int $year): ?Seasons
+    {
+        return $this->createQueryBuilder('s')
+            ->andWhere('s.year = :year')
+            ->setParameter('year', $year)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
+    public function paginateSeasons(int $page, int $limit): Paginator
     {
         return new Paginator(
             $this->createQueryBuilder('s')

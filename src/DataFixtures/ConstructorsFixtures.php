@@ -3,11 +3,13 @@
 namespace App\DataFixtures;
 
 use App\Entity\Constructors;
+use App\Entity\Country;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
-class ConstructorsFixtures extends Fixture
+class ConstructorsFixtures extends Fixture implements DependentFixtureInterface
 {
 
     public function __construct(private ParameterBagInterface $parameterBag)
@@ -26,15 +28,16 @@ class ConstructorsFixtures extends Fixture
         if (isset($data)) {
             foreach ($data as $c) {
                 $constructor = new Constructors();
-                $constructor->setName($c['name'])
+                $constructor->setConstructorId($c['id'])
+                    ->setName($c['name'])
                     ->setFullName($c['fullName'])
-                    ->setCountry($c['countryId'])
+                    ->setCountry($this->getReference('country__'. $c["countryId"],Country::class))
                     ->setRaceEntries($c['totalRaceEntries'])
                     ->setPodiums($c['totalPodiumRaces'])
                     ->setRaceWins($c['totalRaceWins'])
                     ->setWolrdChampionships($c['totalChampionshipWins']);
 
-                $this->addReference('constructor__'.$c["id"], $constructor);
+                $this->addReference('constructor__' . $c["id"], $constructor);
                 $manager->persist($constructor);
             }
         }
@@ -42,5 +45,12 @@ class ConstructorsFixtures extends Fixture
         $manager->flush();
         $manager->clear();
         unset($data);
+    }
+
+    public function getDependencies(): array
+    {
+        return [
+            CountryFixtures::class,
+        ];
     }
 }

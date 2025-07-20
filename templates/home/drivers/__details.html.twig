@@ -1,0 +1,121 @@
+<div id="driver_information" class="mt-4 scroll-mt-12">
+    <div class="my-2.5 flex font-serif text-xl px-2 w-full">
+        <div class="flex items-center text-green-700 ">
+            GET
+        </div>
+        <div class="flex-1 flex items-center p-2">
+            Driver Information
+        </div>
+    </div>
+    <div class="px-4">
+        <div class="">
+            <div class="mb-4">
+                <div class="my-1.5">
+                    This endpoint retrieves detailed information about a specific Formula One driver by using their
+                    unique identifier in the database. The returned data includes personal details.
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/drivers/{id}
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Headers</h3>
+                <div class="mb-2 px-4">
+                    <p class="text-gray-500 font-light mb-1.5">Response Headers:</p>
+                    <ul class="list-disc list-outside ps-5">
+                        <li class="bg-gray-200">
+                            Content-Type: application/json
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="my-1.5 text-xl font-semibold text-gray-500">Parameters</h3>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Type
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Example
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Description
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                id
+                            </th>
+                            <td class="px-6 py-4">
+                                string
+                            </td>
+                            <td class="px-6 py-4">
+                                alain-prost
+                            </td>
+                            <td class="px-6 py-4">
+                                The id of the driver.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="w-full flex p-2 bg-gray-800 text-white">
+                    Example Request and Response
+                </div>
+                <div class="w-full flex p-2 bg-gray-700">
+                    <div class="flex items-center text-green-400 ">
+                        GET
+                    </div>
+                    <div class="flex-1 flex items-center px-4 text-white">
+                        https://formulaone.prb-dev.fr/api/drivers/alain-prost
+                    </div>
+                </div>
+                <div class="p-2 bg-gray-200 overflow-x-auto">
+                    {% set data =
+                        {
+                            "driverId": "alain-prost",
+                            "first_name": "Alain",
+                            "last_name": "Prost",
+                            "name": "Alain Prost",
+                            "abbreviation": "PRO",
+                            "world_championships": 4,
+                            "date_of_birth": "24-02-1955",
+                            "place_of_birth": "Lorette",
+                            "podiums": 106,
+                            "grands_prix_entered": 202,
+                            "race_wins": 51,
+                            "pole_positions": 33,
+                            "date_of_death": null,
+                            "number": null,
+                            "countryOfBirth": {
+                            "country": "France",
+                            "continent": "Europe"
+                        },
+                            "nationality": {
+                            "nationality": "French",
+                            "country": "France"
+                        }
+                        } %}
+                    <pre>{{ data|json_encode(constant('JSON_PRETTY_PRINT')  b-or constant('JSON_UNESCAPED_UNICODE')) }}</pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

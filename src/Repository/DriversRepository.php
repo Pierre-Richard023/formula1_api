@@ -17,14 +17,28 @@ class DriversRepository extends ServiceEntityRepository
         parent::__construct($registry, Drivers::class);
     }
 
-    public function paginateDrivers(?string $country, int $page, int $limit): Paginator
+
+    public function getDriverInformation(string $id): ?Drivers
+    {
+        return $this->createQueryBuilder('d')
+            ->andWhere('d.driverId = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult();
+
+    }
+
+
+    public function paginateDrivers(?string $nationality, int $page, int $limit): Paginator
     {
 
 
         $query = $this->createQueryBuilder('s');
 
-        if ($country !== null) {
-            $query->andWhere('s.country = :country')->setParameter('country', $country);
+        if ($nationality !== null) {
+            $query
+                ->join('s.nationality', 'c', 'WITH', 'c.name = :nationality')
+                ->setParameter('nationality', $nationality);
         }
 
         $query

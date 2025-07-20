@@ -26,7 +26,9 @@ class SeasonsFixtures extends Fixture
         if (isset($data)) {
             foreach ($data as $s) {
                 $season = new Seasons();
-                $season->setYear($s['year']);
+                $season
+                    ->setSeasonsId('f1s'.$s['year'])
+                    ->setYear($s['year']);
                 $this->addReference('season__'.$s['year'], $season);
                 $manager->persist($season);
             }

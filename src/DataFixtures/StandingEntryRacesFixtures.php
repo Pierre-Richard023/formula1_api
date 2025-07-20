@@ -19,7 +19,7 @@ class StandingEntryRacesFixtures extends Fixture implements DependentFixtureInte
 
     public function load(ObjectManager $manager): void
     {
-        ini_set('memory_limit', '1224M');
+        ini_set('memory_limit', '1506M');
 
         $jsonFile = $this->parameterBag->get('kernel.project_dir') . '/public/utils/standingsR.json';
         $data = Items::fromFile($jsonFile);

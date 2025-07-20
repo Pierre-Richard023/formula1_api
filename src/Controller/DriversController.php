@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Drivers;
 use App\Repository\DriversRepository;
+use App\Repository\EntrantsDriversRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -27,13 +28,13 @@ class DriversController extends AbstractController
     {
         $page = $request->query->getInt('page', 1);
         $limit = $request->query->getInt('limit', 8);
-        $country = $request->query->get('country');
-        $key = 'getAllDrivers_' . $country . '_' . $page . '_' . $limit;
-        $drivers = $this->myCachePool->get($key, function (ItemInterface $item) use ($country, $driversRepository, $page, $limit, $serializer) {
+        $nationality = $request->query->get('nationality');
+        $key = 'getAllDrivers_' . $nationality . '_' . $page . '_' . $limit;
+        $drivers = $this->myCachePool->get($key, function (ItemInterface $item) use ($nationality, $driversRepository, $page, $limit, $serializer) {
             $item->get('driversCache');
             $item->expiresAfter(3600);
 
-            $driversLists = $driversRepository->paginateDrivers($country, $page, $limit);
+            $driversLists = $driversRepository->paginateDrivers($nationality, $page, $limit);
             $context = [
                 'currentPage' => $page,
                 'itemsPerPage' => $limit,
@@ -43,16 +44,18 @@ class DriversController extends AbstractController
 
             return $serializer->serialize($driversLists, 'json', $context);
         });
-
         return new JsonResponse($drivers, Response::HTTP_OK, [], true);
     }
 
 
-    #[Route('/{id}', requirements: ['id' => Requirement::DIGITS], methods: ['GET'])]
-    public function show(Drivers $drivers, SerializerInterface $serializer): JsonResponse
+    #[Route('/{id}', requirements: ['id' => '[a-z0-9\-]+'], methods: ['GET'])]
+    public function show(string $id, SerializerInterface $serializer, DriversRepository $driversRepository): JsonResponse
     {
-        $cacheKey = 'driver_' . $drivers->getId();
-        $cacheTag = 'driver_' . $drivers->getId();
+
+        $drivers = $driversRepository->getDriverInformation($id);
+
+        $cacheKey = 'driver_' . $drivers->getDriverId();
+        $cacheTag = 'driver_' . $drivers->getDriverId();
 
         $data = $this->myCachePool->get($cacheKey, function (ItemInterface $item) use ($drivers, $cacheTag, $serializer) {
             $item->get($cacheTag);
@@ -63,6 +66,29 @@ class DriversController extends AbstractController
             ];
 
             return $serializer->serialize($drivers, 'json', $context);
+        });
+        return new JsonResponse($data, Response::HTTP_OK, [], true);
+    }
+
+    #[Route('/{id}/career', requirements: ['id' => '[a-z0-9\-]+'], methods: ['GET'])]
+    public function career(string $id, Request $request, SerializerInterface $serializer, DriversRepository $driversRepository, EntrantsDriversRepository $entrantsDriversRepository)
+    {
+        $drivers = $driversRepository->getDriverInformation($id);
+
+        $cacheKey = 'driver_career' . $drivers->getDriverId();
+        $cacheTag = 'driver_career' . $drivers->getDriverId();
+
+        $data = $this->myCachePool->get($cacheKey, function (ItemInterface $item) use ($entrantsDriversRepository, $drivers, $cacheTag, $serializer) {
+            $item->get($cacheTag);
+            $item->expiresAfter(3600);
+            $context = [
+
+                "groups" => ["drivers.career"],
+                'datetime_format' => 'd-m-Y',
+            ];
+
+            $entrants = $entrantsDriversRepository->getDriversEntrants($drivers);
+            return $serializer->serialize($entrants, 'json', $context);
         });
         return new JsonResponse($data, Response::HTTP_OK, [], true);
     }
