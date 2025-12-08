@@ -399,8 +399,8 @@
         "continent_code": "AS"
     },
     {
-        "id": "czech-republic",
-        "name": "Czech Republic",
+        "id": "czechia",
+        "name": "Czechia",
         "demonym": "Czech",
         "continent": "Europe",
         "continent_code": "EU"
@@ -488,6 +488,13 @@
         "demonym": "Estonian",
         "continent": "Europe",
         "continent_code": "EU"
+    },
+    {
+        "id": "eswatini",
+        "name": "Eswatini",
+        "demonym": "Swazi",
+        "continent": "Africa",
+        "continent_code": "AF"
     },
     {
         "id": "ethiopia",
@@ -910,13 +917,6 @@
         "continent_code": "AS"
     },
     {
-        "id": "macedonia",
-        "name": "Macedonia",
-        "demonym": "Macedonian",
-        "continent": "Europe",
-        "continent_code": "EU"
-    },
-    {
         "id": "madagascar",
         "name": "Madagascar",
         "demonym": "Malagasy",
@@ -1139,6 +1139,13 @@
         "demonym": "North Korean",
         "continent": "Asia",
         "continent_code": "AS"
+    },
+    {
+        "id": "north-macedonia",
+        "name": "North Macedonia",
+        "demonym": "Macedonian",
+        "continent": "Europe",
+        "continent_code": "EU"
     },
     {
         "id": "northern-mariana-islands",
@@ -1496,13 +1503,6 @@
         "demonym": null,
         "continent": "Europe",
         "continent_code": "EU"
-    },
-    {
-        "id": "swaziland",
-        "name": "Swaziland",
-        "demonym": "Swazi",
-        "continent": "Africa",
-        "continent_code": "AF"
     },
     {
         "id": "sweden",
